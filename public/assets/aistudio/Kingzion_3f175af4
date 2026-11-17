@@ -1,0 +1,1394 @@
+﻿PROJECT: KING ZION'S ESTATE
+NIGERIAN REAL ESTATE WEBSITE — PROPERTY SHOWCASE AND ENQUIRY UPGRADE
+
+
+ROLE
+
+
+Act as a senior Nigerian real estate marketing strategist, property
+sales specialist, property investment consultant, premium website
+designer, UI/UX architect, and full-stack developer with extensive
+industry experience.
+
+
+Your task is to upgrade the EXISTING KING ZION'S ESTATE website.
+
+
+Do not rebuild the application from scratch.
+
+
+Preserve the existing green-and-gold brand identity, current
+navigation structure where appropriate, working integrations,
+database records, and established design elements.
+
+
+The main objective is to help customers discover houses for sale,
+land for sale, rental properties, and estate development opportunities
+in Nigeria.
+
+
+The website must make property discovery visually compelling,
+informative, and easy to understand.
+
+
+==================================================
+1. TARGET MARKET AND VISUAL DIRECTION
+==================================================
+
+
+The website serves Nigerian property buyers, tenants, investors,
+families, and Nigerians in the diaspora.
+
+
+Prioritize Nigerian architecture and real estate environments.
+
+
+Use visual references inspired by residential developments in:
+
+
+- Asaba, Delta State.
+- Lagos State.
+- Abuja, Federal Capital Territory.
+- Other relevant Nigerian cities.
+
+
+PREFERRED ARCHITECTURAL STYLES:
+
+
+- Modern Nigerian detached duplexes.
+- Contemporary five-bedroom and six-bedroom homes.
+- Luxury residential bungalows.
+- Semi-detached duplexes.
+- Terraced houses.
+- Gated residential estates.
+- Modern apartments.
+- Spacious rental apartments.
+- Nigerian residential plots.
+- Dry, buildable land with accessible roads.
+- Planned estate layouts.
+- Residential developments with appropriate infrastructure.
+
+
+The houses should look realistic for the Nigerian market.
+
+
+Where appropriate, show perimeter fencing, security gates, paved
+driveways, water storage facilities, compound parking, balconies,
+modern roofs, and tropical landscaping.
+
+
+Avoid making the entire website look like a collection of American
+suburban houses or European countryside properties.
+
+
+Use Nigerian architectural references wherever suitable photographs
+are available.
+
+
+Do not invent claims about a photograph's location or ownership.
+
+
+Photographs used for illustration must not be presented as actual
+KING ZION'S ESTATE properties unless their identity is confirmed.
+
+
+==================================================
+2. BRAND AND DESIGN
+==================================================
+
+
+Keep the existing green-and-gold design.
+
+
+Do not introduce a completely different colour palette.
+
+
+Maintain a premium, professional, trustworthy appearance.
+
+
+Use:
+
+
+- Strong, readable headings.
+- Elegant property photography.
+- Consistent image dimensions.
+- Clear prices.
+- Simple navigation.
+- Spacious layouts.
+- Professional property cards.
+- Well-designed forms.
+- Responsive mobile layouts.
+
+
+The homepage should immediately communicate that the company
+specializes in selling houses, selling land, and providing rental
+property opportunities.
+
+
+==================================================
+3. HOMEPAGE HERO
+==================================================
+
+
+Preserve the existing hero design and improve its relevance to
+the Nigerian property market.
+
+
+Use a high-quality photograph of a contemporary Nigerian-style
+luxury home or residential estate.
+
+
+MAIN HEADING:
+
+
+Find Your Place.
+Build Your Future.
+
+
+DESCRIPTION:
+
+
+Discover houses, land, and rental properties across Asaba and
+other Nigerian locations. Explore your options and find a property
+that fits your needs and budget.
+
+
+PRIMARY CTA:
+
+
+Explore Properties
+
+
+SECONDARY CTA:
+
+
+Request an Inspection
+
+
+The first button should take visitors to the property discovery page.
+
+
+The second button should open the inspection request page.
+
+
+Do not display the entire property enquiry form automatically
+on the homepage.
+
+
+==================================================
+4. PROPERTY CATEGORY SHOWCASE
+==================================================
+
+
+Create a visually impressive section immediately after the hero.
+
+
+SECTION HEADING:
+
+
+Find Your Next Property
+
+
+DESCRIPTION:
+
+
+From beautiful family homes to valuable land opportunities and
+elegant rental apartments, explore property options for different
+budgets and goals.
+
+
+Display three large, attractive property category cards.
+
+
+CARD ONE: HOUSES FOR SALE
+
+
+Use a high-resolution photograph of a beautiful modern Nigerian
+detached duplex or contemporary residential house.
+
+
+Suggested image URL:
+
+
+https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=90
+
+
+Heading:
+
+
+Houses for Sale
+
+
+Description:
+
+
+Explore modern homes, spacious duplexes, family residences,
+and premium residential properties.
+
+
+Estimated price guide:
+
+
+₦30 million–₦500 million+.
+
+
+Include a disclaimer that prices depend on location, size, finish,
+property specifications, and availability.
+
+
+BUTTON:
+
+
+Explore Houses
+
+
+Navigate to:
+
+
+/properties-for-sale
+
+
+Do not merely scroll down the homepage.
+
+
+CARD TWO: LAND FOR SALE
+
+
+Use a high-resolution photograph showing open, buildable land,
+visible plot boundaries, or an attractive residential estate layout.
+
+
+Suggested image URL:
+
+
+https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=90
+
+
+Prefer a Nigerian residential land photograph if a suitable
+high-resolution image is available.
+
+
+Heading:
+
+
+Land for Sale
+
+
+Description:
+
+
+Find land for your dream home, future development, or long-term
+property investment.
+
+
+Estimated price guide:
+
+
+₦3.5 million–₦50 million+.
+
+
+Clearly explain that prices can be substantially higher in premium
+locations and vary with plot size, title documentation, access,
+infrastructure, and development location.
+
+
+BUTTON:
+
+
+Explore Available Land
+
+
+Navigate to:
+
+
+/land-for-sale
+
+
+CARD THREE: RENTAL PROPERTIES
+
+
+Use a high-resolution photograph of an elegant apartment or
+modern residential interior.
+
+
+Suggested image URL:
+
+
+https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=90
+
+
+Prefer photographs of rental properties that look appropriate
+for the Nigerian market.
+
+
+Heading:
+
+
+Find a Home to Rent
+
+
+Description:
+
+
+Explore apartments, bungalows, duplexes, and other rental
+opportunities for individuals and families.
+
+
+PRICE:
+
+
+Display a realistic rental estimate only when supported by
+current local examples.
+
+
+Make the payment period clear.
+
+
+For example, distinguish between monthly and annual rent.
+
+
+Do not invent a rental range without supporting local market
+information.
+
+
+BUTTON:
+
+
+Explore Rentals
+
+
+Navigate to:
+
+
+/properties-for-rent
+
+
+CARD DESIGN REQUIREMENTS:
+
+
+- Display the property photograph prominently.
+- Make each category visually distinct.
+- Use high-resolution images.
+- Display the estimated price range beneath the description.
+- Include a clear CTA.
+- Keep the cards within the screen width.
+- Maintain consistent spacing.
+- Make the entire card clickable where appropriate.
+- Do not place large forms inside these cards.
+
+
+==================================================
+5. HOMEPAGE FEATURED PROPERTIES
+==================================================
+
+
+Create a section titled:
+
+
+Featured Property Opportunities
+
+
+Show a selection of individual property listings beneath the
+three main category cards.
+
+
+Use a clean, responsive layout.
+
+
+Display attractive photographs of:
+
+
+- A detached duplex.
+- A residential bungalow.
+- A semi-detached duplex.
+- A residential plot.
+- An estate development.
+- An elegant rental apartment.
+
+
+Use real property database records wherever available.
+
+
+Each property card must show:
+
+
+- Property photograph.
+- Property title.
+- Location.
+- Property category.
+- Asking price or clearly labelled estimate.
+- Relevant specifications.
+- Availability, when confirmed.
+- View Details button.
+
+
+Use Nigerian naira formatting.
+
+
+Examples:
+
+
+₦45,000,000
+₦85,000,000
+₦150,000,000
+
+
+These are illustrative amounts, not confirmed prices for actual
+KING ZION'S ESTATE properties.
+
+
+Do not publish invented listings as real available inventory.
+
+
+If demonstration content is necessary, label it clearly in
+development and do not present it as verified inventory.
+
+
+The View Details button must open the individual property's
+dedicated detail page.
+
+
+==================================================
+6. NIGERIAN LAND LISTINGS
+==================================================
+
+
+Create a dedicated land listing page:
+
+
+/land-for-sale
+
+
+SECTION HEADING:
+
+
+Find Land for Your Next Investment
+
+
+INTRODUCTION:
+
+
+The right piece of land can become the foundation of your future
+home, a development project, or a long-term investment.
+
+
+Explore available land opportunities and request further information
+before making a decision.
+
+
+Include property cards with the following fields:
+
+
+- Property or estate name.
+- Location.
+- Plot dimensions.
+- Plot area, where confirmed.
+- Asking price.
+- Documentation information.
+- Road access.
+- Infrastructure.
+- Development status.
+- Availability.
+- Request Inspection button.
+- View Details button.
+
+
+Use actual information from the property database.
+
+
+For land listings around Asaba and Ibusa, display the relevant
+estate location and plot details where confirmed.
+
+
+EXAMPLE FORMAT:
+
+
+Property Type:
+Residential Land.
+
+
+Plot Size:
+50 ft × 100 ft, where confirmed.
+
+
+Location:
+Display the actual location from the property record.
+
+
+Estimated Price:
+Display the actual asking price if confirmed.
+
+
+Documentation:
+Display only documents that have actually been confirmed.
+
+
+Do not assume that every plot measures 50 ft × 100 ft.
+
+
+Do not invent a title document or claim that land is fully verified
+without supporting records.
+
+
+LAND SALES COPY:
+
+
+Build the home you have always envisioned.
+
+
+Whether you are planning a family residence, a future development,
+or a long-term investment, explore available land opportunities
+and obtain the information you need before committing.
+
+
+CTA:
+
+
+Request Land Information
+
+
+SECONDARY CTA:
+
+
+Schedule a Site Inspection
+
+
+==================================================
+7. HOUSES FOR SALE PAGE
+==================================================
+
+
+Create a dedicated page:
+
+
+/properties-for-sale
+
+
+HEADING:
+
+
+Explore Houses for Sale
+
+
+DESCRIPTION:
+
+
+Discover residential properties ranging from practical family homes
+to spacious duplexes and premium residences.
+
+
+Use a professional grid of property listings.
+
+
+Include filters for:
+
+
+- Location.
+- Budget.
+- Property type.
+- Number of bedrooms.
+- Number of bathrooms, where available.
+
+
+Each property should display:
+
+
+- Main photograph.
+- Property name.
+- Location.
+- Asking price.
+- Property type.
+- Bedrooms and bathrooms, where available.
+- Property size, where confirmed.
+- Availability.
+- View Details button.
+
+
+Allow visitors to open each property in a dedicated detail page.
+
+
+Use a property image gallery on the detail page.
+
+
+Do not force every property into the same image crop if that would
+hide important architectural features.
+
+
+==================================================
+8. RENTAL PROPERTY PAGE
+==================================================
+
+
+Create a dedicated page:
+
+
+/properties-for-rent
+
+
+HEADING:
+
+
+Find a Home That Fits Your Lifestyle
+
+
+DESCRIPTION:
+
+
+Explore rental properties suited to individuals, couples, families,
+and professionals.
+
+
+Display suitable Nigerian-style:
+
+
+- Apartments.
+- Two-bedroom flats.
+- Three-bedroom apartments.
+- Residential bungalows.
+- Duplexes.
+- Family homes.
+
+
+Only display categories that correspond to genuine listings or
+clearly labelled demonstration content.
+
+
+Each rental card must display:
+
+
+- Property photograph.
+- Location.
+- Property type.
+- Number of bedrooms, where applicable.
+- Rent amount.
+- Payment period.
+- Other charges, where confirmed.
+- Availability.
+- View Details button.
+- Request Inspection button.
+
+
+On the property detail page, explain the applicable rental terms.
+
+
+Do not confuse annual rent with monthly rent.
+
+
+Do not invent agency fees, legal fees, caution deposits, or
+payment conditions.
+
+
+==================================================
+9. INDIVIDUAL PROPERTY DETAIL PAGES
+==================================================
+
+
+Every property must have a dedicated detail page.
+
+
+Example route:
+
+
+/property/[property-slug]
+
+
+The page must contain:
+
+
+1. Property title.
+2. Property photographs.
+3. Location.
+4. Asking price or rent.
+5. Property category.
+6. Description.
+7. Property specifications.
+8. Land or building size, where confirmed.
+9. Amenities.
+10. Availability status.
+11. Documentation information, where applicable.
+12. Inspection request button.
+13. Purchase enquiry button.
+14. Similar properties.
+
+
+Provide a professional gallery that allows users to view additional
+photographs.
+
+
+Use sharp, high-resolution images.
+
+
+Do not stretch photographs.
+
+
+Do not hide important property details behind decorative elements.
+
+
+Place the main CTAs prominently.
+
+
+PRIMARY CTA:
+
+
+Request an Inspection
+
+
+SECONDARY CTA:
+
+
+I Am Interested in This Property
+
+
+For land, use:
+
+
+Request a Site Inspection
+
+
+and:
+
+
+I Am Interested in Buying This Land
+
+
+For rental properties, use:
+
+
+Request a Viewing
+
+
+and:
+
+
+Apply / Enquire About This Rental
+
+
+The application must navigate to the appropriate form page and
+associate the request with the selected property.
+
+
+==================================================
+10. PROPERTY INSPECTION PAGE
+==================================================
+
+
+Create a dedicated inspection request page:
+
+
+/request-inspection
+
+
+Do not automatically display the form on the homepage.
+
+
+Open this page when a visitor clicks Request an Inspection or
+Request a Viewing.
+
+
+PAGE HEADING:
+
+
+Schedule a Property Inspection
+
+
+DESCRIPTION:
+
+
+We appreciate your interest in viewing this property.
+
+
+Submit your preferred inspection details. Our team will review
+the request and contact you to confirm an available appointment.
+
+
+FORM FIELDS:
+
+
+CUSTOMER INFORMATION:
+
+
+- Full name.
+- Phone number.
+- WhatsApp number.
+- Email address, optional.
+- Preferred contact method.
+
+
+PROPERTY INFORMATION:
+
+
+- Property name or reference.
+- Property category.
+- Property location.
+- Purchase, land, or rental enquiry.
+- Preferred inspection date.
+- Alternative inspection date.
+- Preferred time.
+- Number of people attending, optional.
+
+
+ADDITIONAL INFORMATION:
+
+
+- Questions about the property.
+- Accessibility or special arrangements, optional.
+- Additional comments.
+
+
+Include a required privacy consent checkbox.
+
+
+SUBMIT BUTTON:
+
+
+Submit Inspection Request
+
+
+VALIDATION:
+
+
+- Validate required fields.
+- Prevent invalid dates.
+- Prevent duplicate submissions.
+- Save the request to the database.
+- Associate the request with the relevant property.
+- Display a reference number after successful submission.
+- Display an error if saving fails.
+
+
+CONFIRMATION MESSAGE:
+
+
+Thank you for requesting a property inspection.
+
+
+Your request has been received. Our team will review the inspection
+schedule and contact you to confirm an available date and time.
+
+
+Please note that submitting a request does not automatically
+confirm an appointment.
+
+
+Do not promise a particular response time unless the company
+has established that commitment.
+
+
+==================================================
+11. PURCHASE ENQUIRY PAGE
+==================================================
+
+
+Create a dedicated purchase enquiry page:
+
+
+/purchase-enquiry
+
+
+Open it when a visitor clicks:
+
+
+I Am Interested in This Property.
+
+
+The form should be prefilled with the selected property wherever
+the visitor arrived from a property detail page.
+
+
+HEADING:
+
+
+Begin Your Property Purchase Enquiry
+
+
+DESCRIPTION:
+
+
+Tell us a little about your requirements so our team can guide
+you through the next steps.
+
+
+FORM FIELDS:
+
+
+PERSONAL DETAILS:
+
+
+- Full name.
+- Phone number.
+- WhatsApp number.
+- Email address.
+- Residential address.
+- Preferred contact method.
+
+
+PROPERTY DETAILS:
+
+
+- Selected property.
+- Property reference number.
+- Property category.
+- Property location.
+- Property price, where confirmed.
+- Intended use.
+- Preferred purchase timeline.
+
+
+PURCHASE PREFERENCES:
+
+
+- Preferred payment arrangement.
+- Additional property requirements.
+- Questions about documentation.
+- Preferred inspection date.
+- Alternative inspection date.
+- Preferred time.
+- Additional comments.
+
+
+Do not advertise installment payment unless it is genuinely
+available for the selected property.
+
+
+Do not request unnecessary sensitive financial information.
+
+
+CONSENT:
+
+
+Include a clear privacy consent checkbox.
+
+
+SUBMIT BUTTON:
+
+
+Submit Purchase Enquiry
+
+
+After successful submission, save the enquiry and display
+a confirmation reference.
+
+
+CONFIRMATION MESSAGE:
+
+
+Thank you for your interest in this property.
+
+
+Your enquiry has been received. Our team will review your
+requirements and contact you regarding the next steps.
+
+
+Property enquiries and purchase submissions do not constitute
+a completed purchase or guarantee property availability.
+
+
+==================================================
+12. CUSTOM PROPERTY REQUEST
+==================================================
+
+
+Create a dedicated custom request page:
+
+
+/property-request
+
+
+This page is for visitors who cannot find a suitable property
+among the current listings.
+
+
+Allow the visitor to describe the property they want.
+
+
+Include:
+
+
+- Full name.
+- Phone number.
+- WhatsApp number.
+- Email address, optional.
+- Preferred location.
+- Property category.
+- Budget range.
+- Number of bedrooms, where applicable.
+- Preferred land size, where applicable.
+- Intended use.
+- Purchase, rental, or land enquiry.
+- Preferred timeline.
+- Description of the desired property.
+- Additional requirements.
+
+
+Allow visitors to describe their requirements in their own words.
+
+
+CTA:
+
+
+Submit My Property Requirements
+
+
+Save the enquiry and provide a reference number after successful
+submission.
+
+
+==================================================
+13. KING ZION'S ESTATE DEVELOPMENT PROJECTS
+==================================================
+
+
+Create a dedicated estate projects page:
+
+
+/estate-projects
+
+
+Use the existing project information already available to the
+application.
+
+
+PHASE 1:
+
+
+King Zion Estate Phase 1.
+
+
+Location:
+Asaba, Delta State, Nigeria.
+
+
+Relevant location context:
+Near Asaba Airport and the Benin-Onitsha corridor.
+
+
+Stated development information:
+
+
+- 120 plots.
+- 24 terraced duplexes.
+- 16 detached duplexes.
+
+
+PHASE 2:
+
+
+King Zion Estate Phase 2.
+
+
+Location:
+Ibusa, Oshimili area, Delta State, Nigeria.
+
+
+Stated development information:
+
+
+- 200 plots.
+- 12 semi-detached duplexes.
+
+
+Display these figures as project information, not as confirmation
+that all plots or buildings remain available.
+
+
+Include:
+
+
+- Project overview.
+- Relevant photographs.
+- Location information.
+- Property types.
+- Development information.
+- Available inventory, when confirmed.
+- Inspection request CTA.
+- Enquiry CTA.
+
+
+Do not invent prices, title documents, completion status,
+infrastructure, or availability.
+
+
+Use actual property records wherever possible.
+
+
+==================================================
+14. PERSUASIVE REAL ESTATE COPY
+==================================================
+
+
+Use persuasive but honest Nigerian real estate marketing language.
+
+
+Examples:
+
+
+"Your Future Home Starts Here."
+
+
+"Discover Land. Build Your Vision."
+
+
+"Find a Property That Fits Your Plans."
+
+
+"Make Your Next Property Decision with Confidence."
+
+
+"Explore Available Opportunities Before You Decide."
+
+
+"From Your First Home to Your Next Investment, Start Here."
+
+
+"Your Property Journey Deserves the Right Guidance."
+
+
+Use these messages naturally across the website.
+
+
+Avoid artificial urgency.
+
+
+Do not claim that prices will rise, that a property is guaranteed
+to appreciate, or that a property is selling out unless those claims
+are supported by verified information.
+
+
+==================================================
+15. TESTIMONIALS
+==================================================
+
+
+Create a premium testimonial section on the homepage.
+
+
+HEADING:
+
+
+Experiences That Inspire Confidence
+
+
+Include a responsive layout with room for customer testimonials.
+
+
+Support:
+
+
+- Customer photograph, if authorized.
+- Customer name, if approved.
+- Location.
+- Relevant property service.
+- Testimonial text.
+
+
+The website may eventually include customers from Nigeria and
+international or diaspora clients.
+
+
+However, do not fabricate customer identities, photographs,
+nationalities, property purchases, or testimonials.
+
+
+If real testimonials have not been supplied, display clearly
+labelled sample content in development or hide the testimonial
+cards until approved customer feedback is available.
+
+
+Do not publish sample testimonials as genuine reviews.
+
+
+==================================================
+16. FREQUENTLY ASKED QUESTIONS
+==================================================
+
+
+Create an FAQ section on the homepage and a dedicated FAQ page.
+
+
+Include:
+
+
+1. How do I buy a property through KING ZION'S ESTATE?
+
+
+2. How can I arrange a property inspection?
+
+
+3. How do I find out whether a property is available?
+
+
+4. What information should I request before buying land?
+
+
+5. What plot sizes are available?
+
+
+6. How do property prices vary by location?
+
+
+7. Can I request a property that is not currently listed?
+
+
+8. How do I enquire about a rental property?
+
+
+9. What documentation should I review before purchasing land?
+
+
+10. Does submitting an inspection request confirm an appointment?
+
+
+Provide accurate, practical answers.
+
+
+Explain that prices, documentation, availability, and payment
+arrangements vary by property.
+
+
+Encourage appropriate independent legal and title verification
+before completing a property purchase.
+
+
+==================================================
+17. IMAGE QUALITY AND PRESENTATION
+==================================================
+
+
+Use the supplied image URLs as candidate image assets.
+
+
+Check that every URL loads successfully.
+
+
+Replace any failed, unsuitable, or low-resolution photograph.
+
+
+For prominent images, use high-resolution sources where available.
+
+
+Use responsive image sizes.
+
+
+Do not stretch photographs.
+
+
+Do not make a small image appear large through upscaling.
+
+
+For ordinary property cards, use object-fit: cover with a suitable
+aspect ratio.
+
+
+For image galleries, preserve image proportions and provide
+a larger viewing option.
+
+
+For the homepage, prioritize images that clearly communicate
+the difference between:
+
+
+- Houses for sale.
+- Land for sale.
+- Rental properties.
+
+
+Use Nigerian architectural photography wherever possible.
+
+
+Do not use an image of a house as the primary visual for a land
+listing if it prevents visitors from seeing the land itself.
+
+
+Do not use photographs of interiors to represent vacant plots.
+
+
+==================================================
+18. DATABASE AND FUNCTIONALITY
+==================================================
+
+
+Preserve the existing database.
+
+
+Do not reset it or create duplicate property records.
+
+
+Use the existing property records where available.
+
+
+Allow authorized administrators to manage:
+
+
+- Property photographs.
+- Property titles.
+- Locations.
+- Prices.
+- Property categories.
+- Plot sizes.
+- Property specifications.
+- Availability.
+- Documentation information.
+- Rental terms.
+- Estate development details.
+
+
+Allow authorized staff to review:
+
+
+- Purchase enquiries.
+- Inspection requests.
+- Rental enquiries.
+- Land enquiries.
+- Custom property requests.
+
+
+Protect customer information with appropriate access controls.
+
+
+Do not expose private administration data on public pages.
+
+
+==================================================
+19. FINAL QUALITY CHECKS
+==================================================
+
+
+Before completing the work, verify that:
+
+
+- The homepage prominently displays houses, land, and rentals.
+- Each category has an attractive and relevant image.
+- Nigerian architectural styles are prioritized.
+- Price ranges are clearly labelled as estimates.
+- Actual asking prices are shown only when confirmed.
+- Every category CTA opens the correct inner page.
+- Every property card opens the correct detail page.
+- Inspection requests use a dedicated page.
+- Purchase enquiries use a dedicated page.
+- Rental enquiries use an appropriate workflow.
+- Forms validate and save correctly.
+- Confirmation messages are accurate.
+- Testimonials are not fabricated.
+- FAQs display correctly.
+- Images are sharp and responsive.
+- The existing green-and-gold branding is preserved.
+- The site works on mobile and desktop.
+- No customer information is exposed publicly.
+
+
+FINAL INSTRUCTION:
+
+
+Implement these changes directly in the existing KING ZION'S ESTATE
+website.
+
+
+Do not return only a design mockup.
+
+
+Do not rebuild the application from scratch.
+
+
+Focus on Nigerian property discovery, attractive property imagery,
+clear price estimates, dedicated property detail pages, and
+professional inspection and purchase enquiry workflows.

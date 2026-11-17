@@ -1,0 +1,743 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+<style>
+.kze-root{--kze-g:#102F2B;--kze-em:#1D5147;--kze-gold:#D6B779;--kze-cta:#B58C48;--kze-cta-h:#967139;--kze-wa:#128C7E;--kze-wah:#0E7166;--kze-iv:#F5F3ED;--kze-lg:#E9F0EB;--kze-w:#FFFFFF;--kze-txt:#202824;--kze-mut:#69736D;--kze-bd:rgba(16,47,43,.12);--kze-bds:rgba(16,47,43,.22);--kze-serif:"Playfair Display",Georgia,serif;--kze-sans:"DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-family:var(--kze-sans);color:var(--kze-txt);background:var(--kze-w);line-height:1.55;font-size:16px;width:100%;margin:0;padding:0;overflow-x:clip;-webkit-font-smoothing:antialiased}
+.kze-root,.kze-root *,.kze-root *::before,.kze-root *::after{box-sizing:border-box}
+.kze-root h1,.kze-root h2,.kze-root h3,.kze-root h4,.kze-root p,.kze-root ul{margin:0;padding:0;list-style:none;letter-spacing:normal;text-transform:none}
+.kze-root input,.kze-root select,.kze-root textarea{max-width:100%;box-sizing:border-box}
+.kze-root select{appearance:auto;-webkit-appearance:menulist;height:auto;min-height:42px}
+.kze-root .kze-eyebrow{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.kze-det-sav.is-saved svg{fill:#D6B779;color:#D6B779}
+.kze-root a{color:inherit;text-decoration:none}
+.kze-root img{display:block;max-width:100%;border:0;background:var(--kze-lg)}
+.kze-root button{font-family:inherit;cursor:pointer;border:0;background:transparent;color:inherit;padding:0;line-height:inherit;text-transform:none;letter-spacing:normal;box-shadow:none}
+.kze-root button svg,.kze-root button span,.kze-root a svg,.kze-root a span{pointer-events:none}
+.kze-root button:focus-visible,.kze-root a:focus-visible,.kze-root input:focus-visible,.kze-root select:focus-visible,.kze-root textarea:focus-visible{outline:2px solid var(--kze-cta);outline-offset:2px}
+.kze-root svg{display:inline-block;vertical-align:middle;flex-shrink:0}
+.kze-hidden{display:none!important;pointer-events:none!important}
+.kze-serif{font-family:var(--kze-serif)}
+.kze-tabnum{font-variant-numeric:tabular-nums}
+.kze-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+.kze-clamp1{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.kze-clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.kze-wrap{max-width:1280px;width:100%;margin:0 auto;padding:0 16px}
+@media(min-width:640px){.kze-wrap{padding:0 24px}}
+@media(min-width:1024px){.kze-wrap{padding:0 32px}}
+.kze-h-xl{font-family:var(--kze-serif);font-size:32px;font-weight:700;line-height:1.12;letter-spacing:-.015em}
+.kze-h-lg{font-family:var(--kze-serif);font-size:28px;font-weight:700;line-height:1.2}
+.kze-h-md{font-family:var(--kze-serif);font-size:22px;font-weight:700;line-height:1.28}
+@media(min-width:640px){.kze-h-xl{font-size:44px}.kze-h-lg{font-size:36px}.kze-h-md{font-size:24px}}
+@media(min-width:1024px){.kze-h-xl{font-size:52px}}
+.kze-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:8px;font-size:14px;font-weight:600;line-height:1.2;white-space:nowrap;transition:background-color .18s ease,opacity .18s ease,transform .15s ease}
+.kze-btn-sm{padding:9px 12px;font-size:12px}
+.kze-btn-lg{padding:14px 24px;font-size:15px}
+.kze-btn-full{width:100%}
+.kze-btn-cta{background:var(--kze-cta);color:var(--kze-w);box-shadow:0 2px 6px rgba(16,47,43,.15)}
+.kze-btn-cta:hover:not(:disabled){background:var(--kze-cta-h)}
+.kze-btn-cta:disabled{opacity:.6;cursor:not-allowed}
+.kze-btn-g{background:var(--kze-g);color:var(--kze-w)}
+.kze-btn-g:hover{background:var(--kze-em)}
+.kze-btn-wa{background:var(--kze-wa);color:var(--kze-w);box-shadow:0 2px 6px rgba(18,140,126,.22)}
+.kze-btn-wa:hover{background:var(--kze-wah)}
+.kze-btn-ogold{background:rgba(16,47,43,.85);color:var(--kze-w);border:1px solid rgba(214,183,121,.65)}
+.kze-btn-ogold:hover{background:var(--kze-em)}
+.kze-btn-ogreen{background:var(--kze-w);color:var(--kze-g);border:1px solid var(--kze-g)}
+.kze-btn-ogreen:hover{background:var(--kze-lg)}
+.kze-btn-sub{background:var(--kze-w);color:var(--kze-g);border:1px solid var(--kze-bds)}
+.kze-btn-sub:hover{background:var(--kze-lg)}
+.kze-link{font-size:12px;font-weight:600;color:var(--kze-em)}
+.kze-link:hover{text-decoration:underline}
+.kze-hdr{position:sticky;top:0;z-index:40;background:var(--kze-g);color:var(--kze-w);border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 2px 10px rgba(0,0,0,.08)}
+@media(min-width:783px){.admin-bar .kze-hdr{top:32px}}
+.kze-hdr-in{height:74px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.kze-logo{display:flex;align-items:center;gap:10px;text-align:left}
+.kze-logo-t{font-family:var(--kze-serif);font-weight:700;letter-spacing:.04em;font-size:15px;text-transform:uppercase;color:var(--kze-w)}
+@media(min-width:640px){.kze-logo-t{font-size:18px}.kze-hdr-in{height:80px}}
+.kze-nav{display:none;align-items:center;gap:6px}
+@media(min-width:1024px){.kze-nav{display:flex}}
+.kze-nav-b{padding:8px 14px;border-radius:8px;font-size:14px;font-weight:500;color:rgba(245,243,237,.9);white-space:nowrap}
+.kze-nav-b:hover{background:rgba(255,255,255,.1);color:var(--kze-w)}
+.kze-nav-b.is-active{background:var(--kze-cta);color:var(--kze-w);font-weight:600}
+.kze-hdr-act{display:flex;align-items:center;gap:10px}
+.kze-hdr-cta{display:none}
+@media(min-width:640px){.kze-hdr-cta{display:inline-flex}}
+.kze-fav-ico{position:relative;padding:8px;border-radius:8px;color:var(--kze-iv)}
+.kze-fav-ico:hover{background:rgba(255,255,255,.12)}
+.kze-badge-c{position:absolute;top:-3px;right:-3px;width:17px;height:17px;border-radius:999px;background:var(--kze-cta);color:var(--kze-w);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.kze-mob-tgl{padding:8px;border-radius:8px;color:var(--kze-iv)}
+@media(min-width:1024px){.kze-mob-tgl{display:none}}
+.kze-page{display:none;width:100%}
+.kze-page.is-active{display:block}
+.kze-hero{position:relative;min-height:540px;display:flex;align-items:center;background:var(--kze-g);overflow:hidden}
+@media(min-width:640px){.kze-hero{min-height:600px}}
+.kze-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;pointer-events:none}
+.kze-hero-scrim{position:absolute;inset:0;background:linear-gradient(to right,rgba(16,47,43,.92) 0%,rgba(16,47,43,.72) 55%,rgba(16,47,43,.28) 100%);pointer-events:none}
+.kze-hero-in{position:relative;z-index:2;padding:64px 0}
+.kze-motto{display:inline-block;font-size:13px;font-weight:500;color:var(--kze-gold);background:rgba(16,47,43,.85);border:1px solid rgba(214,183,121,.4);padding:6px 14px;border-radius:6px;margin-bottom:18px}
+.kze-banner{background:var(--kze-g);color:var(--kze-w);padding:48px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.kze-sec{padding:54px 0}
+@media(min-width:640px){.kze-sec{padding:72px 0}}
+.kze-bg-w{background:var(--kze-w)}
+.kze-bg-iv{background:var(--kze-iv);border-top:1px solid var(--kze-bd);border-bottom:1px solid var(--kze-bd)}
+.kze-bg-ivs{background:rgba(245,243,237,.65)}
+.kze-bg-g{background:var(--kze-g);color:var(--kze-w)}
+.kze-split{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
+@media(min-width:768px){.kze-split{flex-direction:row;align-items:flex-end;justify-content:space-between}}
+.kze-g2,.kze-g3,.kze-g4{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:640px){.kze-g4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:768px){.kze-g2{grid-template-columns:repeat(2,1fr)}.kze-g3{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1024px){.kze-g4{grid-template-columns:repeat(4,1fr)}}
+.kze-card{background:var(--kze-w);border:1px solid var(--kze-bd);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 4px rgba(16,47,43,.05)}
+.kze-card-iv{background:var(--kze-iv)}
+.kze-media{position:relative;aspect-ratio:4/3;background:var(--kze-lg);overflow:hidden}
+.kze-media img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .4s ease}
+.kze-img-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;text-align:center;background:linear-gradient(135deg,#102F2B 0%,#1D5147 100%);color:#F5F3ED;gap:6px;pointer-events:none}
+.kze-img-ph strong{font-family:var(--kze-serif);font-size:15px;color:#D6B779}
+.kze-img-ph span{font-size:11px;opacity:.85;max-width:240px}
+.kze-sbadge{position:absolute;top:12px;left:12px;background:rgba(16,47,43,.92);color:var(--kze-w);font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;z-index:2;pointer-events:none}
+.kze-heart{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:999px;background:rgba(255,255,255,.95);color:var(--kze-g);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.14);z-index:3}
+.kze-heart.is-saved svg{fill:var(--kze-cta);color:var(--kze-cta)}
+.kze-cat-ico{position:absolute;bottom:12px;left:12px;width:42px;height:42px;border-radius:999px;background:var(--kze-g);color:var(--kze-gold);border:2px solid rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 3px 8px rgba(0,0,0,.22);pointer-events:none}
+.kze-slide-shell{position:relative;max-width:1160px;margin:0 auto;display:flex;align-items:center;gap:14px}
+.kze-slide-vp{position:relative;flex:1;min-width:0;max-width:1024px;margin:0 auto;border-radius:16px;overflow:hidden;background:var(--kze-w);color:var(--kze-txt);box-shadow:0 20px 45px rgba(0,0,0,.28)}
+.kze-slide-flank{display:none;width:44px;height:44px;border-radius:999px;background:var(--kze-gold);color:var(--kze-g);font-size:22px;font-weight:700;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(0,0,0,.28);transition:background-color .2s,transform .15s}
+.kze-slide-flank:hover{background:var(--kze-cta);color:var(--kze-w);transform:scale(1.05)}
+@media(min-width:1080px){.kze-slide-flank{display:inline-flex}}
+.kze-slide{position:absolute;inset:0;width:100%;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .65s ease,visibility .65s ease}
+.kze-slide.is-active{position:relative;opacity:1;visibility:visible;pointer-events:auto;z-index:2}
+@media(prefers-reduced-motion:reduce){.kze-slide{transition:none}}
+.kze-slide-grid{display:grid;grid-template-columns:1fr}
+@media(min-width:1024px){.kze-slide-grid{grid-template-columns:1fr 1fr}}
+.kze-spec-row{display:flex;flex-wrap:wrap;gap:12px;font-size:12.5px;font-weight:600;color:var(--kze-txt);margin:6px 0 8px}
+.kze-spec-item{display:inline-flex;align-items:center;gap:5px}
+.kze-dots{display:flex;justify-content:center;gap:8px;margin-top:22px}
+.kze-dot{height:10px;width:10px;border-radius:999px;background:rgba(255,255,255,.32);transition:width .25s ease,background-color .25s ease}
+.kze-dot.is-active{width:28px;background:var(--kze-gold)}
+.kze-tabs-bar{position:sticky;top:74px;z-index:30;background:var(--kze-w);border-bottom:1px solid var(--kze-bd)}
+@media(min-width:783px){.admin-bar .kze-tabs-bar{top:112px}}
+.kze-tabs-row{display:flex;gap:10px;overflow-x:auto;padding:12px 0}
+.kze-tab{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:8px;font-size:14px;font-weight:600;white-space:nowrap;background:var(--kze-iv);color:var(--kze-txt)}
+.kze-tab.is-active{background:var(--kze-g);color:var(--kze-w)}
+.kze-fcard{background:var(--kze-w);border:1px solid var(--kze-bd);border-radius:12px;padding:20px;margin-bottom:26px;display:flex;flex-direction:column;gap:14px}
+.kze-fg{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:640px){.kze-fg{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.kze-fg5{grid-template-columns:repeat(5,1fr)}.kze-fg4{grid-template-columns:repeat(4,1fr)}}
+.kze-in,.kze-sel,.kze-txtarea{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--kze-bds);background:var(--kze-w);color:var(--kze-txt);font-family:inherit;font-size:14px}
+.kze-pill{padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;border:1px solid var(--kze-bd);background:var(--kze-iv);color:var(--kze-txt)}
+.kze-pill.is-active{background:var(--kze-g);color:var(--kze-w);border-color:var(--kze-g)}
+.kze-act3{padding-top:12px;border-top:1px solid var(--kze-bd);display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.kze-team{display:flex;flex-direction:column;background:var(--kze-w);border:1px solid var(--kze-bd);border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(16,47,43,.05)}
+@media(min-width:640px){.kze-team{flex-direction:row}}
+.kze-team-l{background:var(--kze-lg);padding:12px;min-height:190px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--kze-bd)}
+@media(min-width:640px){.kze-team-l{width:196px;flex-shrink:0;border-bottom:0;border-right:1px solid var(--kze-bd)}}
+.kze-team-img{width:100%;height:180px;object-fit:cover;object-position:center top;border-radius:8px}
+@media(min-width:640px){.kze-team-img{height:100%;min-height:166px}}
+.kze-faq-i{border-bottom:1px solid var(--kze-bd);padding:14px 0}
+.kze-faq-i:last-child{border-bottom:0}
+.kze-faq-b{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;text-align:left;padding:4px 0}
+.kze-faq-i.is-open .kze-chev{transform:rotate(180deg)}
+.kze-proj-g{display:grid;grid-template-columns:1fr}
+@media(min-width:1024px){.kze-proj-g{grid-template-columns:5fr 7fr}}
+.kze-contact-g{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
+@media(min-width:1024px){.kze-contact-g{grid-template-columns:4fr 8fr}}
+.kze-etype-g{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:18px}
+@media(min-width:640px){.kze-etype-g{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.kze-etype-g{grid-template-columns:repeat(4,1fr)}}
+.kze-etype-b{display:flex;align-items:center;gap:8px;padding:11px 12px;border-radius:10px;border:1px solid var(--kze-bd);background:var(--kze-iv);font-size:13px;font-weight:600;text-align:left}
+.kze-etype-b.is-active{background:var(--kze-g);color:var(--kze-w);border-color:var(--kze-g)}
+.kze-fg2{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:640px){.kze-fg2{grid-template-columns:repeat(2,1fr)}.kze-span2{grid-column:span 2}}
+.kze-lbl{display:block;font-size:12px;font-weight:600;color:var(--kze-txt);margin-bottom:5px}
+.kze-radio-r{display:flex;flex-wrap:wrap;gap:8px}
+.kze-radio-c{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border-radius:8px;border:1px solid var(--kze-bds);font-size:13px;cursor:pointer;background:var(--kze-w)}
+.kze-radio-c.is-sel{background:var(--kze-lg);border-color:var(--kze-g);color:var(--kze-g);font-weight:600}
+.kze-err{padding:12px 14px;border-radius:10px;background:#fef2f2;border:1px solid #fecaca;color:#991b1b;font-size:13px;margin-bottom:16px}
+.kze-spin{width:15px;height:15px;border:2px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:999px;animation:kze-sp .7s linear infinite}
+@keyframes kze-sp{to{transform:rotate(360deg)}}
+.kze-ov-m,.kze-ov-d{position:fixed;inset:0;z-index:9999;display:flex}
+.kze-ov-m{align-items:center;justify-content:center;padding:16px}
+.kze-ov-d{justify-content:flex-end}
+.kze-bk{position:fixed;inset:0;background:rgba(0,0,0,.64);backdrop-filter:blur(2px)}
+.kze-pnl{position:relative;z-index:2;background:var(--kze-w);display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.kze-pnl-d{width:100%;max-width:660px;height:100%}
+.kze-pnl-m{width:100%;max-width:780px;max-height:90vh;border-radius:16px}
+.kze-mhdr{padding:16px 22px;background:var(--kze-g);color:var(--kze-w);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-shrink:0}
+.kze-mbdy{padding:22px;overflow-y:auto;flex:1}
+.kze-mftr{padding:14px 22px;background:var(--kze-iv);border-top:1px solid var(--kze-bd);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;flex-shrink:0}
+.kze-ftr{background:var(--kze-g);color:var(--kze-w);border-top:1px solid rgba(255,255,255,.12);padding:52px 0 76px}
+.kze-ftr-g{display:grid;grid-template-columns:1fr;gap:32px}
+@media(min-width:768px){.kze-ftr-g{grid-template-columns:1.3fr .9fr 1.6fr}}
+.kze-wa-float{position:fixed;bottom:20px;right:20px;z-index:800;display:inline-flex;align-items:center;gap:9px;padding:12px 16px;border-radius:999px;background:var(--kze-wa);color:var(--kze-w);border:2px solid rgba(255,255,255,.88);box-shadow:0 8px 24px rgba(16,47,43,.32);font-size:13px;font-weight:700;transition:background-color .2s,transform .15s}
+.kze-wa-float:hover{background:var(--kze-wah);transform:translateY(-2px)}
+@media(max-width:520px){.kze-wa-float{padding:12px 14px;bottom:16px;right:16px;font-size:12px}}
+.kze-toast{position:fixed;bottom:82px;right:20px;z-index:850;background:var(--kze-g);color:#fff;border:1px solid rgba(214,183,121,.5);border-radius:10px;padding:12px 18px;font-size:13px;box-shadow:0 10px 26px rgba(0,0,0,.25);pointer-events:none}
+.kze-wa-box{margin-top:16px;padding:16px;border-radius:12px;background:var(--kze-w);border:1px solid rgba(18,140,126,.28);text-align:left}
+.kze-col{display:flex;flex-direction:column}
+.kze-row{display:flex;align-items:center}
+.kze-jb{display:flex;justify-content:space-between;align-items:center}
+.kze-mut{color:var(--kze-mut)}
+.kze-cg{color:var(--kze-g)}
+.kze-cem{color:var(--kze-em)}
+.kze-cgold{color:var(--kze-gold)}
+.kze-sm{font-size:14px}
+.kze-xs{font-size:12px}
+.kze-empty{grid-column:1/-1;padding:36px;text-align:center}
+.kze-ibtn{padding:7px;border-radius:8px;background:rgba(255,255,255,.14)}
+.kze-bdr{border-top:1px solid var(--kze-bd);padding-top:14px}
+.kze-cbody{padding:20px;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+</style>
+<div id="kze-app" class="kze-root">
+<noscript><div style="padding:24px;background:#F5F3ED;color:#102F2B;font-family:sans-serif;text-align:center;"><strong>KING ZION'S ESTATE</strong> requires JavaScript to browse listings and submit property enquiries. Office: No. 5 King Zion Estate, Phase 1, Asaba, Delta State, Nigeria. WhatsApp: +2349069710687.</div></noscript>
+</div>
+<script>
+(function(){
+"use strict";
+/* 1. GOOGLE SHEETS APPS SCRIPT ENDPOINT & WHATSAPP CONFIGURATION */
+var KZE_SCRIPT_URL="https://script.google.com/macros/s/AKfycbzonwBMjcKLZEqWTWV3YcxB0n48CrH6Br0xgSKJ6P0DbMLHeCRDQIgFuZaOEXXg7OzH/exec";
+var KZE_WHATSAPP_NUMBER="2349069710687";
+var KZE_WHATSAPP_DISPLAY="+2349069710687";
+/* 2. WORDPRESS MEDIA LIBRARY IMAGE CONFIGURATION */
+/* Optional: set a single folder URL (e.g. "https://yoursite.com/wp-content/uploads/2026/11/") if all 12 .jpg files are in one folder */
+var KZE_IMAGE_BASE="";
+/* Or paste the full HTTPS WordPress Media Library File URL for each image key below (files live in wordpress-export/assets/images/ and src/assets/images/) */
+var KZE_IMAGES={
+hero:"PASTE_URL_FOR_ng_hero_duplex_1794585692827.jpg",
+house:"PASTE_URL_FOR_ng_houses_duplex_1794585693906.jpg",
+land:"PASTE_URL_FOR_ng_land_category_1794585694414.jpg",
+rent:"PASTE_URL_FOR_ng_rental_interior_1794585696910.jpg",
+semi:"PASTE_URL_FOR_ng_semi_detached_1794585696661.jpg",
+bung:"PASTE_URL_FOR_ng_bungalow_1794585697267.jpg",
+gated:"PASTE_URL_FOR_ng_gated_estate_1794585697269.jpg",
+pegs:"PASTE_URL_FOR_ng_survey_pegs_land_1794585698128.jpg",
+aptExt:"PASTE_URL_FOR_ng_apartment_exterior_1794585698889.jpg",
+aptBed:"PASTE_URL_FOR_ng_apartment_bedroom_1794585699657.jpg",
+gate:"PASTE_URL_FOR_ng_estate_entrance_1794585699985.jpg",
+dev:"PASTE_URL_FOR_ng_estate_dev_land_1794585700467.jpg",
+ceo:"data:image/jpeg;base64,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",
+manager:"data:image/jpeg;base64,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"
+};
+function kzeImg(key){
+var v=KZE_IMAGES[key]||"";
+if(!v)return "";
+if(v.indexOf("data:image/")===0||v.indexOf("http://")===0||v.indexOf("https://")===0||v.indexOf("/")===0)return v;
+if(v.indexOf("PASTE_URL_FOR_")===0){
+var fn=v.replace("PASTE_URL_FOR_","");
+return KZE_IMAGE_BASE?KZE_IMAGE_BASE.replace(/\/+$/,"")+"/"+fn:"";
+}
+return v;
+}
+function kzeFileHint(key){
+var v=KZE_IMAGES[key]||"";
+return v.indexOf("PASTE_URL_FOR_")===0?v.replace("PASTE_URL_FOR_",""):key;
+}
+function waUrl(msg){
+return "https://wa.me/"+KZE_WHATSAPP_NUMBER+(msg?"?text="+encodeURIComponent(msg):"");
+}
+var PROPS=[
+{id:"kze-001",ref:"KZE-PROP-101",title:"5-Bedroom Contemporary Detached Duplex",loc:"Asaba, Delta State",city:"Asaba",type:"Detached Duplex",intent:"Buy",status:"For Sale",price:"\u20a6185,000,000",num:185000000,beds:5,baths:6,plot:"650 sqm",bldg:"420 sqm",feat:true,img:"house",gal:["house","hero","gated"],desc:"Modern 5-bedroom Nigerian detached duplex featuring a spacious compound, security gatehouse, contemporary facade, ensuite bedrooms, and modern interior fittings.",am:["5 Ensuite Bedrooms","Security Gatehouse & Perimeter Wall","Paved Parking Compound","Modern Kitchen Layout","Private Balconies"],docs:"Available for review upon enquiry and legal inspection"},
+{id:"kze-002",ref:"KZE-PROP-102",title:"4-Bedroom Contemporary Detached Bungalow",loc:"Asaba, Delta State",city:"Asaba",type:"Bungalow",intent:"Buy",status:"For Sale",price:"\u20a668,000,000",num:68000000,beds:4,baths:4,plot:"500 sqm",bldg:"240 sqm",feat:true,img:"bung",gal:["bung","house"],desc:"Single-level 4-bedroom Nigerian bungalow designed with pitched roofing, perimeter fence, heavy security gate, and comfortable compound space.",am:["4 Ensuite Bedrooms","Perimeter Fence & Security Gate","Paved Front Compound","Visitor Convenience"],docs:"Available for review upon enquiry and legal inspection"},
+{id:"kze-003",ref:"KZE-PROP-103",title:"4-Bedroom Twin Semi-Detached Duplex",loc:"Ibusa, Delta State",city:"Ibusa",type:"Semi-Detached Duplex",intent:"Buy",status:"For Sale",price:"\u20a655,000,000",num:55000000,beds:4,baths:5,plot:"400 sqm",bldg:"280 sqm",feat:true,img:"semi",gal:["semi","gated"],desc:"Contemporary 4-bedroom semi-detached residential duplex in Ibusa featuring partitioned compound entry, upper family lounge, and modern finishes.",am:["4 Ensuite Bedrooms","Partitioned Private Compound","Upper Family Lounge","Modern Sanitary Fittings"],docs:"Available for review upon enquiry and legal inspection"},
+{id:"kze-004",ref:"KZE-PROP-104",title:"Dry Residential Land Plot \u2014 Surveyed Layout",loc:"Ibusa / Asaba Axis, Delta State",city:"Ibusa",type:"Residential Land",intent:"Land",status:"Land",price:"\u20a68,500,000",num:8500000,plot:"465 sqm (50 ft \u00d7 100 ft)",feat:true,img:"land",gal:["land","pegs"],desc:"Dry flat residential land parcel with visible plot boundaries and motorable access corridor. Physical inspection and boundary review available by appointment.",am:["Dry Flat Terrain","Visible Boundary Beacons","Motorable Access Road"],docs:"Documentation details provided for independent review upon enquiry"},
+{id:"kze-005",ref:"KZE-PROP-105",title:"Surveyed Residential Estate Land Plot",loc:"Asaba, Delta State",city:"Asaba",type:"Residential Land",intent:"Land",status:"Estate Project",price:"Price on enquiry",plot:"465 sqm \u2013 930 sqm (confirm exact plot)",feat:true,img:"pegs",gal:["pegs","dev"],desc:"Demarcated residential estate plots featuring visible concrete boundary markers within an organized layout in Asaba. Confirm plot size, pricing, and title papers directly with our team.",am:["Concrete Boundary Pillars","Organized Layout Plan","Site Inspection Available"],docs:"Plot-specific documents shared for buyer verification upon enquiry"},
+{id:"kze-006",ref:"KZE-PROP-106",title:"3-Bedroom Residential Apartment (Long-Term Rental)",loc:"Asaba, Delta State",city:"Asaba",type:"Apartment",intent:"Rent",status:"For Rent",rcat:"Long-Term Rental",bill:"per year",minDur:"1 Year",supp:["One year","Two years","Other agreed duration"],price:"\u20a64,500,000 per year",num:4500000,beds:3,baths:3,bldg:"190 sqm",feat:true,img:"aptExt",gal:["aptExt","rent","aptBed"],desc:"Spacious 3-bedroom apartment in a gated residential compound for annual or multi-year lease. Includes private balcony, ensuite rooms, and dedicated parking space.",am:["3 Ensuite Bedrooms","Gated Residential Compound","Reserved Parking Space","Private Balcony"],docs:"Standard tenancy agreement terms confirmed prior to occupation"},
+{id:"kze-007",ref:"KZE-PROP-107",title:"5-Bedroom Executive Residence in Gated Enclave",loc:"Asaba, Delta State",city:"Asaba",type:"Detached Duplex",intent:"Buy",status:"For Sale",price:"\u20a6125,000,000",num:125000000,beds:5,baths:5,plot:"550 sqm",bldg:"360 sqm",feat:true,img:"gated",gal:["gated","hero"],desc:"Contemporary residence within a gated residential setting featuring paved compound access, spacious balconies, and modern interior architecture.",am:["5 Bedrooms","Gated Compound Access","Paved Driveway","Modern Facade"],docs:"Title papers available for review upon inspection and formal enquiry"},
+{id:"kze-008",ref:"KZE-PROP-108",title:"2-Bedroom Furnished Serviced Apartment (Short Stay)",loc:"Asaba, Delta State",city:"Asaba",type:"Apartment",intent:"Rent",status:"For Rent",rcat:"Short Stay",bill:"per night",minDur:"2 Nights",supp:["Nightly","Weekly","Monthly","Other duration"],price:"\u20a6120,000 per night",num:120000,beds:2,baths:2,bldg:"130 sqm",feat:true,img:"rent",gal:["rent","aptBed","aptExt"],desc:"Modern furnished 2-bedroom serviced apartment tailored for short business visits and family stays in Asaba. Nightly, weekly, and monthly rates subject to stay duration confirmation.",am:["Furnished Living & Dining Area","2 Ensuite Bedrooms","Fitted Kitchenette","Secured Compound Parking"],docs:"Short-stay booking confirmation & house guidelines provided prior to check-in"}
+];
+var GALLERY=[
+{id:"gh1",cat:"houses",img:"hero",cap:"Contemporary Detached Residence \u2014 Nigerian Urban Architecture"},
+{id:"gh2",cat:"houses",img:"house",cap:"Executive Detached Duplex with Perimeter Security Fence"},
+{id:"gh3",cat:"houses",img:"semi",cap:"Twin Semi-Detached Residential Duplex Design"},
+{id:"gh4",cat:"houses",img:"bung",cap:"Contemporary Nigerian Bungalow with Stone-Coated Roofing"},
+{id:"gl1",cat:"land",img:"land",cap:"Dry Residential Land Parcel with Visible Demarcation Boundaries"},
+{id:"gl2",cat:"land",img:"pegs",cap:"Demarcated Residential Plot with Concrete Survey Beacon Pillars"},
+{id:"gl3",cat:"land",img:"dev",cap:"Developing Estate Layout with Graded Access Corridors"},
+{id:"gl4",cat:"land",img:"gated",cap:"Gated Residential Estate Perimeter & Internal Compound"},
+{id:"gr1",cat:"rentals",img:"rent",cap:"Serviced Apartment Living Room Interior"},
+{id:"gr2",cat:"rentals",img:"aptExt",cap:"Modern Multi-Unit Residential Apartment Block"},
+{id:"gr3",cat:"rentals",img:"aptBed",cap:"Spacious Ensuite Primary Bedroom Interior"}
+];
+var TEAM=[
+{id:"ceo",img:"ceo",name:"Mr. Kingslay Wilfred",role:"CEO, King Zion's Estate",q:"Committed to helping clients explore quality residential properties, land opportunities, and transparent guidance with clarity and care.",b:"Leads King Zion's Estate across residential property acquisitions, land opportunities, rental placements, and estate development initiatives in Asaba, Ibusa, and across Nigeria."},
+{id:"property-coordinator",img:"manager",name:"Property Coordinator",role:"Property Coordinator",q:"Dedicated to attentive enquiry handling, clear property information, and well-coordinated site inspections for every prospective client.",b:"Coordinates property enquiries, site inspection scheduling, and client communication across houses, land, rentals, and estate projects."}
+];
+var FAQS=[
+{id:"f1",c:"General",q:"What types of properties can I enquire about?",a:"Through King Zion's Estate, you can enquire about houses for sale (including detached duplexes, semi-detached duplexes, terrace houses, and bungalows), residential land plots, short-stay and long-term rental apartments or homes, as well as our Phase 1 (Asaba) and Phase 2 (Ibusa) estate projects."},
+{id:"f2",c:"Inspection",q:"How can I request a property inspection?",a:"You can click \"Request an Inspection\" from the homepage, any property details panel, the Estate Projects page, or go directly to the Contact page and choose \"Inspection Request\". Submitting a request logs your preferred date and time; our team will contact you to confirm an available appointment."},
+{id:"f3",c:"Land",q:"Can I enquire about land in Asaba or Ibusa?",a:"Yes. We handle enquiries for residential land plots in Asaba (including King Zion Estate Phase 1) and Ibusa (including King Zion Estate Phase 2), as well as other available locations. Specific plot sizes, documentation, and current availability are confirmed for each individual parcel."},
+{id:"f4",c:"General",q:"How do I enquire about a property price?",a:"Some listings display an indicative or confirmed asking price, while others state \"Price on enquiry\". You may open any listing's details panel and submit a Purchase or Rental Enquiry via the Contact page so our team can provide the confirmed current price and applicable terms."},
+{id:"f5",c:"General",q:"Can I request a property that is not currently displayed?",a:"Yes. On the Properties page (\"Can't Find What You Need?\") or on the Contact page under \"Custom Property Request\", you can describe your preferred category, location, budget range, and specifications. Our team will review your request and contact you if a suitable option is identified."},
+{id:"f6",c:"Rentals",q:"Can I rent a property for a short stay or a longer period?",a:"Yes. Our Rentals tab and Rental Enquiry form support both Short-Stay Rentals (nightly, weekly, monthly, or other agreed duration) and Long-Term Rentals (one year, two years, three years, or other agreed duration). Available durations and billing periods depend on the specific property."},
+{id:"f7",c:"Documentation",q:"What documents should I request and review before purchasing land or a house?",a:"Before completing any purchase, you should request and independently verify the specific title and survey documents applicable to that property \u2014 such as the Survey Plan, Deed of Assignment or Conveyance, Certificate of Occupancy (C of O) or Governor's Consent where applicable, and relevant layout/building approvals. Property documentation varies by property and must be reviewed and confirmed for each individual transaction."},
+{id:"f8",c:"General",q:"How do I know if a property or estate unit is still available?",a:"Published listings display their current recorded status (such as For Sale, For Rent, or Land). For estate developments like Phase 1 (Asaba) and Phase 2 (Ibusa), stated project counts represent total inventory rather than guaranteed remaining units. Always contact our team to confirm real-time availability before making commitments."}
+];
+var PROJECTS=[
+{id:"phase-1",lbl:"Phase 1",name:"King Zion Estate Phase 1",loc:"Asaba, Delta State, Nigeria",img1:"gate",img2:"gated",desc:"King Zion Estate Phase 1 is located in Asaba, Delta State \u2014 also home to our office at No. 5 King Zion Estate, Phase 1. The development comprises plots alongside terraced and detached duplex buildings. Stated figures represent project inventory and do not imply that all plots or buildings remain available.",stats:[["Land Plots","120 Plots"],["Terraced Duplexes","24 Units"],["Detached Duplexes","16 Units"]],pts:["Located in Asaba, Delta State, Nigeria","Mix of residential land plots, terraced duplexes, and detached duplexes","Direct enquiries and site inspections coordinated through our Asaba office"]},
+{id:"phase-2",lbl:"Phase 2",name:"King Zion Estate Phase 2",loc:"Ibusa, Delta State, Nigeria",img1:"dev",img2:"pegs",desc:"King Zion Estate Phase 2 is situated in Ibusa, Delta State, offering residential plot opportunities alongside semi-detached duplex developments. Stated figures reflect project inventory and are subject to confirmation of current availability upon enquiry.",stats:[["Land Plots","200 Plots"],["Semi-Detached Duplexes","12 Units"]],pts:["Located in Ibusa, Delta State, Nigeria","Comprises residential plots and semi-detached duplex units","Enquiries and guided inspection requests available upon booking"]}
+];
+var SS_DUR=["Nightly","Weekly","Monthly","Other duration"];
+var LT_DUR=["One year","Two years","Three years","Other agreed duration"];
+var LOGO_SVG='<svg viewBox="0 0 48 48" width="38" height="38" fill="none" aria-hidden="true"><path d="M6 22L24 7L42 22L39 25L24 12.5L9 25L6 22Z" fill="#D6B779"/><path d="M32 10.5V6H36V13.8L32 10.5Z" fill="#F5F3ED"/><path d="M12 24.5L24 14.5L36 24.5V39H12V24.5Z" stroke="#F5F3ED" stroke-width="2.4" stroke-linejoin="round"/><path d="M17 39V28H23V39H17Z" fill="#D6B779"/><path d="M25 39V26H31V39H25Z" stroke="#D6B779" stroke-width="1.5" fill="#102F2B"/><rect x="4" y="39" width="40" height="3" rx="1.5" fill="#D6B779"/></svg>';
+var IC={
+arr:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>',
+hrt:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>',
+cal:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>',
+pin:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B58C48" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>',
+hom:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+key:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/></svg>',
+eye:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>',
+snd:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>',
+chk:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1D5147" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>',
+chv:'<svg class="kze-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5147" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>',
+cls:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>',
+mnu:'<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>',
+src:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>',
+bed:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1D5147" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>',
+bth:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1D5147" stroke-width="2"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-2.1 2.1L6 7.2V12M2 12h20v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4Z"/><path d="M7 20v2m10-2v2"/></svg>',
+max:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1D5147" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>',
+wa:'<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.78 1.21 5.46 0 9.91-4.45 9.91-9.91C21.94 6.45 17.5 2 12.04 2Zm5.8 14.08c-.25.7-1.45 1.34-2 1.42-.52.08-1.18.11-1.91-.12-.44-.14-1-.33-1.72-.64-3.03-1.31-5-4.37-5.15-4.57-.15-.2-1.23-1.64-1.23-3.13 0-1.49.78-2.22 1.06-2.52.28-.3.61-.38.81-.38.2 0 .4 0 .58.01.18.01.43-.07.68.52.25.61.85 2.1.93 2.25.08.15.13.33.02.53-.1.2-.15.33-.3.5-.15.18-.32.4-.45.54-.15.15-.3.31-.13.61.18.3.78 1.29 1.67 2.09 1.15 1.03 2.12 1.35 2.42 1.5.3.15.48.13.66-.08.18-.2.75-.88.95-1.18.2-.3.4-.25.68-.15.28.1 1.77.83 2.07.99.3.15.5.23.58.35.08.13.08.73-.17 1.43Z"/></svg>',
+trs:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>'
+};
+function esc(v){return v==null?"":String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
+function imgTag(key,alt,cls,lazy){
+var url=kzeImg(key);
+var fn=kzeFileHint(key);
+if(!url){
+if(cls==="kze-hero-img")return "";
+return '<div class="kze-img-ph"><strong>KING ZION\'S ESTATE</strong><span>'+esc(alt)+' ('+esc(fn)+')</span></div>';
+}
+var ph=cls==="kze-hero-img"?"":'<div class="kze-img-ph kze-hidden"><strong>KING ZION\'S ESTATE</strong><span>'+esc(alt)+'</span></div>';
+return '<img src="'+esc(url)+'" alt="'+esc(alt)+'" data-kze-img="1"'+(cls?' class="'+cls+'"':'')+(lazy?' loading="lazy"':'')+'>'+ph;
+}
+var FAV_KEY="kze_wp_favourites";
+function loadFavs(){try{var d=JSON.parse(localStorage.getItem(FAV_KEY)||"[]");return Array.isArray(d)?d:[];}catch(e){return[];}}
+function saveFavs(a){try{localStorage.setItem(FAV_KEY,JSON.stringify(a));}catch(e){}}
+function byId(id){return document.getElementById(id);}
+function findProp(id){return PROPS.filter(function(p){return p.id===id;})[0]||null;}
+var S={route:"home",tab:"houses",gtab:"houses",rsub:"All",rper:"All",rloc:"All",hf:{loc:"All",type:"All",bud:"All",bed:"All",st:"All"},lf:{loc:"All",sz:"All",bud:"All",doc:"All"},favs:loadFavs(),slide:0,paused:false,hover:false,timer:null,hFaq:"f1",aFaq:"f1",detId:null,detIdx:0,toastT:null};
+function toast(m){var t=byId("kze-toast");if(!t)return;t.textContent=m;t.classList.remove("kze-hidden");clearTimeout(S.toastT);S.toastT=setTimeout(function(){t.classList.add("kze-hidden");},3200);}
+function buildShell(){
+var root=byId("kze-app");if(!root)return;
+var navs=[["home","Home"],["properties","Properties"],["estate-projects","Estate Projects"],["about","About"],["contact","Contact"]];
+var navHtml=navs.map(function(n){return '<button type="button" class="kze-nav-b'+(n[0]==="home"?" is-active":"")+'" data-kze-route="'+n[0]+'">'+n[1]+'</button>';}).join("");
+var mobHtml=navs.map(function(n){return '<button type="button" class="kze-nav-b'+(n[0]==="home"?" is-active":"")+'" style="width:100%;text-align:left;padding:12px 14px;" data-kze-route="'+n[0]+'">'+n[1]+'</button>';}).join("");
+var waDefault=waUrl("Hello King Zion's Estate, I would like to enquire about your properties.");
+root.innerHTML=
+'<header class="kze-hdr"><div class="kze-wrap kze-hdr-in">'+
+'<button type="button" class="kze-logo" data-kze-route="home">'+LOGO_SVG+'<span class="kze-logo-t">KING ZION\'S ESTATE</span></button>'+
+'<nav class="kze-nav" aria-label="Main navigation">'+navHtml+'</nav>'+
+'<div class="kze-hdr-act"><button type="button" id="kze-hfav" class="kze-fav-ico kze-hidden" aria-label="Saved properties">'+IC.hrt+'<span id="kze-hfav-c" class="kze-badge-c">0</span></button>'+
+'<button type="button" class="kze-btn kze-btn-cta kze-hdr-cta" data-kze-open-enq="custom"><span>Enquire Now</span>'+IC.arr+'</button>'+
+'<button type="button" id="kze-mob-open" class="kze-mob-tgl" aria-label="Open menu">'+IC.mnu+'</button></div></div></header>'+
+'<div id="kze-mob-wrap" class="kze-ov-d kze-hidden"><div class="kze-bk" data-kze-cls-mob="1"></div><aside class="kze-pnl" style="width:280px;max-width:85vw;height:100%;background:#102F2B;color:#fff;padding:22px;justify-content:space-between;"><div><div class="kze-jb" style="padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.12);"><span class="kze-serif kze-cgold" style="font-weight:700;">Navigation</span><button type="button" data-kze-cls-mob="1" aria-label="Close menu" style="padding:6px;">'+IC.cls+'</button></div><div class="kze-col" style="margin-top:16px;gap:6px;">'+mobHtml+'</div></div><div class="kze-col" style="gap:10px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);"><button type="button" id="kze-mfav" class="kze-btn kze-btn-full kze-hidden" style="background:rgba(255,255,255,.12);color:#F5F3ED;">Saved (<span id="kze-mfav-c">0</span>)</button><button type="button" class="kze-btn kze-btn-cta kze-btn-full" data-kze-open-enq="custom"><span>Enquire Now</span>'+IC.arr+'</button><a href="'+esc(waDefault)+'" target="_blank" rel="noopener noreferrer" class="kze-btn kze-btn-wa kze-btn-full">'+IC.wa+'<span>WhatsApp '+KZE_WHATSAPP_DISPLAY+'</span></a></div></aside></div>'+
+'<main id="kze-page-home" class="kze-page is-active"></main>'+
+'<main id="kze-page-properties" class="kze-page kze-bg-ivs"></main>'+
+'<main id="kze-page-estate-projects" class="kze-page kze-bg-ivs"></main>'+
+'<main id="kze-page-about" class="kze-page kze-bg-w"></main>'+
+'<main id="kze-page-contact" class="kze-page kze-bg-ivs"></main>'+
+'<footer class="kze-ftr"><div class="kze-wrap"><div class="kze-ftr-g">'+
+'<div class="kze-col" style="gap:12px;"><div class="kze-logo">'+LOGO_SVG+'<div><span class="kze-logo-t" style="display:block;">KING ZION\'S ESTATE</span><span class="kze-serif kze-cgold" style="font-size:11px;font-style:italic;">Our Customers\' Satisfaction Is Our Overall Aim.</span></div></div><p style="font-size:13px;color:rgba(245,243,237,.78);line-height:1.6;">Helping clients explore quality houses for sale, residential land plots, rental properties, and estate development opportunities in Asaba, Ibusa, and across Nigeria.</p></div>'+
+'<div><h4 class="kze-eyebrow kze-cgold" style="margin-bottom:12px;">Quick Links</h4><div class="kze-col kze-sm" style="gap:8px;align-items:flex-start;">'+navs.map(function(n){return '<button type="button" data-kze-route="'+n[0]+'">'+n[1]+'</button>';}).join("")+'</div></div>'+
+'<div><h4 class="kze-eyebrow kze-cgold" style="margin-bottom:12px;">Contact Us</h4><div class="kze-col" style="gap:10px;"><p class="kze-sm" style="color:rgba(245,243,237,.86);display:flex;gap:8px;align-items:flex-start;">'+IC.pin+'<span>No. 5 King Zion Estate, Phase 1, Asaba, Delta State, Nigeria.</span></p><p class="kze-sm" style="color:rgba(245,243,237,.92);display:flex;gap:8px;align-items:center;"><span style="color:#25D366;">'+IC.wa+'</span><a href="'+esc(waDefault)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;text-underline-offset:3px;">WhatsApp: '+KZE_WHATSAPP_DISPLAY+'</a></p><button type="button" data-kze-route="contact" class="kze-xs kze-cgold" style="font-weight:600;text-align:left;">Submit an online enquiry via our Contact page &#8594;</button></div></div>'+
+'</div><div class="kze-xs" style="margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:rgba(245,243,237,.72);"><div style="display:flex;gap:16px;flex-wrap:wrap;"><button type="button" data-kze-legal="privacy">Privacy Policy</button><button type="button" data-kze-legal="terms">Terms of Use</button><button type="button" data-kze-legal="disclaimer">Property Disclaimer</button></div><div class="kze-row" style="gap:12px;"><span>&copy; '+new Date().getFullYear()+' King Zion\'s Estate. All rights reserved.</span><button type="button" id="kze-top" aria-label="Scroll to top" style="width:32px;height:32px;border-radius:999px;background:rgba(255,255,255,.14);">&#8593;</button></div></div></div></footer>'+
+'<a class="kze-wa-float" href="'+esc(waDefault)+'" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp '+KZE_WHATSAPP_DISPLAY+'">'+IC.wa+'<span>WhatsApp Us</span></a>'+
+'<div id="kze-det-m" class="kze-ov-d kze-hidden" role="dialog" aria-modal="true"><div class="kze-bk" data-kze-cls-det="1"></div><div class="kze-pnl kze-pnl-d"><div class="kze-mhdr"><div style="min-width:0;"><div class="kze-xs kze-cgold"><span id="kze-det-ref" class="kze-mono"></span> &#8226; <span id="kze-det-st"></span></div><h2 id="kze-det-t" class="kze-serif kze-clamp1" style="font-size:19px;font-weight:700;"></h2></div><div class="kze-row" style="gap:8px;"><button type="button" id="kze-det-fav" class="kze-det-sav kze-ibtn" aria-label="Save property">'+IC.hrt+'</button><button type="button" class="kze-ibtn" data-kze-cls-det="1" aria-label="Close panel">'+IC.cls+'</button></div></div><div id="kze-det-b" class="kze-mbdy"></div><div id="kze-det-f" class="kze-mftr"></div></div></div>'+
+'<div id="kze-enq-m" class="kze-ov-m kze-hidden" role="dialog" aria-modal="true"><div class="kze-bk" data-kze-cls-enq="1"></div><div class="kze-pnl kze-pnl-m"><div class="kze-mhdr"><div><span class="kze-eyebrow kze-cgold" style="margin:0;">King Zion\'s Estate</span><h2 class="kze-serif" style="font-size:19px;font-weight:700;">Submit Your Property Enquiry</h2></div><button type="button" class="kze-ibtn" data-kze-cls-enq="1" aria-label="Close modal">'+IC.cls+'</button></div><div id="kze-modal-form" class="kze-mbdy"></div></div></div>'+
+'<div id="kze-fav-m" class="kze-ov-d kze-hidden" role="dialog" aria-modal="true"><div class="kze-bk" data-kze-cls-fav="1"></div><div class="kze-pnl" style="width:100%;max-width:420px;height:100%;"><div class="kze-mhdr"><h3 class="kze-serif" style="font-size:18px;font-weight:700;">Saved Properties (<span id="kze-fav-c">0</span>)</h3><button type="button" class="kze-ibtn" data-kze-cls-fav="1" aria-label="Close saved drawer">'+IC.cls+'</button></div><div id="kze-fav-b" class="kze-mbdy"></div><div id="kze-fav-f" class="kze-mftr kze-hidden"><button type="button" id="kze-fav-all" class="kze-btn kze-btn-cta kze-btn-full"><span>Enquire About Saved Listings</span>'+IC.arr+'</button></div></div></div>'+
+'<div id="kze-lb-m" class="kze-ov-m kze-hidden" role="dialog" aria-modal="true"><div class="kze-bk" data-kze-cls-lb="1"></div><div class="kze-pnl kze-pnl-m"><div class="kze-mhdr"><div><span class="kze-eyebrow kze-cgold" style="margin:0;">Illustrative Property Visual</span><h3 id="kze-lb-c" class="kze-serif" style="font-size:18px;font-weight:700;"></h3></div><button type="button" class="kze-ibtn" data-kze-cls-lb="1" aria-label="Close lightbox">'+IC.cls+'</button></div><div style="position:relative;aspect-ratio:4/3;background:#F5F3ED;"><img id="kze-lb-i" data-kze-img="1" alt="Illustrative visual" style="width:100%;height:100%;object-fit:cover;"><div class="kze-img-ph kze-hidden"><strong>KING ZION\'S ESTATE</strong><span id="kze-lb-ph">Upload image in WordPress Media Library</span></div></div><div class="kze-mftr"><p class="kze-xs kze-mut" style="max-width:440px;">This visual is illustrative of architectural styles and does not represent a confirmed available listing, price, or specific property allocation.</p><button type="button" id="kze-lb-enq" class="kze-btn kze-btn-cta kze-btn-sm">Make a General Enquiry</button></div></div></div>'+
+'<div id="kze-leg-m" class="kze-ov-m kze-hidden" role="dialog" aria-modal="true"><div class="kze-bk" data-kze-cls-leg="1"></div><div class="kze-pnl" style="width:100%;max-width:540px;border-radius:16px;padding:24px;"><div class="kze-jb" style="margin-bottom:12px;"><h3 id="kze-leg-t" class="kze-serif kze-cg" style="font-size:21px;font-weight:700;"></h3><button type="button" data-kze-cls-leg="1" aria-label="Close dialog" class="kze-mut" style="padding:6px;">'+IC.cls+'</button></div><p id="kze-leg-c" class="kze-sm kze-mut" style="line-height:1.65;"></p><div class="kze-xs" style="margin-top:14px;padding:12px;border-radius:8px;background:#F5F3ED;"><strong>KING ZION\'S ESTATE Notice:</strong> All property inspections, survey verifications, and documentation reviews are coordinated directly through our Asaba office (WhatsApp: '+KZE_WHATSAPP_DISPLAY+').</div><div style="margin-top:18px;text-align:right;"><button type="button" class="kze-btn kze-btn-g kze-btn-sm" data-kze-cls-leg="1">I Understand</button></div></div></div>'+
+'<div id="kze-toast" class="kze-toast kze-hidden" role="status"></div>';
+}
+function teamHtml(compact){
+return TEAM.map(function(m){
+return '<article class="kze-team"><div class="kze-team-l">'+imgTag(m.img,m.name+" \u2014 "+m.role,"kze-team-img",true)+'</div><div class="kze-col" style="padding:20px;justify-content:center;gap:6px;"><h3 class="kze-serif kze-cg" style="font-size:19px;font-weight:700;">'+esc(m.name)+'</h3><p style="font-size:13px;font-weight:600;color:#B58C48;">'+esc(m.role)+'</p><p class="kze-sm kze-mut" style="line-height:1.6;">'+esc(compact?m.q:m.b)+'</p></div></article>';
+}).join("");
+}
+function faqHtml(list,openId,scope){
+return list.map(function(f){
+var op=openId===f.id;
+return '<div class="kze-faq-i'+(op?" is-open":"")+'"><button type="button" class="kze-faq-b" data-kze-faq="'+f.id+'" data-kze-fsc="'+scope+'" aria-expanded="'+op+'"><div>'+(scope==="about"?'<span class="kze-eyebrow kze-cem" style="margin:0 0 2px;">'+esc(f.c)+'</span>':"")+'<span style="font-size:15px;font-weight:600;">'+esc(f.q)+'</span></div>'+IC.chv+'</button>'+(op?'<p class="kze-sm kze-mut" style="margin-top:8px;line-height:1.65;">'+esc(f.a)+'</p>':"")+'</div>';
+}).join("");
+}
+function renderHome(){
+var el=byId("kze-page-home");if(!el)return;
+var hc=PROPS.filter(function(p){return p.intent==="Buy"&&(!p.num||p.num>=30000000);}).length;
+var lc=PROPS.filter(function(p){return p.intent==="Land"&&(!p.num||p.num>=5000000);}).length;
+var rc=PROPS.filter(function(p){return p.intent==="Rent";}).length;
+var cats=[
+{tab:"houses",t:"Houses for Sale",d:"Explore modern homes, spacious duplexes, and residential properties.",img:"house",r:"\u20a630 million \u2013 \u20a6500 million and above",c:hc,cta:"Explore Houses",ico:IC.hom},
+{tab:"land",t:"Land for Sale",d:"Discover dry residential plots and surveyed land opportunities.",img:"land",r:"\u20a65 million \u2013 \u20a6100 million and above",c:lc,cta:"Explore Land",ico:IC.pin},
+{tab:"rentals",t:"Find a Home to Rent",d:"Browse short-stay serviced stays and long-term rental homes.",img:"rent",r:"\u20a6500,000 \u2013 \u20a615 million and above",c:rc,cta:"Explore Rentals",ico:IC.key}
+];
+var catHtml=cats.map(function(c){
+return '<div class="kze-card kze-card-iv"><div class="kze-media">'+imgTag(c.img,c.t,"",true)+'<div class="kze-cat-ico">'+c.ico+'</div></div><div class="kze-cbody"><div><h3 class="kze-serif kze-cg" style="font-size:22px;font-weight:700;margin-bottom:6px;">'+c.t+'</h3><p class="kze-sm kze-mut">'+c.d+'</p></div><div class="kze-bdr kze-col" style="gap:10px;"><div><span class="kze-eyebrow kze-mut" style="margin:0;">Indicative Price Range (Confirm Current Price)</span><p class="kze-tabnum kze-sm kze-cg" style="font-weight:700;margin-top:2px;">'+c.r+'</p><p class="kze-xs kze-cem" style="font-weight:600;margin-top:2px;">'+c.c+' Published Listings</p></div><button type="button" class="kze-btn kze-btn-cta kze-btn-full" data-kze-ptab="'+c.tab+'"><span>'+c.cta+'</span>'+IC.arr+'</button></div></div></div>';
+}).join("");
+var gPrev=[["houses","Houses","Detached, Semi-Detached & Bungalows","semi"],["land","Land","Surveyed Plots & Estate Parcels","pegs"],["rentals","Rental Apartments","Short-Stay & Multi-Year Options","aptBed"]].map(function(g){
+return '<button type="button" data-kze-ptab="'+g[0]+'" style="position:relative;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1px solid var(--kze-bd);text-align:left;display:block;width:100%;">'+imgTag(g[3],g[1],"",true)+'<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(16,47,43,.92),rgba(16,47,43,.25),transparent);pointer-events:none;"></div><div style="position:absolute;bottom:16px;left:16px;right:16px;color:#fff;z-index:2;"><h3 class="kze-serif" style="font-size:20px;font-weight:700;">'+g[1]+'</h3><p class="kze-xs" style="color:rgba(245,243,237,.88);">'+g[2]+'</p></div></button>';
+}).join("");
+el.innerHTML=
+'<section class="kze-hero">'+imgTag("hero","Modern Nigerian luxury detached duplex","kze-hero-img",false)+'<div class="kze-hero-scrim"></div><div class="kze-wrap kze-hero-in"><div style="max-width:650px;"><p class="kze-motto">Our Customers\' Satisfaction Is Our Overall Aim.</p><h1 class="kze-h-xl" style="color:#fff;margin-bottom:16px;">Find Your Place. <span class="kze-cgold">Build Your Future.</span></h1><p style="font-size:16px;color:rgba(245,243,237,.92);max-width:560px;margin-bottom:24px;line-height:1.65;">Explore houses for sale, residential land opportunities, and rental homes across Asaba, Ibusa, and Nigerian residential corridors.</p><div style="display:flex;flex-wrap:wrap;gap:12px;"><button type="button" class="kze-btn kze-btn-cta kze-btn-lg" data-kze-route="properties"><span>Explore Properties</span>'+IC.arr+'</button><button type="button" class="kze-btn kze-btn-ogold kze-btn-lg" data-kze-open-enq="inspection">'+IC.cal+'<span>Request an Inspection</span></button></div></div></div></section>'+
+'<section class="kze-sec kze-bg-w"><div class="kze-wrap"><div style="text-align:center;max-width:640px;margin:0 auto 40px;"><h2 class="kze-h-lg kze-cg">Find Your Next Property</h2><p class="kze-mut" style="font-size:15px;margin-top:8px;">From modern family homes to surveyed land opportunities and rental residences.</p></div><div class="kze-g3">'+catHtml+'</div></div></section>'+
+'<section class="kze-sec kze-bg-g"><div class="kze-wrap"><div class="kze-split"><div><span class="kze-eyebrow kze-cgold">Featured Listings</span><h2 class="kze-h-lg" style="color:#fff;">Featured Property Opportunities</h2><p class="kze-sm" style="color:rgba(245,243,237,.82);margin-top:6px;">Browse selected published listings currently recorded in our inventory.</p></div><div style="display:flex;gap:8px;"><button type="button" id="kze-s-pause" style="width:40px;height:40px;border-radius:8px;background:rgba(255,255,255,.14);color:#fff;" aria-label="Pause slideshow">&#10074;&#10074;</button><button type="button" id="kze-s-prev" style="width:40px;height:40px;border-radius:8px;background:#B58C48;color:#fff;font-size:18px;" aria-label="Previous slide">&#8249;</button><button type="button" id="kze-s-next" style="width:40px;height:40px;border-radius:8px;background:#B58C48;color:#fff;font-size:18px;" aria-label="Next slide">&#8250;</button></div></div><div class="kze-slide-shell"><button type="button" id="kze-s-prev2" class="kze-slide-flank" aria-label="Previous featured listing">&#8249;</button><div id="kze-sw" class="kze-slide-vp"></div><button type="button" id="kze-s-next2" class="kze-slide-flank" aria-label="Next featured listing">&#8250;</button></div><div id="kze-sd" class="kze-dots"></div></div></section>'+
+'<section class="kze-sec kze-bg-iv"><div class="kze-wrap"><div class="kze-g3" style="align-items:center;"><div class="kze-media" style="border-radius:12px;border:1px solid var(--kze-bd);">'+imgTag("gate","Modern gated estate entrance in Nigeria","",true)+'</div><div class="kze-col" style="gap:12px;"><h2 class="kze-h-md kze-cg">About King Zion\'s Estate</h2><p class="kze-serif kze-sm kze-cem" style="font-style:italic;">"Our Customers\' Satisfaction Is Our Overall Aim."</p><p class="kze-sm kze-mut" style="line-height:1.65;">We help prospective homeowners, tenants, and property buyers explore residential houses, surveyed land opportunities, and rental options across Asaba, Ibusa, and other Nigerian locations.</p><div><button type="button" class="kze-btn kze-btn-g" data-kze-route="about"><span>Discover Our Company</span>'+IC.arr+'</button></div></div><div class="kze-card" style="padding:22px;"><h3 class="kze-serif kze-cg" style="font-size:19px;font-weight:700;margin-bottom:12px;">Why Choose Us?</h3><div class="kze-col kze-sm" style="gap:10px;">'+
+["Property options across houses, land, and rentals for varied needs","Direct, transparent property enquiry and guidance from our team","Coordinated physical site inspection request support","Clear presentation of estate development project inventory"].map(function(pt){return '<div style="display:flex;gap:8px;align-items:flex-start;">'+IC.chk+'<span>'+pt+'</span></div>';}).join("")+
+'</div></div></div></div></section>'+
+'<section class="kze-sec kze-bg-w"><div class="kze-wrap"><div style="text-align:center;max-width:640px;margin:0 auto 34px;"><h2 class="kze-h-lg kze-cg">Our Property Gallery</h2><p class="kze-sm kze-mut" style="margin-top:8px;">Illustrative architectural views across houses, land, and rental apartment styles. Select a category to browse on the Properties page.</p></div><div class="kze-g3">'+gPrev+'</div></div></section>'+
+'<section class="kze-sec kze-bg-iv"><div class="kze-wrap kze-col" style="gap:42px;"><div><span class="kze-eyebrow" style="color:#B58C48;">Leadership &amp; Coordination</span><h2 class="kze-h-md kze-cg" style="margin-bottom:18px;">Meet Our Team</h2><div class="kze-g2">'+teamHtml(true)+'</div></div><div class="kze-card" style="padding:26px;"><div class="kze-split" style="margin-bottom:16px;"><div><h2 class="kze-h-md kze-cg">Frequently Asked Questions</h2><p class="kze-sm kze-mut" style="margin-top:4px;">Quick answers on property enquiries, inspections, rentals, and documentation review.</p></div><button type="button" class="kze-btn kze-btn-g" data-kze-route="about"><span>View More FAQs</span>'+IC.arr+'</button></div><div id="kze-h-faq">'+faqHtml(FAQS.slice(0,4),S.hFaq,"home")+'</div></div></div></section>';
+renderSlides();
+}
+function renderSlides(){
+var vp=byId("kze-sw"),dots=byId("kze-sd");if(!vp||!dots)return;
+var feat=PROPS.filter(function(p){return p.feat;});
+vp.innerHTML=feat.map(function(p,i){
+var ac=i===S.slide,fav=S.favs.indexOf(p.id)!==-1;
+var sp='<div class="kze-spec-row">'+(p.beds?'<span class="kze-spec-item">'+IC.bed+'<span>'+p.beds+' Beds</span></span>':"")+(p.baths?'<span class="kze-spec-item">'+IC.bth+'<span>'+p.baths+' Baths</span></span>':"")+(p.plot?'<span class="kze-spec-item">'+IC.max+'<span>'+esc(p.plot)+'</span></span>':"")+'</div>';
+return '<div class="kze-slide'+(ac?" is-active":"")+'" aria-hidden="'+(!ac)+'"><div class="kze-slide-grid"><div class="kze-media" style="min-height:320px;">'+imgTag(p.img,p.title,"",i>0)+'<div class="kze-sbadge">'+esc(p.status)+'</div><button type="button" class="kze-heart'+(fav?" is-saved":"")+'" data-kze-fav="'+p.id+'" aria-label="Save property">'+IC.hrt+'</button></div><div class="kze-cbody" style="padding:28px;"><div><div class="kze-jb kze-xs" style="margin-bottom:8px;"><span class="kze-cem" style="font-weight:600;background:#E9F0EB;padding:3px 9px;border-radius:6px;">'+esc(p.type)+'</span><span class="kze-mono kze-mut">'+esc(p.ref)+'</span></div><h3 class="kze-serif kze-cg" style="font-size:24px;font-weight:700;margin-bottom:6px;">'+esc(p.title)+'</h3><p class="kze-row kze-mut" style="font-size:13px;gap:6px;">'+IC.pin+'<span>'+esc(p.loc)+'</span></p><p class="kze-tabnum kze-cg" style="font-size:21px;font-weight:700;margin:10px 0 4px;">'+esc(p.price)+'</p>'+sp+'<p class="kze-clamp2 kze-sm kze-mut">'+esc(p.desc)+'</p></div><div class="kze-bdr kze-jb"><button type="button" class="kze-btn kze-btn-g" data-kze-det="'+p.id+'">'+IC.eye+'<span>View Details</span></button><span class="kze-tabnum kze-xs kze-mut">'+(i+1)+' / '+feat.length+'</span></div></div></div></div>';
+}).join("");
+dots.innerHTML=feat.map(function(_,i){return '<button type="button" class="kze-dot'+(i===S.slide?" is-active":"")+'" data-kze-dot="'+i+'" aria-label="Slide '+(i+1)+'"></button>';}).join("");
+}
+function goSlide(idx){
+var feat=PROPS.filter(function(p){return p.feat;});if(!feat.length)return;
+S.slide=((idx%feat.length)+feat.length)%feat.length;
+var sl=document.querySelectorAll("#kze-sw .kze-slide"),dt=document.querySelectorAll("#kze-sd .kze-dot");
+for(var i=0;i<sl.length;i++){sl[i].classList.toggle("is-active",i===S.slide);sl[i].setAttribute("aria-hidden",String(i!==S.slide));}
+for(var j=0;j<dt.length;j++){dt[j].classList.toggle("is-active",j===S.slide);}
+}
+function resetSlideTimer(){
+clearInterval(S.timer);
+var red=window.matchMedia&&window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+if(red||S.paused||S.hover)return;
+S.timer=setInterval(function(){goSlide(S.slide+1);},4000);
+}
+function propCard(p,mode){
+var fav=S.favs.indexOf(p.id)!==-1,b=mode==="rentals"?(p.rcat||p.status):p.status,elbl=mode==="land"?"Purchase":"Enquire",et=mode==="rentals"?"rental":"purchase",info="";
+if(mode==="houses")info='<p class="kze-xs">'+(p.beds?p.beds+" Beds":"")+(p.baths?" \u2022 "+p.baths+" Baths":"")+(p.bldg?" \u2022 "+esc(p.bldg):"")+'</p>';
+else if(mode==="land")info='<p class="kze-xs">Plot Size: '+esc(p.plot)+'</p><p class="kze-xs kze-mut">Docs: '+esc(p.docs)+'</p>';
+else info=(p.minDur?'<p class="kze-xs">Minimum: <strong>'+esc(p.minDur)+'</strong></p>':"")+(p.supp?'<p class="kze-xs kze-mut">Supported: '+esc(p.supp.join(", "))+'</p>':"");
+return '<article class="kze-card"><div class="kze-media">'+imgTag(p.img,p.title,"",true)+'<div class="kze-sbadge">'+esc(b)+'</div><button type="button" class="kze-heart'+(fav?" is-saved":"")+'" data-kze-fav="'+p.id+'" aria-label="Save property">'+IC.hrt+'</button></div><div class="kze-cbody"><div><div class="kze-jb kze-xs" style="margin-bottom:6px;"><span class="kze-cem" style="font-weight:600;">'+esc(p.type)+'</span><span class="kze-mono kze-mut">'+esc(p.ref)+'</span></div><h3 class="kze-serif kze-cg" style="font-size:18px;font-weight:700;margin-bottom:4px;">'+esc(p.title)+'</h3><p class="kze-row kze-mut" style="font-size:13px;gap:5px;margin-bottom:6px;">'+IC.pin+'<span>'+esc(p.loc)+'</span></p>'+info+'<p class="kze-tabnum kze-cg" style="font-size:18px;font-weight:700;margin-top:8px;">'+esc(p.price)+'</p></div><div class="kze-act3"><button type="button" class="kze-btn kze-btn-g kze-btn-sm" data-kze-det="'+p.id+'">'+IC.eye+'<span>Details</span></button><button type="button" class="kze-btn kze-btn-cta kze-btn-sm" data-kze-enqp="'+p.id+'" data-kze-enqt="'+et+'">'+IC.snd+'<span>'+elbl+'</span></button><button type="button" class="kze-btn kze-btn-sub kze-btn-sm" data-kze-enqp="'+p.id+'" data-kze-enqt="inspection">'+IC.cal+'<span>Inspect</span></button></div></div></article>';
+}
+function renderPropsPage(){
+var el=byId("kze-page-properties");if(!el)return;
+el.innerHTML=
+'<section class="kze-banner"><div class="kze-wrap kze-split" style="margin-bottom:0;"><div><span class="kze-eyebrow kze-cgold">Property Discovery Centre</span><h1 class="kze-h-xl">Properties &amp; Opportunities</h1><p style="font-size:15px;color:rgba(245,243,237,.86);margin-top:8px;max-width:650px;">Browse houses for sale, surveyed residential land plots, short-stay and long-term rental properties, and our categorized architectural gallery.</p></div><button type="button" class="kze-btn kze-btn-cta" data-kze-open-enq="custom">'+IC.src+'<span>Can\'t Find What You Need?</span></button></div></section>'+
+'<section class="kze-tabs-bar"><div class="kze-wrap kze-tabs-row"><button type="button" class="kze-tab is-active" data-kze-tab="houses">'+IC.hom+'<span>Houses for Sale</span></button><button type="button" class="kze-tab" data-kze-tab="land">'+IC.pin+'<span>Land for Sale</span></button><button type="button" class="kze-tab" data-kze-tab="rentals">'+IC.key+'<span>Rentals</span></button></div></section>'+
+'<section class="kze-sec"><div class="kze-wrap">'+
+'<div id="kze-tp-houses"><div class="kze-fcard"><div class="kze-split" style="margin:0;"><div><h2 class="kze-h-md kze-cg">Houses for Sale</h2><p class="kze-mut" style="font-size:13px;">Indicative price range: \u20a630 million \u2013 \u20a6500 million and above (confirm exact property price upon enquiry).</p></div><button type="button" id="kze-rh" class="kze-link">Reset Filters</button></div><div class="kze-fg kze-fg5"><select id="kze-fhl" class="kze-sel"><option value="All">All Locations</option><option>Asaba</option><option>Ibusa</option><option>Agbor</option><option>Warri</option></select><select id="kze-fht" class="kze-sel"><option value="All">All House Types</option><option>Detached Duplex</option><option>Semi-Detached Duplex</option><option>Terrace House</option><option>Bungalow</option></select><select id="kze-fhb" class="kze-sel"><option value="All">Any Budget</option><option value="u80">Under \u20a680M</option><option value="80-150">\u20a680M \u2013 \u20a6150M</option><option value="a150">Above \u20a6150M</option></select><select id="kze-fhd" class="kze-sel"><option value="All">Any Bedrooms</option><option value="3">3+ Bedrooms</option><option value="4">4+ Bedrooms</option><option value="5">5+ Bedrooms</option></select><select id="kze-fhs" class="kze-sel"><option value="All">All Statuses</option><option>For Sale</option><option>Under Offer</option></select></div></div><div id="kze-gh" class="kze-g3"></div></div>'+
+'<div id="kze-tp-land" class="kze-hidden"><div class="kze-fcard"><div class="kze-split" style="margin:0;"><div><h2 class="kze-h-md kze-cg">Land for Sale</h2><p class="kze-mut" style="font-size:13px;">Indicative price range: \u20a65 million \u2013 \u20a6100 million and above (plot prices and title documents confirmed per parcel).</p></div><button type="button" id="kze-rl" class="kze-link">Reset Filters</button></div><div class="kze-fg kze-fg4"><select id="kze-fll" class="kze-sel"><option value="All">All Locations</option><option>Asaba</option><option>Ibusa</option><option>Agbor</option></select><select id="kze-fls" class="kze-sel"><option value="All">All Plot Sizes</option><option value="465">Approx. 465 sqm</option><option value="930">Approx. 930 sqm</option></select><select id="kze-flb" class="kze-sel"><option value="All">Any Budget</option><option value="u15">Under \u20a615M</option><option value="15-50">\u20a615M \u2013 \u20a650M</option><option value="a50">Above \u20a650M</option></select><select id="kze-fld" class="kze-sel"><option value="All">All Documentation Records</option><option value="review">Available for Review</option><option value="enquiry">Shared Upon Enquiry</option></select></div></div><div id="kze-gl" class="kze-g3"></div></div>'+
+'<div id="kze-tp-rentals" class="kze-hidden"><div class="kze-fcard"><div class="kze-split" style="margin:0;"><div><h2 class="kze-h-md kze-cg">Rental Properties</h2><p class="kze-mut" style="font-size:13px;">Indicative rental range: \u20a6500,000 \u2013 \u20a615 million and above (subject to specific property and chosen rental duration).</p></div><button type="button" id="kze-rr" class="kze-link">Reset Filters</button></div><div style="display:flex;flex-wrap:wrap;gap:8px;"><button type="button" class="kze-pill is-active" data-kze-rsub="All">All Rentals</button><button type="button" class="kze-pill" data-kze-rsub="Short Stay">Short-Stay Rentals</button><button type="button" class="kze-pill" data-kze-rsub="Long-Term Rental">Long-Term Rentals</button></div><div class="kze-fg"><select id="kze-frp" class="kze-sel"></select><select id="kze-frl" class="kze-sel"><option value="All">All Locations</option><option>Asaba</option><option>Ibusa</option><option>Warri</option></select></div></div><div id="kze-gr" class="kze-g3"></div></div>'+
+'<div style="background:#102F2B;color:#fff;border-radius:16px;padding:28px;margin-top:38px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;"><div style="max-width:620px;"><h3 class="kze-h-md">Can\'t Find What You Need?</h3><p class="kze-sm" style="color:rgba(245,243,237,.86);margin-top:6px;">Submit your preferred property type, location, and budget through our Custom Property Request form.</p></div><div style="display:flex;flex-wrap:wrap;gap:10px;"><button type="button" class="kze-btn kze-btn-cta" data-kze-open-enq="custom"><span>Request Custom Property</span>'+IC.arr+'</button><a href="'+esc(waUrl("Hello King Zion's Estate, I need help finding a custom property."))+'" target="_blank" rel="noopener noreferrer" class="kze-btn kze-btn-wa">'+IC.wa+'<span>Chat on WhatsApp</span></a></div></div>'+
+'<div style="margin-top:44px;padding-top:30px;border-top:1px solid var(--kze-bd);"><div class="kze-split"><div><span class="kze-eyebrow" style="color:#B58C48;">Categorized Visual Showcase</span><h2 class="kze-h-md kze-cg">Comprehensive Property Gallery</h2></div><div style="display:flex;gap:8px;flex-wrap:wrap;"><button type="button" class="kze-pill is-active" data-kze-gtab="houses">Houses Gallery</button><button type="button" class="kze-pill" data-kze-gtab="land">Land Gallery</button><button type="button" class="kze-pill" data-kze-gtab="rentals">Rental Apartments</button></div></div><div id="kze-gg" class="kze-g4"></div></div>'+
+'</div></section>';
+renderRentalOpts();renderPropGrids();renderGallery();
+}
+function renderRentalOpts(){
+var s=byId("kze-frp");if(!s)return;
+var o='<option value="All">Any Rental Period</option>';
+if(S.rsub==="All"||S.rsub==="Short Stay")o+='<option value="Nightly">Short Stay \u2014 Nightly</option><option value="Weekly">Short Stay \u2014 Weekly</option><option value="Monthly">Short Stay \u2014 Monthly</option>';
+if(S.rsub==="All"||S.rsub==="Long-Term Rental")o+='<option value="One year">Long-Term \u2014 One year</option><option value="Two years">Long-Term \u2014 Two years</option><option value="Three years">Long-Term \u2014 Three years</option>';
+s.innerHTML=o+'<option value="Other">Other agreed duration</option>';s.value=S.rper;
+}
+function renderPropGrids(){
+var emp=function(t,b,e){return '<div class="kze-card kze-empty"><p class="kze-serif kze-cg" style="font-size:19px;font-weight:700;">'+t+'</p><div style="margin-top:12px;"><button type="button" class="kze-btn kze-btn-cta" data-kze-open-enq="'+e+'">'+b+'</button></div></div>';};
+var h=PROPS.filter(function(p){
+if(p.intent!=="Buy")return false;
+if(S.hf.loc!=="All"&&p.loc.toLowerCase().indexOf(S.hf.loc.toLowerCase())===-1)return false;
+if(S.hf.type!=="All"&&p.type!==S.hf.type)return false;
+if(S.hf.bed!=="All"&&(!p.beds||p.beds<Number(S.hf.bed)))return false;
+if(S.hf.st!=="All"&&p.status!==S.hf.st)return false;
+if(S.hf.bud==="u80"&&p.num>=80000000)return false;
+if(S.hf.bud==="80-150"&&(p.num<80000000||p.num>150000000))return false;
+if(S.hf.bud==="a150"&&p.num<=150000000)return false;
+return true;
+});
+var gh=byId("kze-gh");if(gh)gh.innerHTML=h.length?h.map(function(p){return propCard(p,"houses");}).join(""):emp("No Matching House Listings Found","Submit Custom Property Request","custom");
+var l=PROPS.filter(function(p){
+if(p.intent!=="Land")return false;
+if(S.lf.loc!=="All"&&p.loc.toLowerCase().indexOf(S.lf.loc.toLowerCase())===-1)return false;
+if(S.lf.sz!=="All"&&(p.plot||"").indexOf(S.lf.sz)===-1)return false;
+if(S.lf.doc!=="All"&&(p.docs||"").toLowerCase().indexOf(S.lf.doc)===-1)return false;
+if(S.lf.bud==="u15"&&p.num&&p.num>=15000000)return false;
+if(S.lf.bud==="15-50"&&p.num&&(p.num<15000000||p.num>50000000))return false;
+if(S.lf.bud==="a50"&&p.num&&p.num<=50000000)return false;
+return true;
+});
+var gl=byId("kze-gl");if(gl)gl.innerHTML=l.length?l.map(function(p){return propCard(p,"land");}).join(""):emp("No Matching Land Listings Found","Request Land Options","custom");
+var r=PROPS.filter(function(p){
+if(p.intent!=="Rent")return false;
+if(S.rsub!=="All"&&p.rcat!==S.rsub)return false;
+if(S.rloc!=="All"&&p.loc.toLowerCase().indexOf(S.rloc.toLowerCase())===-1)return false;
+if(S.rper!=="All"){var m=(p.supp||[]).some(function(d){return d.toLowerCase().indexOf(S.rper.toLowerCase())!==-1;})||(p.bill||"").toLowerCase().indexOf(S.rper.toLowerCase())!==-1;if(!m)return false;}
+return true;
+});
+var gr=byId("kze-gr");if(gr)gr.innerHTML=r.length?r.map(function(p){return propCard(p,"rentals");}).join(""):emp("No Matching Rental Listings Found","Submit Rental Enquiry","rental");
+}
+function renderGallery(){
+var gg=byId("kze-gg");if(!gg)return;
+var real=PROPS.filter(function(p){return S.gtab==="houses"?p.intent==="Buy":S.gtab==="land"?p.intent==="Land":p.intent==="Rent";});
+var il=GALLERY.filter(function(v){return v.cat===S.gtab;});
+gg.innerHTML=real.map(function(p){
+return '<button type="button" class="kze-card" style="text-align:left;" data-kze-det="'+p.id+'"><div class="kze-media">'+imgTag(p.img,p.title,"",true)+'<span class="kze-sbadge" style="top:auto;bottom:10px;left:10px;">'+esc(p.ref)+'</span></div><div style="padding:12px;"><p class="kze-clamp1 kze-xs kze-cg" style="font-weight:700;">'+esc(p.title)+'</p><p class="kze-clamp1 kze-xs kze-mut">'+esc(p.loc)+'</p></div></button>';
+}).join("")+il.map(function(v){
+return '<button type="button" class="kze-card" style="text-align:left;" data-kze-lb="'+v.id+'"><div class="kze-media">'+imgTag(v.img,v.cap,"",true)+'<span class="kze-sbadge" style="top:auto;bottom:10px;left:10px;">Illustrative Visual</span></div><div style="padding:12px;"><p class="kze-clamp1 kze-xs kze-cg" style="font-weight:700;">Illustrative Property Visual</p><p class="kze-clamp1 kze-xs kze-mut">'+esc(v.cap)+'</p></div></button>';
+}).join("");
+}
+function renderProjects(){
+var el=byId("kze-page-estate-projects");if(!el)return;
+el.innerHTML='<section class="kze-banner"><div class="kze-wrap"><span class="kze-eyebrow kze-cgold">Development Portfolio</span><h1 class="kze-h-xl">King Zion\'s Estate Projects</h1><p style="font-size:15px;color:rgba(245,243,237,.86);margin-top:8px;max-width:650px;">Explore our Phase 1 development in Asaba and Phase 2 development in Ibusa, Delta State. Stated figures represent recorded estate inventory and are subject to confirmation upon enquiry.</p></div></section><section class="kze-sec"><div class="kze-wrap kze-col" style="gap:28px;">'+
+PROJECTS.map(function(pr){
+var pwa=waUrl("Hello King Zion's Estate, I would like to enquire about "+pr.name+" ("+pr.loc+").");
+return '<article class="kze-card" style="border-radius:16px;"><div class="kze-proj-g"><div class="kze-col" style="background:#E9F0EB;"><div class="kze-media">'+imgTag(pr.img1,pr.name,"",true)+'<div class="kze-sbadge kze-cgold">'+esc(pr.lbl)+'</div></div><div style="position:relative;aspect-ratio:16/9;overflow:hidden;border-top:1px solid var(--kze-bd);">'+imgTag(pr.img2,pr.name+" layout","",true)+'</div></div><div class="kze-col" style="padding:28px;justify-content:space-between;gap:20px;"><div class="kze-col" style="gap:12px;"><p class="kze-row kze-cem" style="font-size:13px;font-weight:600;gap:6px;">'+IC.pin+'<span>'+esc(pr.loc)+'</span></p><h2 class="kze-h-md kze-cg">'+esc(pr.name)+'</h2><p class="kze-mut" style="font-size:15px;line-height:1.65;">'+esc(pr.desc)+'</p><div style="background:#F5F3ED;border:1px solid var(--kze-bd);border-radius:12px;padding:16px;"><span class="kze-eyebrow kze-mut">Previously Stated Project Inventory (Confirm Current Availability)</span><div class="kze-g3" style="gap:14px;">'+pr.stats.map(function(s){return '<div><span class="kze-xs kze-mut" style="display:block;">'+s[0]+'</span><span class="kze-serif kze-tabnum kze-cg" style="font-size:20px;font-weight:700;">'+s[1]+'</span></div>';}).join("")+'</div></div><div class="kze-col" style="gap:8px;">'+pr.pts.map(function(pt){return '<div class="kze-sm" style="display:flex;gap:8px;">'+IC.chk+'<span>'+esc(pt)+'</span></div>';}).join("")+'</div></div><div class="kze-bdr" style="display:flex;flex-wrap:wrap;gap:10px;"><button type="button" class="kze-btn kze-btn-cta" data-kze-pe="'+esc(pr.name)+'"><span>Enquire About '+esc(pr.lbl)+'</span>'+IC.arr+'</button><button type="button" class="kze-btn kze-btn-ogreen" data-kze-pi="'+esc(pr.name)+'">'+IC.cal+'<span>Request Inspection</span></button><a href="'+esc(pwa)+'" target="_blank" rel="noopener noreferrer" class="kze-btn kze-btn-wa">'+IC.wa+'<span>WhatsApp</span></a></div></div></div></article>';
+}).join("")+
+'<div class="kze-card kze-sm kze-mut" style="padding:20px;"><p><strong class="kze-cg">Important Project Notice:</strong> Project inventory numbers reflect overall development scope and do not guarantee that all plots or housing units remain available. Current pricing, specific plot allocations, documentation, and site conditions are confirmed upon direct enquiry and physical inspection.</p></div></div></section>';
+}
+function renderAbout(){
+var el=byId("kze-page-about");if(!el)return;
+el.innerHTML='<section class="kze-banner"><div class="kze-wrap"><span class="kze-eyebrow kze-cgold">About Us</span><h1 class="kze-h-xl">KING ZION\'S ESTATE</h1><p class="kze-serif kze-cgold" style="font-style:italic;font-size:18px;margin-top:8px;">"Our Customers\' Satisfaction Is Our Overall Aim."</p></div></section>'+
+'<section class="kze-sec kze-bg-w"><div class="kze-wrap"><div class="kze-proj-g" style="gap:32px;align-items:center;"><div class="kze-media" style="border-radius:16px;">'+imgTag("gate","King Zion's Estate entrance","",true)+'</div><div class="kze-col" style="gap:16px;"><div><span class="kze-eyebrow kze-cem">Who We Are</span><h2 class="kze-h-md kze-cg" style="margin-bottom:8px;">Helping Clients Navigate Real Estate With Clarity</h2><p class="kze-mut" style="font-size:15px;line-height:1.65;">KING ZION\'S ESTATE is a Nigerian real-estate company with its office at No. 5 King Zion Estate, Phase 1, Asaba, Delta State, Nigeria. We assist buyers, renters, and property seekers exploring houses for sale, residential land plots, short-stay and long-term rentals, and estate development projects in Asaba, Ibusa, and surrounding areas.</p></div><div class="kze-col" style="background:#F5F3ED;border:1px solid var(--kze-bd);border-radius:12px;padding:20px;gap:10px;"><h3 class="kze-serif kze-cg" style="font-size:19px;font-weight:700;">Our Approach</h3><p class="kze-sm kze-mut" style="line-height:1.6;">Guided by our motto \u2014 <em>"Our Customers\' Satisfaction Is Our Overall Aim."</em> \u2014 we focus on presenting clear property options, receiving client enquiries, and coordinating physical site inspections before decisions.</p>'+["Houses, residential plots, rentals, and estate projects presented clearly","Direct communication from initial enquiry through site inspection","Property-specific documentation disclosure for independent review"].map(function(pt){return '<div class="kze-sm" style="display:flex;gap:8px;">'+IC.chk+'<span>'+pt+'</span></div>';}).join("")+'</div><p class="kze-row kze-mut" style="font-size:13px;gap:6px;">'+IC.pin+'<span>Office Location: No. 5 King Zion Estate, Phase 1, Asaba, Delta State, Nigeria.</span></p></div></div></div></section>'+
+'<section class="kze-sec kze-bg-iv"><div class="kze-wrap"><span class="kze-eyebrow" style="color:#B58C48;">Leadership &amp; Coordination</span><h2 class="kze-h-lg kze-cg" style="margin-bottom:22px;">Leadership &amp; Property Coordination</h2><div class="kze-g2">'+teamHtml(false)+'</div></div></section>'+
+'<section class="kze-sec kze-bg-w"><div class="kze-wrap" style="max-width:920px;"><div style="text-align:center;margin-bottom:28px;"><span class="kze-eyebrow" style="color:#B58C48;">Frequently Asked Questions</span><h2 class="kze-h-lg kze-cg">Helpful Information for Buyers &amp; Tenants</h2></div><div id="kze-a-faq" class="kze-card kze-card-iv" style="padding:24px;">'+faqHtml(FAQS,S.aFaq,"about")+'</div><div style="text-align:center;margin-top:24px;"><button type="button" class="kze-btn kze-btn-cta" data-kze-route="contact"><span>Have Another Question? Contact Our Team</span>'+IC.arr+'</button></div></div></section>';
+}
+function renderContact(){
+var el=byId("kze-page-contact");if(!el)return;
+var cwa=waUrl("Hello King Zion's Estate, I would like to make an enquiry.");
+el.innerHTML='<section class="kze-banner"><div class="kze-wrap"><span class="kze-eyebrow kze-cgold">Contact &amp; Enquiries</span><h1 class="kze-h-xl">Speak With Our Team</h1><p style="font-size:15px;color:rgba(245,243,237,.86);margin-top:8px;max-width:650px;">Choose the enquiry option that matches your needs \u2014 Inspection Request, Purchase Enquiry, Rental Enquiry, or Custom Property Request.</p></div></section>'+
+'<section class="kze-sec"><div class="kze-wrap kze-contact-g"><aside class="kze-col" style="background:#102F2B;color:#fff;border-radius:16px;padding:26px;gap:18px;"><div><span class="kze-eyebrow kze-cgold">Office &amp; Channels</span><h2 class="kze-h-md">KING ZION\'S ESTATE</h2><p class="kze-serif kze-cgold" style="font-size:13px;font-style:italic;margin-top:4px;">"Our Customers\' Satisfaction Is Our Overall Aim."</p></div><div class="kze-bdr" style="border-color:rgba(255,255,255,.15);display:flex;gap:10px;">'+IC.pin+'<div><span class="kze-eyebrow kze-cgold" style="margin-bottom:2px;">Office Address</span><p class="kze-sm">No. 5 King Zion Estate, Phase 1, Asaba, Delta State, Nigeria.</p></div></div><div class="kze-bdr" style="border-color:rgba(255,255,255,.15);display:flex;gap:10px;align-items:flex-start;"><span style="color:#25D366;margin-top:2px;">'+IC.wa+'</span><div style="flex:1;"><span class="kze-eyebrow kze-cgold" style="margin-bottom:4px;">WhatsApp Enquiries</span><p class="kze-sm" style="margin-bottom:10px;">'+KZE_WHATSAPP_DISPLAY+'</p><a href="'+esc(cwa)+'" target="_blank" rel="noopener noreferrer" class="kze-btn kze-btn-wa kze-btn-sm">'+IC.wa+'<span>Chat on WhatsApp</span></a></div></div><p class="kze-xs" style="color:rgba(245,243,237,.78);">Submit the central enquiry form alongside to record your request and open a pre-filled WhatsApp conversation with our team.</p></aside><div class="kze-card" style="padding:26px;"><div id="kze-contact-form"></div></div></div></section>';
+}
+function buildWaSummary(pay,ref){
+var lines=["*KING ZION'S ESTATE - PROPERTY ENQUIRY*","Reference: "+ref];
+var label=pay.type==="inspection"?"Inspection Request":pay.type==="land"?"Land Purchase Enquiry":pay.type==="purchase"?"Property Purchase Enquiry":pay.type==="rental"?"Rental Enquiry":"Custom Property Request";
+lines.push("Enquiry Type: "+label);
+if(pay.propertyCategory)lines.push("Property Interest: "+pay.propertyCategory);
+if(pay.rentalCategory)lines.push("Rental Type: "+pay.rentalCategory);
+lines.push("Name: "+pay.fullName);
+lines.push("Phone: "+pay.phone);
+if(pay.whatsapp)lines.push("WhatsApp: "+pay.whatsapp);
+if(pay.email)lines.push("Email: "+pay.email);
+if(pay.preferredContactMethod)lines.push("Preferred Contact: "+pay.preferredContactMethod);
+if(pay.propertyOrProject)lines.push("Property / Project: "+pay.propertyOrProject);
+if(pay.selectedProperty)lines.push("Selected Property / Project: "+pay.selectedProperty);
+if(pay.preferredLocation)lines.push("Location: "+pay.preferredLocation);
+if(pay.budget)lines.push("Budget: "+pay.budget);
+if(pay.preferredHouseType)lines.push("House Type: "+pay.preferredHouseType);
+if(pay.bedrooms)lines.push("Bedrooms: "+pay.bedrooms);
+if(pay.bedroomPreference)lines.push("Bedrooms: "+pay.bedroomPreference);
+if(pay.preferredPlotSize)lines.push("Plot Size: "+pay.preferredPlotSize);
+if(pay.propertyTypeOrLandSize)lines.push("Type / Size: "+pay.propertyTypeOrLandSize);
+if(pay.rentalDuration)lines.push("Duration: "+pay.rentalDuration);
+if(pay.requestedRentalDuration)lines.push("Duration: "+pay.requestedRentalDuration);
+if(pay.preferredInspectionDate)lines.push("Preferred Inspection Date: "+pay.preferredInspectionDate);
+if(pay.alternativeDate)lines.push("Alternative Date: "+pay.alternativeDate);
+if(pay.preferredTime)lines.push("Preferred Time: "+pay.preferredTime);
+if(pay.checkInDate)lines.push("Check-In Date: "+pay.checkInDate);
+if(pay.checkOutDate)lines.push("Check-Out Date: "+pay.checkOutDate);
+if(pay.moveInDate)lines.push("Move-In Date: "+pay.moveInDate);
+if(pay.paymentPreference)lines.push("Payment Preference: "+pay.paymentPreference);
+var extra=pay.comments||pay.additionalQuestions||pay.additionalRequests||pay.description||"";
+if(extra)lines.push("Additional Message: "+extra);
+return lines.join("\n");
+}
+function makeForm(mountId){
+var box=byId(mountId);if(!box)return null;
+var F={t:"inspection",sub:false,err:"",ref:"",rtyp:"",waHref:"",waMsg:"",name:"",phone:"",wa:"",email:"",pcm:"Phone Call",pid:"",ptext:"",pdate:"",adate:"",time:"Morning (9:00 AM \u2013 11:30 AM)",att:"",comm:"",pcat:"Houses for Sale",addr:"",loc:"",use:"Personal residence",tl:"Within 1 \u2013 3 months",pay:"Open to Discussion",bud:"",psize:"",luse:"Residential building",pqty:"Individual plot",htype:"",bed:"",q:"",rcat:"Long-Term Rental",accom:"",rdur:"One year",rbud:"",occ:"",cin:"",cout:"",mvin:"",rreq:"",ccat:"House for Sale",cbud:"",csz:"",cbed:"",crdur:"",cuse:"Personal residence",ctl:"1 \u2013 3 months",cdesc:""};
+function pull(){var ins=box.querySelectorAll("[data-kf]");for(var i=0;i<ins.length;i++){var k=ins[i].getAttribute("data-kf");if(ins[i].type==="radio"){if(ins[i].checked)F[k]=ins[i].value;}else F[k]=ins[i].value;}}
+function opts(arr,sel){return arr.map(function(x){var v=typeof x==="string"?x:x[0],l=typeof x==="string"?x:x[1];return '<option value="'+esc(v)+'"'+(sel===v?" selected":"")+'>'+esc(l)+'</option>';}).join("");}
+function fld(l,c,sp){return '<div'+(sp?' class="kze-span2"':"")+'><label class="kze-lbl">'+l+'</label>'+c+'</div>';}
+function fIn(k,t,ph,rq){return '<input type="'+(t||"text")+'"'+(rq?" required":"")+' class="kze-in" data-kf="'+k+'" value="'+esc(F[k])+'"'+(ph?' placeholder="'+esc(ph)+'"':"")+'>';}
+function fSl(k,a,at){return '<select class="kze-sel" data-kf="'+k+'"'+(at?" "+at:"")+'>'+opts(a,F[k])+'</select>';}
+function draw(){
+if(F.ref&&F.rtyp){
+var cm=F.rtyp==="inspection"?"Your inspection request has been saved. Our team will review the schedule and contact you to confirm an available appointment.":F.rtyp==="purchase"?"Your property enquiry has been saved. Our team will review your request and contact you using your preferred contact method.":F.rtyp==="rental"?"Your rental enquiry has been saved. Our team will check availability for your requested duration and contact you using your preferred contact method.":"Your property request has been saved. Our team will review your requirements and contact you if a suitable option is identified.";
+box.innerHTML='<div style="background:#E9F0EB;border:1px solid var(--kze-bd);border-radius:14px;padding:28px 20px;text-align:center;"><span class="kze-mono kze-xs kze-cem" style="background:#fff;border:1px solid var(--kze-bd);font-weight:700;padding:5px 12px;border-radius:6px;display:inline-block;margin-bottom:10px;">Reference: '+esc(F.ref)+'</span><h3 class="kze-h-md kze-cg" style="margin-bottom:8px;">Submission Confirmed</h3><p class="kze-sm" style="max-width:500px;margin:0 auto 14px;">'+esc(cm)+'</p>'+(F.waHref?'<div class="kze-wa-box"><p class="kze-xs kze-cg" style="font-weight:700;margin-bottom:6px;">Continue to WhatsApp ('+KZE_WHATSAPP_DISPLAY+')</p><p class="kze-xs kze-mut" style="margin-bottom:12px;">Click the button below to open WhatsApp with your submitted details pre-filled. Please review your message and press Send inside WhatsApp.</p><a href="'+esc(F.waHref)+'" target="_blank" rel="noopener noreferrer" class="kze-btn kze-btn-wa kze-btn-full">'+IC.wa+'<span>Open WhatsApp to Send Enquiry Details</span></a><pre style="margin:12px 0 0;padding:10px;border-radius:8px;background:#F5F3ED;border:1px solid var(--kze-bd);font-family:inherit;font-size:11.5px;line-height:1.5;white-space:pre-wrap;color:#202824;">'+esc(F.waMsg)+'</pre></div>':"")+'<div style="margin-top:16px;"><button type="button" class="kze-btn kze-btn-g kze-btn-sm" data-kf-rst="1">Submit Another Enquiry</button></div></div>';
+return;
+}
+var tabs=[["inspection","Inspection Request",IC.cal],["purchase","Purchase Enquiry",IC.hom],["rental","Rental Enquiry",IC.key],["custom","Custom Property Request",IC.src]];
+var tH=tabs.map(function(tb){return '<button type="button" class="kze-etype-b'+(F.t===tb[0]?" is-active":"")+'" data-kf-tab="'+tb[0]+'">'+tb[2]+'<span>'+tb[1]+'</span></button>';}).join("");
+var pcmH=["Phone Call","WhatsApp","Email"].map(function(m){var s=F.pcm===m;return '<label class="kze-radio-c'+(s?" is-sel":"")+'"><input type="radio" name="'+mountId+'-pcm" data-kf="pcm" value="'+m+'"'+(s?" checked":"")+'><span>'+m+'</span></label>';}).join("");
+var sec="";
+if(F.t==="inspection"){
+var io=[["","Select listing or estate project..."],["phase-1","King Zion Estate Phase 1 \u2014 Asaba"],["phase-2","King Zion Estate Phase 2 \u2014 Ibusa"]];
+PROPS.forEach(function(p){io.push([p.id,p.title+" ("+p.ref+")"]);});
+sec='<div class="kze-fg2">'+fld("Property or Estate Project of Interest *",'<div class="kze-fg2">'+fSl("pid",io,'data-kf-ps="1"')+fIn("ptext","text","Or type property / project name")+'</div>',1)+fld("Preferred Inspection Date *",fIn("pdate","date","",1))+fld("Preferred Time *",fSl("time",["Morning (9:00 AM \u2013 11:30 AM)","Midday (12:00 PM \u2013 2:30 PM)","Afternoon (3:00 PM \u2013 5:00 PM)"]))+fld("Alternative Date (Optional)",fIn("adate","date"))+fld("Number of Attendees (Optional)",fSl("att",[["","Not specified"],"1 person","2 people","3\u20134 people","Representative on my behalf"]))+fld("Questions or Comments (Optional)",'<textarea rows="3" class="kze-txtarea" data-kf="comm" placeholder="Any specific details...">'+esc(F.comm)+'</textarea>',1)+'</div>';
+}else if(F.t==="purchase"){
+var po=[["","General purchase enquiry"],["phase-1","King Zion Estate Phase 1 \u2014 Asaba"],["phase-2","King Zion Estate Phase 2 \u2014 Ibusa"]];
+PROPS.filter(function(p){return p.intent!=="Rent";}).forEach(function(p){po.push([p.id,p.title+" ("+p.ref+")"]);});
+var cond=F.pcat==="Houses for Sale"?fld("Preferred House Type",fSl("htype",[["","Select (optional)..."],"Detached Duplex","Semi-Detached Duplex","Terrace House","Bungalow",["Any House Type","Open to Options"]]))+fld("Bedroom Preference",fSl("bed",[["","Select (optional)..."],"1 Bedroom","2 Bedrooms","3 Bedrooms","4 Bedrooms","5+ Bedrooms"])):F.pcat==="Land for Sale"?fld("Preferred Plot Size",fIn("psize","text","e.g. 50 ft \u00d7 100 ft or 930 sqm"))+fld("Plot Quantity",'<div class="kze-radio-r">'+["Individual plot","Multiple plots"].map(function(pq){return '<label class="kze-radio-c'+(F.pqty===pq?" is-sel":"")+'"><input type="radio" name="'+mountId+'-pq" data-kf="pqty" value="'+pq+'"'+(F.pqty===pq?" checked":"")+'><span>'+pq+'</span></label>';}).join("")+'</div>')+fld("Intended Land Use",fSl("luse",["Residential building","Land banking / investment","Commercial development","Mixed use / other"]),1):"";
+sec='<div class="kze-fg2">'+fld("Property Category *",fSl("pcat",["Houses for Sale","Land for Sale",["Estate Project","Estate Project (Phase 1 / Phase 2)"]],'data-kf-re="1"'))+fld("Selected Property / Project",fSl("pid",po,'data-kf-ps="1"'))+fld("Preferred Location",fIn("loc","text","e.g. Asaba, Ibusa"))+fld("Residential Address",fIn("addr","text","Optional address"))+cond+fld("Intended Use",fSl("use",["Personal residence","Investment","Family use","Commercial use","Other"]))+fld("Purchase Timeline",fSl("tl",["Immediate","Within 1 \u2013 3 months","3 \u2013 6 months","Exploring options"]))+fld("Preferred Inspection Date",fIn("pdate","date"))+fld("Payment Preference",fSl("pay",["Open to Discussion","Outright Payment",["Enquire About Milestone Plan","Enquire About Payment Terms"]]))+fld("Budget (\u20a6)",fIn("bud","text","e.g. \u20a645,000,000 \u2013 \u20a690,000,000"),1)+fld("Additional Questions",'<textarea rows="3" class="kze-txtarea" data-kf="q">'+esc(F.q)+'</textarea>',1)+'</div>';
+}else if(F.t==="rental"){
+var ro=[["","General rental enquiry"]];PROPS.filter(function(p){return p.intent==="Rent";}).forEach(function(p){ro.push([p.id,p.title+" ("+p.ref+")"]);});
+var rd=F.rcat==="Short Stay"?SS_DUR:LT_DUR;
+var dt=F.rcat==="Short Stay"?fld("Check-In Date",fIn("cin","date"))+fld("Check-Out Date",fIn("cout","date")):fld("Preferred Move-In Date",fIn("mvin","date"));
+sec='<div><label class="kze-lbl">Rental Type *</label><div class="kze-radio-r" style="margin-bottom:14px;">'+["Short Stay","Long-Term Rental"].map(function(rc){return '<label class="kze-radio-c'+(F.rcat===rc?" is-sel":"")+'"><input type="radio" name="'+mountId+'-rc" data-kf="rcat" data-kf-rc="1" value="'+rc+'"'+(F.rcat===rc?" checked":"")+'><span>'+rc+'</span></label>';}).join("")+'</div><div class="kze-fg2">'+fld("Preferred Rental Duration *",fSl("rdur",rd))+fld("Preferred Location *",fIn("loc","text","e.g. Asaba, Ibusa",1))+fld("Budget Range (\u20a6) *",fIn("rbud","text","e.g. \u20a6120,000 per night or \u20a64,500,000/yr",1))+fld("Property Reference",fSl("pid",ro,'data-kf-ps="1"'))+dt+fld("Number of Occupants",fIn("occ","text","e.g. 2 adults"))+fld("Accommodation Type",fSl("accom",[["","Select (optional)..."],"Apartment","Short-Stay Apartment","Detached Duplex","Semi-Detached Duplex","Terrace House","Bungalow","Studio / Mini Flat"]))+fld("Bedrooms",fSl("bed",[["","Select (optional)..."],"1 Bedroom","2 Bedrooms","3 Bedrooms","4+ Bedrooms"]))+fld("Additional Requests",'<textarea rows="3" class="kze-txtarea" data-kf="rreq">'+esc(F.rreq)+'</textarea>',1)+'</div></div>';
+}else{
+var cl=F.ccat.indexOf("Land")!==-1,cr=F.ccat.indexOf("Rental")!==-1;
+sec='<div class="kze-fg2">'+fld("Property Category *",fSl("ccat",["House for Sale","Land for Sale","Short-Stay Rental","Long-Term Rental"],'data-kf-re="1"'))+fld("Preferred Location *",fIn("loc","text","e.g. Asaba, Ibusa",1))+fld("Budget Range (\u20a6) *",fIn("cbud","text","e.g. \u20a630,000,000 \u2013 \u20a660,000,000",1))+fld(cl?"Preferred Land Size":"House / Apartment Type",fIn("csz","text",cl?"e.g. 1 plot (465 sqm)":"e.g. Detached Duplex"))+(!cl?fld("Bedroom Requirement",fSl("cbed",[["","Any"],"1\u20132 Bedrooms","3 Bedrooms","4 Bedrooms","5+ Bedrooms"])):"")+(cr?fld("Requested Rental Duration",fIn("crdur")):"")+fld("Intended Use",fSl("cuse",["Personal residence","Investment","Family use","Commercial use","Short-stay / Hospitality","Other"]))+fld("Expected Timeline",fSl("ctl",["Immediate","1 \u2013 3 months","3 \u2013 6 months","Flexible"]))+fld("Additional Description",'<textarea rows="3" class="kze-txtarea" data-kf="cdesc" placeholder="Describe what you are looking for...">'+esc(F.cdesc)+'</textarea>',1)+'</div>';
+}
+var slbl=F.sub?"Submitting...":F.t==="inspection"?"Submit Inspection Request":F.t==="purchase"?"Submit Purchase Enquiry":F.t==="rental"?"Submit Rental Enquiry":"Submit Property Request";
+box.innerHTML='<div><span class="kze-eyebrow kze-mut">Select Enquiry Type</span><div class="kze-etype-g">'+tH+'</div>'+(F.err?'<div class="kze-err" role="alert">'+esc(F.err)+'</div>':"")+'<form class="kze-ef" novalidate><div class="kze-fg2">'+fld("Full Name *",fIn("name","text","Enter your full name",1))+fld("Phone Number *",fIn("phone","tel","e.g. +234...",1))+fld("WhatsApp Number (Optional)",fIn("wa","tel"))+fld("Email Address (Optional)",fIn("email","email","you@example.com"))+fld("Preferred Contact Method *",'<div class="kze-radio-r">'+pcmH+'</div>',1)+'</div><div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--kze-bd);">'+sec+'</div><div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;"><button type="submit" class="kze-btn kze-btn-cta"'+(F.sub?" disabled":"")+'>'+(F.sub?'<span class="kze-spin"></span>':IC.snd)+'<span>'+esc(slbl)+'</span></button><span class="kze-xs kze-mut">After submitting, you will get a reference number and a ready WhatsApp click-to-chat summary for '+KZE_WHATSAPP_DISPLAY+'.</span></div></form></div>';
+}
+function send(){
+if(F.sub)return;pull();F.err="";
+var n=F.name.trim(),ph=F.phone.trim(),em=F.email.trim();
+if(!n){F.err="Please enter your full name.";draw();return;}
+if(!ph||ph.length<7){F.err="Please enter a valid phone number.";draw();return;}
+if(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){F.err="Please enter a valid email address or leave it blank.";draw();return;}
+var mp=F.pid?findProp(F.pid):null,pay=null;
+if(F.t==="inspection"){
+if(!F.ptext.trim()&&!mp){F.err="Please select or specify the property or project you wish to inspect.";draw();return;}
+if(!F.pdate){F.err="Please choose your preferred inspection date.";draw();return;}
+pay={type:"inspection",fullName:n,phone:ph,whatsapp:F.wa.trim(),email:em,preferredContactMethod:F.pcm,propertyOrProject:F.ptext.trim()||(mp?mp.title:"General Site Inspection"),preferredInspectionDate:F.pdate,alternativeDate:F.adate,preferredTime:F.time,attendeesCount:F.att,comments:F.comm.trim()};
+}else if(F.t==="purchase"){
+var isl=F.pcat==="Land for Sale",sp=mp?mp.title+" ("+mp.ref+")":F.ptext.trim(),fl=(mp&&mp.loc)||F.loc.trim();
+pay=isl?{type:"land",fullName:n,phone:ph,whatsapp:F.wa.trim(),email:em,preferredContactMethod:F.pcm,selectedProperty:sp,preferredLocation:fl,residentialAddress:F.addr.trim(),preferredPlotSize:F.psize.trim(),plotQuantity:F.pqty,intendedLandUse:F.luse,intendedUse:F.use,purchaseTimeline:F.tl,preferredInspectionDate:F.pdate,paymentPreference:F.pay,budget:F.bud.trim(),additionalQuestions:F.q.trim()}:{type:"purchase",fullName:n,phone:ph,whatsapp:F.wa.trim(),email:em,preferredContactMethod:F.pcm,propertyCategory:F.pcat,selectedProperty:sp,preferredLocation:fl,residentialAddress:F.addr.trim(),preferredHouseType:F.htype,bedroomPreference:F.bed,intendedUse:F.use,purchaseTimeline:F.tl,preferredInspectionDate:F.pdate,paymentPreference:F.pay,budget:F.bud.trim(),additionalQuestions:F.q.trim()};
+}else if(F.t==="rental"){
+if(!F.loc.trim()){F.err="Please select or enter your preferred location.";draw();return;}
+if(!F.rbud.trim()){F.err="Please enter or select your budget range.";draw();return;}
+pay={type:"rental",fullName:n,phone:ph,whatsapp:F.wa.trim(),email:em,preferredContactMethod:F.pcm,rentalCategory:F.rcat,rentalDuration:F.rdur,preferredLocation:F.loc.trim(),budget:F.rbud.trim(),selectedProperty:mp?mp.title+" ("+mp.ref+")":F.ptext.trim(),accommodationType:(mp&&mp.type)||F.accom,bedrooms:F.bed,occupants:F.occ.trim(),checkInDate:F.rcat==="Short Stay"?F.cin:"",checkOutDate:F.rcat==="Short Stay"?F.cout:"",moveInDate:F.rcat==="Long-Term Rental"?F.mvin:"",additionalRequests:F.rreq.trim()};
+}else{
+if(!F.loc.trim()){F.err="Please select or enter your preferred location.";draw();return;}
+if(!F.cbud.trim()){F.err="Please provide your budget range.";draw();return;}
+pay={type:"custom",fullName:n,phone:ph,whatsapp:F.wa.trim(),email:em,preferredContactMethod:F.pcm,propertyCategory:F.ccat,preferredLocation:F.loc.trim(),budget:F.cbud.trim(),propertyTypeOrLandSize:F.csz.trim(),bedrooms:F.ccat.indexOf("Land")===-1?F.cbed:"",requestedRentalDuration:F.ccat.indexOf("Rental")!==-1?F.crdur.trim():"",intendedUse:F.cuse,expectedTimeline:F.ctl,description:F.cdesc.trim()};
+}
+F.sub=true;draw();
+fetch(KZE_SCRIPT_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(pay)})
+.then(function(r){if(!r.ok)throw new Error("HTTP");return r.json();})
+.then(function(res){
+if(!res||res.ok!==true||!res.reference){F.err=(res&&res.error)||"Unable to complete your submission. Your details are still here.";F.sub=false;draw();return;}
+var summary=buildWaSummary(pay,res.reference);
+F.ref=res.reference;F.rtyp=F.t;F.waMsg=summary;F.waHref=waUrl(summary);F.sub=false;draw();toast("Enquiry saved (Ref: "+res.reference+"). Tap WhatsApp to send details.");
+}).catch(function(){F.err="Network error while sending your enquiry. Your details have been kept \u2014 please try again.";F.sub=false;draw();});
+}
+box.addEventListener("click",function(e){
+var tb=e.target.closest("[data-kf-tab]");if(tb){pull();F.t=tb.getAttribute("data-kf-tab");F.err="";draw();return;}
+if(e.target.closest("[data-kf-rst]")){F.ref="";F.rtyp="";F.waHref="";F.waMsg="";F.err="";draw();}
+});
+box.addEventListener("change",function(e){
+pull();var tg=e.target;
+if(tg.matches("[data-kf-ps]")){var m=findProp(tg.value);F.ptext=m?m.title+" ("+m.ref+")":tg.value==="phase-1"?"King Zion Estate Phase 1 \u2014 Asaba":tg.value==="phase-2"?"King Zion Estate Phase 2 \u2014 Ibusa":"";draw();return;}
+if(tg.matches("[data-kf-rc]")){F.rcat=tg.value;F.rdur=tg.value==="Short Stay"?SS_DUR[0]:LT_DUR[0];draw();return;}
+if(tg.matches("[data-kf-re]")||tg.getAttribute("data-kf")==="pcm"||tg.getAttribute("data-kf")==="pqty")draw();
+});
+box.addEventListener("submit",function(e){if(e.target.classList.contains("kze-ef")){e.preventDefault();send();}});
+draw();
+return{setCtx:function(o){
+F.ref="";F.rtyp="";F.waHref="";F.waMsg="";F.err="";if(o.type)F.t=o.type;
+if(o.prop){var p=o.prop;F.pid=p.id;F.ptext=p.title+" ("+p.ref+")";if(p.intent==="Land"){F.pcat="Land for Sale";F.psize=p.plot||"";}else if(p.intent==="Buy"){F.pcat="Houses for Sale";F.htype=p.type;F.bed=p.beds?p.beds+" Bedrooms":"";}else{F.accom=p.type;if(p.rcat){F.rcat=p.rcat;F.rdur=p.rcat==="Short Stay"?SS_DUR[0]:LT_DUR[0];}}F.loc=p.city||"";}
+else if(o.proj){F.pid=o.proj.indexOf("Phase 1")!==-1?"phase-1":"phase-2";F.ptext=o.proj;F.pcat="Estate Project";F.loc=o.proj.indexOf("Phase 2")!==-1?"Ibusa, Delta State":"Asaba, Delta State";F.htype="";F.bed="";F.psize="";F.accom="";}
+else{F.pid="";F.ptext="";F.psize="";F.htype="";F.bed="";F.accom="";F.loc="";F.pcat="Houses for Sale";if(o.favs&&o.favs.length){var refs=o.favs.map(function(x){return x.title+" ("+x.ref+")";}).join("; ");F.q="Saved listings of interest: "+refs;F.ptext=o.favs.length===1?refs:"";if(o.favs.length===1&&o.favs[0].intent==="Land")F.pcat="Land for Sale";}}
+draw();
+}};
+}
+function syncFavs(){
+var c=S.favs.length,hb=byId("kze-hfav"),hc=byId("kze-hfav-c"),mb=byId("kze-mfav"),mc=byId("kze-mfav-c");
+if(hb)hb.classList.toggle("kze-hidden",c===0);if(hc)hc.textContent=String(c);
+if(mb)mb.classList.toggle("kze-hidden",c===0);if(mc)mc.textContent=String(c);
+var bs=document.querySelectorAll("#kze-app [data-kze-fav]");
+for(var i=0;i<bs.length;i++)bs[i].classList.toggle("is-saved",S.favs.indexOf(bs[i].getAttribute("data-kze-fav"))!==-1);
+var df=byId("kze-det-fav");if(df&&S.detId)df.classList.toggle("is-saved",S.favs.indexOf(S.detId)!==-1);
+var fb=byId("kze-fav-b"),fc=byId("kze-fav-c"),ff=byId("kze-fav-f");
+if(fb&&fc){
+var sv=PROPS.filter(function(p){return S.favs.indexOf(p.id)!==-1;});fc.textContent=String(sv.length);
+if(ff)ff.classList.toggle("kze-hidden",sv.length===0);
+fb.innerHTML=sv.length?sv.map(function(p){return '<div class="kze-row" style="gap:10px;padding:10px;border:1px solid var(--kze-bd);border-radius:10px;background:#F5F3ED;margin-bottom:10px;"><div style="position:relative;width:72px;height:56px;border-radius:6px;overflow:hidden;flex-shrink:0;">'+imgTag(p.img,p.title,"",false)+'</div><div style="flex:1;min-width:0;"><h4 class="kze-clamp1 kze-cg" style="font-size:13px;font-weight:700;">'+esc(p.title)+'</h4><p class="kze-mut" style="font-size:11px;">'+esc(p.loc)+'</p><p class="kze-xs kze-cem" style="font-weight:700;">'+esc(p.price)+'</p></div><button type="button" data-kze-fv="'+p.id+'" aria-label="View property" style="padding:6px;">'+IC.eye+'</button><button type="button" data-kze-fr="'+p.id+'" aria-label="Remove saved property" style="padding:6px;">'+IC.trs+'</button></div>';}).join(""):'<div style="text-align:center;padding:44px 16px;"><div class="kze-cg" style="width:48px;height:48px;border-radius:999px;background:#E9F0EB;display:inline-flex;align-items:center;justify-content:center;margin-bottom:10px;">'+IC.hrt+'</div><p class="kze-mut" style="font-size:13px;">No saved properties yet. Tap the heart icon on any listing to compare options later.</p></div>';
+}
+}
+function openDet(id){var p=findProp(id);if(!p)return;S.detId=id;S.detIdx=0;drawDet();syncFavs();byId("kze-det-m").classList.remove("kze-hidden");}
+function drawDet(){
+var p=findProp(S.detId);if(!p)return;
+byId("kze-det-ref").textContent=p.ref;byId("kze-det-st").textContent=p.status;byId("kze-det-t").textContent=p.title;
+var g=p.gal&&p.gal.length?p.gal:[p.img],ai=g[S.detIdx]||p.img;
+var th=g.length>1?'<div style="display:flex;gap:8px;margin-top:8px;overflow-x:auto;">'+g.map(function(im,i){return '<button type="button" data-kze-dth="'+i+'" style="position:relative;width:76px;height:54px;border-radius:6px;overflow:hidden;border:2px solid '+(i===S.detIdx?"#B58C48":"transparent")+';flex-shrink:0;">'+imgTag(im,p.title,"",false)+'</button>';}).join("")+'</div>':"";
+var sp=[];
+if(p.beds)sp.push(["Bedrooms",String(p.beds)]);if(p.baths)sp.push(["Bathrooms",String(p.baths)]);if(p.plot)sp.push(["Plot Size",p.plot]);
+if(p.bldg)sp.push(["Building Size",p.bldg]);if(p.minDur)sp.push(["Min. Duration",p.minDur]);if(p.rcat)sp.push(["Rental Category",p.rcat]);
+var spHtml=sp.length?'<div class="kze-g2" style="gap:10px;margin-bottom:14px;">'+sp.map(function(s){return '<div style="padding:10px 12px;border-radius:8px;background:#F5F3ED;border:1px solid var(--kze-bd);"><span class="kze-mut" style="font-size:11px;display:block;">'+s[0]+'</span><span class="kze-cg" style="font-size:13px;font-weight:700;">'+esc(s[1])+'</span></div>';}).join("")+'</div>':"";
+var dWa=waUrl("Hello King Zion's Estate, I would like to enquire about:\nProperty: "+p.title+" ("+p.ref+")\nLocation: "+p.loc+"\nListed Price: "+p.price);
+byId("kze-det-b").innerHTML='<div style="position:relative;aspect-ratio:4/3;border-radius:12px;overflow:hidden;background:#E9F0EB;">'+imgTag(ai,p.title,"",false)+'<div class="kze-sbadge">'+esc(p.status)+'</div></div>'+th+'<div class="kze-jb" style="flex-wrap:wrap;gap:10px;background:#F5F3ED;border:1px solid var(--kze-bd);border-radius:12px;padding:16px;margin:16px 0;"><div><span class="kze-eyebrow kze-mut">'+(p.intent==="Rent"?"Rental Rate":"Asking Price")+'</span><p class="kze-serif kze-tabnum kze-cg" style="font-size:24px;font-weight:700;">'+esc(p.price)+'</p></div><div><p class="kze-row" style="font-size:13px;font-weight:600;gap:5px;">'+IC.pin+'<span>'+esc(p.loc)+'</span></p><p class="kze-xs kze-mut">Type: '+esc(p.type)+'</p></div></div>'+spHtml+'<h3 class="kze-serif kze-cg" style="font-size:17px;font-weight:700;margin-bottom:6px;">Property Overview</h3><p class="kze-sm kze-mut" style="line-height:1.65;margin-bottom:14px;">'+esc(p.desc)+'</p><div class="kze-g2" style="gap:8px;margin-bottom:16px;">'+p.am.map(function(a){return '<div style="display:flex;gap:6px;font-size:13px;">'+IC.chk+'<span>'+esc(a)+'</span></div>';}).join("")+'</div><div style="padding:14px;border-radius:10px;background:#E9F0EB;font-size:13px;"><strong>Documentation:</strong> '+esc(p.docs)+'</div>';
+byId("kze-det-f").innerHTML='<span class="kze-xs kze-mut">Ref: '+esc(p.ref)+'</span><div style="display:flex;flex-wrap:wrap;gap:8px;"><a href="'+esc(dWa)+'" target="_blank" rel="noopener noreferrer" class="kze-btn kze-btn-wa kze-btn-sm">'+IC.wa+'<span>WhatsApp</span></a><button type="button" class="kze-btn kze-btn-ogreen kze-btn-sm" data-kze-da="inspection">'+IC.cal+'<span>Inspect</span></button><button type="button" class="kze-btn kze-btn-cta kze-btn-sm" data-kze-da="'+(p.intent==="Rent"?"rental":"purchase")+'">'+IC.snd+'<span>'+(p.intent==="Rent"?"Rental Enquiry":"Enquire")+'</span></button></div>';
+}
+function nav(r){
+var ok=["home","properties","estate-projects","about","contact"];if(ok.indexOf(r)===-1)r="home";S.route=r;
+var ps=document.querySelectorAll("#kze-app .kze-page");for(var i=0;i<ps.length;i++)ps[i].classList.toggle("is-active",ps[i].id==="kze-page-"+r);
+var nb=document.querySelectorAll("#kze-app [data-kze-route]");for(var j=0;j<nb.length;j++)if(nb[j].classList.contains("kze-nav-b"))nb[j].classList.toggle("is-active",nb[j].getAttribute("data-kze-route")===r);
+byId("kze-mob-wrap").classList.add("kze-hidden");
+var topEl=byId("kze-app");if(topEl&&topEl.scrollIntoView)topEl.scrollIntoView({behavior:"smooth"});
+}
+function setTab(t){
+S.tab=t;S.gtab=t;
+var bs=document.querySelectorAll("#kze-page-properties [data-kze-tab]");for(var i=0;i<bs.length;i++)bs[i].classList.toggle("is-active",bs[i].getAttribute("data-kze-tab")===t);
+["houses","land","rentals"].forEach(function(k){byId("kze-tp-"+k).classList.toggle("kze-hidden",k!==t);});
+var gb=document.querySelectorAll("#kze-page-properties [data-kze-gtab]");for(var j=0;j<gb.length;j++)gb[j].classList.toggle("is-active",gb[j].getAttribute("data-kze-gtab")===t);
+renderGallery();
+}
+function init(){
+buildShell();renderHome();renderPropsPage();renderProjects();renderAbout();renderContact();
+var cf=makeForm("kze-contact-form"),mf=makeForm("kze-modal-form");syncFavs();resetSlideTimer();
+var app=byId("kze-app");
+app.addEventListener("error",function(e){
+var tg=e.target;
+if(tg&&tg.tagName==="IMG"&&tg.getAttribute("data-kze-img")==="1"){
+tg.classList.add("kze-hidden");
+if(tg.nextElementSibling&&tg.nextElementSibling.classList.contains("kze-img-ph"))tg.nextElementSibling.classList.remove("kze-hidden");
+}
+},true);
+app.addEventListener("click",function(e){
+var t=e.target,el;
+if((el=t.closest("[data-kze-route]"))){nav(el.getAttribute("data-kze-route"));return;}
+if((el=t.closest("[data-kze-ptab]"))){nav("properties");setTab(el.getAttribute("data-kze-ptab"));return;}
+if((el=t.closest("[data-kze-tab]"))){setTab(el.getAttribute("data-kze-tab"));return;}
+if((el=t.closest("[data-kze-gtab]"))){S.gtab=el.getAttribute("data-kze-gtab");var gb=document.querySelectorAll("#kze-page-properties [data-kze-gtab]");for(var i=0;i<gb.length;i++)gb[i].classList.toggle("is-active",gb[i].getAttribute("data-kze-gtab")===S.gtab);renderGallery();return;}
+if((el=t.closest("[data-kze-rsub]"))){S.rsub=el.getAttribute("data-kze-rsub");S.rper="All";var rb=document.querySelectorAll("#kze-page-properties [data-kze-rsub]");for(var j=0;j<rb.length;j++)rb[j].classList.toggle("is-active",rb[j].getAttribute("data-kze-rsub")===S.rsub);renderRentalOpts();renderPropGrids();return;}
+if((el=t.closest("[data-kze-fav]"))){e.stopPropagation();var fid=el.getAttribute("data-kze-fav"),ix=S.favs.indexOf(fid);if(ix>=0){S.favs.splice(ix,1);toast("Removed from saved properties.");}else{S.favs.push(fid);toast("Property saved to your shortlist.");}saveFavs(S.favs);syncFavs();return;}
+if((el=t.closest("[data-kze-det]"))){openDet(el.getAttribute("data-kze-det"));return;}
+if((el=t.closest("[data-kze-dth]"))){S.detIdx=Number(el.getAttribute("data-kze-dth"));drawDet();return;}
+if((el=t.closest("[data-kze-da]"))){var p=findProp(S.detId);byId("kze-det-m").classList.add("kze-hidden");if(mf)mf.setCtx({type:el.getAttribute("data-kze-da"),prop:p});byId("kze-enq-m").classList.remove("kze-hidden");return;}
+if((el=t.closest("[data-kze-enqp]"))){var ep=findProp(el.getAttribute("data-kze-enqp"));if(mf)mf.setCtx({type:el.getAttribute("data-kze-enqt"),prop:ep});byId("kze-enq-m").classList.remove("kze-hidden");return;}
+if((el=t.closest("[data-kze-open-enq]"))){byId("kze-mob-wrap").classList.add("kze-hidden");if(mf)mf.setCtx({type:el.getAttribute("data-kze-open-enq")});byId("kze-enq-m").classList.remove("kze-hidden");return;}
+if((el=t.closest("[data-kze-pe]"))){nav("contact");if(cf)cf.setCtx({type:"purchase",proj:el.getAttribute("data-kze-pe")});return;}
+if((el=t.closest("[data-kze-pi]"))){nav("contact");if(cf)cf.setCtx({type:"inspection",proj:el.getAttribute("data-kze-pi")});return;}
+if((el=t.closest("[data-kze-faq]"))){var fid2=el.getAttribute("data-kze-faq"),sc=el.getAttribute("data-kze-fsc");if(sc==="home"){S.hFaq=S.hFaq===fid2?null:fid2;byId("kze-h-faq").innerHTML=faqHtml(FAQS.slice(0,4),S.hFaq,"home");}else{S.aFaq=S.aFaq===fid2?null:fid2;byId("kze-a-faq").innerHTML=faqHtml(FAQS,S.aFaq,"about");}return;}
+if((el=t.closest("[data-kze-lb]"))){var lb=GALLERY.filter(function(v){return v.id===el.getAttribute("data-kze-lb");})[0];if(lb){var lbi=byId("kze-lb-i"),lbph=byId("kze-lb-ph"),lbu=kzeImg(lb.img);byId("kze-lb-c").textContent=lb.cap;if(lbu){lbi.classList.remove("kze-hidden");if(lbph&&lbph.parentNode)lbph.parentNode.classList.add("kze-hidden");lbi.src=lbu;}else{lbi.classList.add("kze-hidden");if(lbph){lbph.textContent=lb.cap+" ("+kzeFileHint(lb.img)+")";if(lbph.parentNode)lbph.parentNode.classList.remove("kze-hidden");}}byId("kze-lb-m").classList.remove("kze-hidden");}return;}
+if((el=t.closest("[data-kze-dot]"))){goSlide(Number(el.getAttribute("data-kze-dot")));resetSlideTimer();return;}
+if((el=t.closest("[data-kze-legal]"))){var lk=el.getAttribute("data-kze-legal"),lg={privacy:["Privacy Policy","KING ZION'S ESTATE respects your privacy. Personal details submitted through our enquiry and inspection forms are used solely to respond to your property requests and coordinate inspections."],terms:["Terms of Use","Property listings, indicative ranges, and estate descriptions on this website are provided for general information. Pricing, availability, and property documentation are confirmed directly for each specific property prior to any transaction."],disclaimer:["Property Disclaimer","Some visual images presented across property galleries are illustrative architectural visuals and do not constitute an offer of specific availability. Title documents, survey plans, dimensions, and pricing must be confirmed for each specific property prior to purchase or tenancy."]}[lk];byId("kze-leg-t").textContent=lg[0];byId("kze-leg-c").textContent=lg[1];byId("kze-leg-m").classList.remove("kze-hidden");return;}
+if((el=t.closest("[data-kze-fv]"))){byId("kze-fav-m").classList.add("kze-hidden");openDet(el.getAttribute("data-kze-fv"));return;}
+if((el=t.closest("[data-kze-fr]"))){var ri=S.favs.indexOf(el.getAttribute("data-kze-fr"));if(ri>=0)S.favs.splice(ri,1);saveFavs(S.favs);syncFavs();return;}
+if(t.closest("[data-kze-cls-mob]"))byId("kze-mob-wrap").classList.add("kze-hidden");
+if(t.closest("[data-kze-cls-det]"))byId("kze-det-m").classList.add("kze-hidden");
+if(t.closest("[data-kze-cls-enq]"))byId("kze-enq-m").classList.add("kze-hidden");
+if(t.closest("[data-kze-cls-fav]"))byId("kze-fav-m").classList.add("kze-hidden");
+if(t.closest("[data-kze-cls-lb]"))byId("kze-lb-m").classList.add("kze-hidden");
+if(t.closest("[data-kze-cls-leg]"))byId("kze-leg-m").classList.add("kze-hidden");
+});
+byId("kze-mob-open").onclick=function(){byId("kze-mob-wrap").classList.remove("kze-hidden");};
+byId("kze-hfav").onclick=function(){syncFavs();byId("kze-fav-m").classList.remove("kze-hidden");};
+byId("kze-mfav").onclick=function(){byId("kze-mob-wrap").classList.add("kze-hidden");syncFavs();byId("kze-fav-m").classList.remove("kze-hidden");};
+byId("kze-det-fav").onclick=function(){if(S.detId){var ix=S.favs.indexOf(S.detId);if(ix>=0){S.favs.splice(ix,1);toast("Removed from saved properties.");}else{S.favs.push(S.detId);toast("Property saved to your shortlist.");}saveFavs(S.favs);syncFavs();}};
+byId("kze-fav-all").onclick=function(){var sv=PROPS.filter(function(p){return S.favs.indexOf(p.id)!==-1;});byId("kze-fav-m").classList.add("kze-hidden");if(mf)mf.setCtx({type:"purchase",favs:sv});byId("kze-enq-m").classList.remove("kze-hidden");};
+byId("kze-lb-enq").onclick=function(){byId("kze-lb-m").classList.add("kze-hidden");if(mf)mf.setCtx({type:"custom"});byId("kze-enq-m").classList.remove("kze-hidden");};
+byId("kze-top").onclick=function(){window.scrollTo({top:0,behavior:"smooth"});};
+byId("kze-s-prev").onclick=function(){goSlide(S.slide-1);resetSlideTimer();};
+byId("kze-s-next").onclick=function(){goSlide(S.slide+1);resetSlideTimer();};
+byId("kze-s-prev2").onclick=function(){goSlide(S.slide-1);resetSlideTimer();};
+byId("kze-s-next2").onclick=function(){goSlide(S.slide+1);resetSlideTimer();};
+byId("kze-s-pause").onclick=function(){S.paused=!S.paused;this.innerHTML=S.paused?"&#9654;":"&#10074;&#10074;";resetSlideTimer();};
+var sw=byId("kze-sw");sw.onmouseenter=function(){S.hover=true;resetSlideTimer();};sw.onmouseleave=function(){S.hover=false;resetSlideTimer();};
+var bf=function(id,fn){var x=byId(id);if(x)x.onchange=fn;};
+bf("kze-fhl",function(e){S.hf.loc=e.target.value;renderPropGrids();});
+bf("kze-fht",function(e){S.hf.type=e.target.value;renderPropGrids();});
+bf("kze-fhb",function(e){S.hf.bud=e.target.value;renderPropGrids();});
+bf("kze-fhd",function(e){S.hf.bed=e.target.value;renderPropGrids();});
+bf("kze-fhs",function(e){S.hf.st=e.target.value;renderPropGrids();});
+bf("kze-fll",function(e){S.lf.loc=e.target.value;renderPropGrids();});
+bf("kze-fls",function(e){S.lf.sz=e.target.value;renderPropGrids();});
+bf("kze-flb",function(e){S.lf.bud=e.target.value;renderPropGrids();});
+bf("kze-fld",function(e){S.lf.doc=e.target.value;renderPropGrids();});
+bf("kze-frp",function(e){S.rper=e.target.value;renderPropGrids();});
+bf("kze-frl",function(e){S.rloc=e.target.value;renderPropGrids();});
+byId("kze-rh").onclick=function(){S.hf={loc:"All",type:"All",bud:"All",bed:"All",st:"All"};["kze-fhl","kze-fht","kze-fhb","kze-fhd","kze-fhs"].forEach(function(i){byId(i).value="All";});renderPropGrids();};
+byId("kze-rl").onclick=function(){S.lf={loc:"All",sz:"All",bud:"All",doc:"All"};["kze-fll","kze-fls","kze-flb","kze-fld"].forEach(function(i){byId(i).value="All";});renderPropGrids();};
+byId("kze-rr").onclick=function(){S.rsub="All";S.rper="All";S.rloc="All";byId("kze-frl").value="All";var rb=document.querySelectorAll("#kze-page-properties [data-kze-rsub]");for(var i=0;i<rb.length;i++)rb[i].classList.toggle("is-active",rb[i].getAttribute("data-kze-rsub")==="All");renderRentalOpts();renderPropGrids();};
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){["kze-mob-wrap","kze-det-m","kze-enq-m","kze-fav-m","kze-lb-m","kze-leg-m"].forEach(function(i){byId(i).classList.add("kze-hidden");});}});
+}
+if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init);}else{init();}
+})();
+</script>

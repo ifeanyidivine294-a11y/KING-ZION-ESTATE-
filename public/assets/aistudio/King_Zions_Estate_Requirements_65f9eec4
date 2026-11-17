@@ -1,0 +1,714 @@
+﻿KING ZION'S ESTATE — COMPLETE WEBSITE RESTRUCTURING AND PREMIUM UI REDESIGN
+Act as a senior Nigerian real-estate website architect, premium UI/UX designer, frontend and backend developer, database engineer, and conversion optimisation specialist.
+You are working on an EXISTING website project for KING ZION'S ESTATE, a Nigerian real-estate business operating around Agbor and Asaba, Delta State.
+This is a substantial restructuring and visual redesign of the existing project. Do not build a disconnected replacement website. Do not destroy existing working functionality.
+Your task is to transform the existing website into a premium, modern, responsive, five-public-page real-estate website that presents houses for sale, land for sale, rental properties and estate development projects.
+1. CRITICAL EXISTING-PROJECT RULES
+Before making changes:
+1. Inspect the existing project structure, routes, components, database, authentication, integrations, storage, forms and admin functions.
+2. Identify the existing database tables and fields used for properties, land, rentals, enquiries, users and staff.
+3. Reuse the existing database, authentication and storage systems.
+4. Preserve existing valid property records, images, customer enquiries, staff accounts and administrator permissions.
+5. Do not delete, reset, overwrite or duplicate existing database records.
+6. Do not replace working authentication with a mock login.
+7. Do not create a second database when the existing database can support the new structure.
+8. Preserve the working staff/admin area and its existing permissions. It must remain accessible through its existing secure route but must not appear in the public navigation.
+9. Do not expose internal management information, private staff records, salaries, financial reports or administrator data on the public website.
+10. Do not copy management records, personal contact details or internal app information into public website content.
+11. Use only confirmed public business information and property information relevant to the website.
+12. Do not invent property listings, property availability, prices, addresses, legal documents, land titles, testimonials, staff names or business claims.
+13. If a required piece of information is not available, leave it unpublished or clearly mark it as awaiting confirmation.
+14. Keep the existing working integrations. Do not break Google Sheets, Firebase, Firestore, authentication, enquiry workflows or any other integration currently used.
+15. If a schema change is necessary, use a safe additive migration. Do not destroy existing fields or records.
+16. Do not display sample or placeholder properties as real available listings.
+17. Do not show a successful enquiry message unless the enquiry has actually been saved successfully.
+The existing website must remain operational throughout the restructuring.
+2. STRICT FIVE-PUBLIC-PAGE STRUCTURE
+The public website must contain exactly these five main pages:
+1. Home
+2. Properties
+3. Estate Projects
+4. About
+5. Contact
+The main navigation must link to these five pages.
+Do not create additional public routes for individual properties, inspection requests, purchase enquiries, rental enquiries, custom property requests, FAQs or gallery pages.
+Instead, implement those features as modal windows, slide-out panels, expandable sections or tabs inside the five public pages.
+The five-page structure must be clear in the routing and navigation.
+The admin/staff area is a separate protected internal application area. Preserve it, but exclude it from the public menu and public five-page count.
+Public navigation
+Header:
+* King Zion's Estate logo
+* Home
+* Properties
+* Estate Projects
+* About
+* Contact
+* A clear "Enquire Now" button
+On mobile, use a clean slide-out hamburger menu with all five public pages.
+The header should be sticky or intelligently fixed, with a premium appearance and no content overlap.
+3. BRAND INFORMATION
+Business name: KING ZION'S ESTATE
+Business motto: "Our Customers' Satisfaction Is Our Overall Aim."
+Business location: No. 5 King Zion Estate, Phase 1, Asaba, Delta State, Nigeria.
+Relevant estate locations:
+* Phase 1 — Asaba, Delta State.
+* Phase 2 — Ibusa, Delta State.
+The existing business information may be used where relevant.
+Do not invent additional branch addresses, phone numbers, WhatsApp numbers, email addresses, staff names or office locations.
+If the existing public contact details are verified, preserve them. If they are missing, provide editable contact fields for the administrator and do not display invented details.
+4. NEW PREMIUM DESIGN SYSTEM
+Replace the old public website colour scheme with the following premium palette:
+Primary deep green: #102F2B Secondary emerald: #1D5147 Champagne gold: #D6B779 Warm ivory background: #F5F3ED Pure white: #FFFFFF Main text: #202824 Secondary text: #69736D Primary button: #B58C48 Button hover: #967139 Light green background: #E9F0EB
+Use these colours consistently.
+The visual identity should feel:
+* Premium
+* Elegant
+* Modern
+* Trustworthy
+* Spacious
+* Professional
+* Suitable for a serious Nigerian real-estate company
+Typography:
+* Playfair Display for large editorial headings.
+* DM Sans for paragraphs, navigation, forms, buttons and specifications.
+Design requirements:
+* Large, carefully spaced headings.
+* Strong image-led sections.
+* Clean alignment and consistent spacing.
+* Elegant rounded corners, not excessive rounding.
+* Subtle shadows.
+* Premium buttons with clear hover and active states.
+* High contrast and accessible text.
+* Beautiful property cards with consistent image ratios.
+* Alternate warm ivory, white and deep green sections for visual rhythm.
+* Use gold only as an accent, not as a dominant background.
+* Avoid crowded layouts.
+* Avoid excessive animations.
+* Use restrained transitions and smooth interactions.
+* Avoid generic template appearance.
+The website must look like a professionally designed Nigerian property company website, not a generic international property template.
+5. HOME PAGE — COMPLETE LAYOUT
+The homepage should be a polished, conversion-focused landing page.
+Section A: Hero
+Create a large, premium hero section with a high-resolution photograph of a modern Nigerian luxury duplex or gated residential property.
+The hero should include:
+* A short premium headline about finding quality property in Nigeria.
+* A supporting sentence explaining that King Zion's Estate provides access to houses, land and rental property opportunities.
+* A primary CTA: "Explore Properties".
+* A secondary CTA: "Request an Inspection".
+The Explore Properties button should open the Properties page.
+The Request an Inspection button should open the enquiry modal or slide-out panel on the Contact page with "Inspection Request" selected.
+Use a subtle dark overlay if needed to keep text readable.
+IMPORTANT: Remove the old "Search Properties" box completely from the homepage.
+Do not display location, property-type or budget filters directly below the homepage hero.
+Property filters may exist only on the Properties page.
+Section B: Property category showcase
+Immediately after the hero, show three large premium category cards:
+1. Houses for Sale
+2. Land for Sale
+3. Find a Home to Rent
+Each card must contain:
+* One high-quality category photograph.
+* A clear category title.
+* A short description.
+* An indicative price range.
+* The real number of published listings within the category and displayed range.
+* A clear CTA button.
+Use these indicative ranges as display guidance only:
+Houses for Sale: ₦30 million – ₦500 million and above.
+Land for Sale: ₦5 million – ₦100 million and above.
+Rental Properties: ₦500,000 – ₦15 million and above.
+Clearly label all these category ranges as "Indicative price range" or "Typical advertised range; confirm current property price".
+Do not present these ranges as confirmed prices for every property.
+Do not invent listing counts.
+The listing count must be calculated dynamically from actual published and available database records that fall within the displayed category and range.
+If there are no matching published listings, display "Enquire for current availability" or "Listings coming soon" rather than inventing a number.
+Category CTA behaviour:
+* Houses for Sale opens the Properties page with the Houses for Sale tab selected.
+* Land for Sale opens the Properties page with the Land for Sale tab selected.
+* Find a Home to Rent opens the Properties page with the Rentals tab selected.
+These are tab states on the same Properties page, not separate pages.
+Section C: Featured properties slideshow
+Create a premium featured-property carousel.
+This slide feature is essential and must not be removed.
+Requirements:
+* Display one featured property card at a time.
+* Each slide must use a sharp, high-resolution property image.
+* Use a smooth fade transition between slides.
+* Autoplay every 8 seconds.
+* Use approximately one second for the fade transition.
+* Include previous and next arrows.
+* Include visible slide indicators or dots.
+* Include play/pause control.
+* Pause autoplay when the user hovers over the carousel or interacts with it.
+* Resume after interaction unless the user has manually paused it.
+* Respect the user's reduced-motion preference.
+* Ensure the displayed slide and active indicator always remain synchronised.
+* Prevent slides from appearing on top of one another.
+* Do not crop important parts of property photographs.
+* Do not stretch images.
+Only show real, published, available property records in this carousel.
+If there are no published featured listings, hide the carousel or show a clearly labelled editorial placeholder. Never pretend that a placeholder is an available property.
+Each actual listing card should show:
+* Property image
+* Property title
+* Location
+* Property type
+* Confirmed asking price, if available
+* Availability status
+* View Details button
+The View Details button should open a property details modal or right-side panel. Do not navigate to a sixth public page.
+Section D: Who We Are preview
+Create a short, attractive company introduction.
+Use the business name and motto.
+Explain the company's focus on helping customers explore property opportunities, including houses, land and rental options.
+Keep the writing professional and concise.
+Include a "Discover Our Company" button that opens the About page.
+Section E: Property gallery preview
+Show a beautiful image-led preview of the three property gallery categories:
+* Houses
+* Land
+* Rental Apartments
+Each gallery preview should use a different image.
+Clicking a gallery category should open the Properties page with the matching tab selected.
+The gallery must not be presented as proof that the illustrated properties belong to the company.
+Section F: Why choose King Zion's Estate
+Create a clean benefits section using only reasonable, supportable statements.
+Possible themes:
+* Property options for different needs.
+* Opportunity to enquire about available properties.
+* Inspection request support.
+* Direct communication with the company.
+* Information about estate development projects.
+Do not claim legal verification, guaranteed returns, guaranteed appreciation, government approval or title perfection unless the company has verified evidence.
+Section G: CEO and property coordinator preview
+Place this section after the company introduction and property sections, before the FAQ/footer area.
+Show two parallel profile cards side by side on desktop and stacked neatly on mobile.
+Profile one: Name: Mr. Kingslay Wilfred. Role: CEO, King Zion's Estate.
+Profile two: Role: Property Coordinator. Name: Use the real confirmed name if supplied by the company; otherwise do not invent a name.
+Each card should have:
+* A rectangular or subtly rounded portrait image.
+* Name.
+* Position.
+* A brief professional description of no more than two or three sentences.
+Use genuine approved photographs where available.
+Do not use AI-generated portraits and claim they are the actual CEO or coordinator.
+If genuine photographs are not available, use a neutral placeholder clearly marked for replacement before publication.
+Section H: Frequently Asked Questions preview
+Include a concise FAQ section with expandable questions.
+Suggested questions:
+* What types of properties can I enquire about?
+* How can I request a property inspection?
+* Can I enquire about land in Asaba or Ibusa?
+* How do I enquire about a property price?
+* Can I request a property that is not currently displayed?
+* Can I rent a property for a short stay or a longer period?
+* What documents should I request and review before purchasing land or a house?
+Answers must be accurate and cautious.
+Explain that property documentation must be reviewed and confirmed for each specific property. Do not claim that all properties have the same documents.
+Include a button linking to the About page where the complete FAQ section appears.
+Section I: Footer
+Create a premium multi-column footer containing:
+* Logo and company name.
+* Business motto.
+* Short business description.
+* Links to the five public pages.
+* Verified phone number.
+* Verified WhatsApp number.
+* Verified email.
+* Verified office address.
+* Social media links only when confirmed.
+* Copyright year dynamically updated.
+Do not invent contact details or social media accounts.
+6. PROPERTIES PAGE — PROPERTY SEARCH, TABS AND GALLERY
+This page is the main property discovery centre.
+At the top, create a strong page heading and short introduction.
+Create exactly three primary tabs:
+1. Houses for Sale
+2. Land for Sale
+3. Rentals
+Switching tabs must update the content without navigating to another public page.
+A. Houses for Sale tab
+Show real available house listings from the existing database.
+Each card should display:
+* Property image.
+* Property title.
+* Location.
+* House type.
+* Number of bedrooms where confirmed.
+* Number of bathrooms where confirmed.
+* Property size where confirmed.
+* Price where confirmed.
+* Availability status.
+* View Details button.
+* Enquire button.
+* Request Inspection button.
+Provide optional filters inside this tab:
+* Location.
+* House type.
+* Minimum and maximum budget.
+* Bedrooms.
+* Availability.
+Filters must work with actual database data.
+B. Land for Sale tab
+Show genuine available land listings.
+Each card should display:
+* Actual land photograph.
+* Property or estate location.
+* Plot size, if confirmed.
+* Price, if confirmed.
+* Documentation status only when verified.
+* Availability status.
+* View Details button.
+* Purchase Enquiry button.
+* Request Inspection button.
+Do not use a house photograph for a land listing.
+Do not invent plot sizes, survey information, title documents or prices.
+Optional filters:
+* Location.
+* Plot size.
+* Minimum and maximum budget.
+* Documentation status, only if actual data exists.
+C. Rentals tab
+This tab must support both short-term and long-term rental property.
+Create two subcategories:
+1. Short-Stay Rentals
+2. Long-Term Rentals
+Short-stay rental periods:
+* Nightly.
+* Weekly.
+* Monthly.
+* Other agreed duration.
+Long-term rental periods:
+* One year.
+* Two years.
+* Three years.
+* Other agreed duration.
+A customer must be able to select the period they want.
+Do not assume that every property supports every rental duration.
+Each rental listing must display:
+* Real property photograph.
+* Property type.
+* Location.
+* Available facilities, only when confirmed.
+* Rental price and billing period, only when confirmed.
+* Availability.
+* Minimum rental period, if confirmed.
+* View Details.
+* Rental Enquiry.
+* Request Inspection, where applicable.
+A price must clearly show its billing period, for example:
+* ₦500,000 per year.
+* ₦150,000 per night.
+* ₦1,200,000 per month.
+Never show a price without its applicable period.
+The general indicative rental range may be shown as ₦500,000 – ₦15 million and above, but label it as indicative and subject to actual property and rental duration.
+D. Comprehensive property gallery
+The Properties page must include a comprehensive gallery.
+Place a gallery section after the tab introduction or integrate the gallery into each tab.
+The gallery must have:
+* Houses gallery.
+* Land gallery.
+* Rental apartments gallery.
+Use a clean grid with consistent aspect ratios.
+Every image must belong to the correct category.
+Clicking a gallery image should open an image lightbox or property details panel, depending on whether the image is connected to a real property record.
+For a real listing:
+* Show all available property images.
+* Allow next/previous image navigation.
+* Show the property title and relevant details.
+* Provide enquiry and inspection actions.
+For an illustrative image:
+* Label it as an illustrative property image.
+* Do not show a fake property price, property ID or availability.
+* Provide a general enquiry CTA rather than claiming it is available.
+E. Property detail modal or slide-out panel
+When a customer selects View Details, open a premium right-side panel on desktop and a full-screen or near-full-screen sheet on mobile.
+Do not open a new public route.
+Include:
+* Image gallery.
+* Property title.
+* Reference number if one exists.
+* Location.
+* Property type.
+* Confirmed price and billing period if applicable.
+* Bedrooms and bathrooms if applicable.
+* Plot size or floor area if confirmed.
+* Available features.
+* Availability.
+* Confirmed documentation information, if recorded.
+* Short description.
+* Enquire button.
+* Request Inspection button.
+All details must come from the real selected database record.
+7. PURCHASE ENQUIRY FORM — HOUSES AND LAND
+The customer should be able to open this form from a house or land listing.
+Use a modal or slide-out panel.
+Required fields:
+* Full name.
+* Phone number.
+* Property category.
+* Selected property or property reference, when available.
+* Preferred contact method.
+Optional or conditionally required:
+* WhatsApp number, if different from phone.
+* Email address.
+* Residential address.
+* Preferred location.
+* Property type.
+* Intended use: Personal residence, investment, family use, commercial use, or other.
+* Purchase timeline.
+* Preferred inspection date.
+* Preferred inspection time.
+* Additional questions.
+For land enquiries, conditionally ask:
+* Preferred plot size.
+* Intended land use.
+* Whether the customer wants an individual plot or multiple plots.
+For house enquiries, conditionally ask:
+* Preferred house type.
+* Bedroom preference.
+* Preferred location.
+Use dropdowns, radio buttons and checkboxes where appropriate to reduce typing.
+Do not make optional fields compulsory.
+Do not request bank details, card details, passwords or unnecessary sensitive financial information.
+On submission:
+1. Validate required fields.
+2. Save the enquiry to the existing database.
+3. Associate it with the selected property if applicable.
+4. Generate a unique enquiry reference.
+5. Show a success message only after successful database confirmation.
+6. Show a clear error message if saving fails.
+7. Prevent duplicate submissions from repeated taps.
+8. Preserve the form data if submission fails so the customer does not need to start again.
+Success message: "Your property enquiry has been received. Our team will review your request and contact you using your preferred contact method."
+8. RENTAL ENQUIRY FORM
+The rental form must adapt to the customer's selected rental type.
+First ask:
+"What type of rental are you interested in?"
+Options:
+* Short stay.
+* Long-term rental.
+If Short Stay is selected, show:
+* Nightly.
+* Weekly.
+* Monthly.
+* Other duration.
+If Long-Term Rental is selected, show:
+* One year.
+* Two years.
+* Three years.
+* Other agreed duration.
+Required fields:
+* Full name.
+* Phone number.
+* Rental category.
+* Preferred rental duration.
+* Preferred location.
+* Budget range.
+* Preferred contact method.
+Optional or conditional fields:
+* WhatsApp number.
+* Email.
+* Property reference.
+* Number of occupants.
+* Number of bedrooms.
+* Check-in date for short stays.
+* Check-out date for short stays.
+* Preferred move-in date for long-term rentals.
+* Preferred inspection date.
+* Additional requests.
+Budget input should allow customers to select a range or enter an amount.
+Do not assume the advertised price range applies to every rental duration.
+Do not promise that a property is available for the entire requested duration unless the actual listing record confirms it.
+Save rental enquiries to the existing database and generate a reference ID.
+Show success only after a confirmed save.
+9. PROPERTY REQUEST FORM
+A customer may want a property that is not currently listed.
+Provide a "Can't Find What You Need?" CTA on the Properties page.
+It should open a property request form.
+Required:
+* Full name.
+* Phone number.
+* Property category.
+* Preferred location.
+* Budget range.
+* Preferred contact method.
+Optional or conditional:
+* WhatsApp.
+* Email.
+* House type or land size.
+* Bedroom requirement.
+* Rental duration if requesting a rental.
+* Intended use.
+* Expected timeline.
+* Additional description.
+Save the request in the existing database.
+Do not promise that the requested property will be sourced. Tell the customer that the team will review the request and contact them if a suitable option is identified.
+10. ESTATE PROJECTS PAGE
+Create one public Estate Projects page with two main project sections.
+Phase 1 — Asaba
+Use the confirmed project information:
+Location: Asaba, Delta State, Nigeria.
+Previously stated project inventory:
+* 120 plots.
+* 24 terraced duplexes.
+* 16 detached duplexes.
+Present these as project inventory information, not as a guarantee that all units remain available.
+Show:
+* Project overview.
+* Location.
+* Project photographs.
+* Project features only where confirmed.
+* Project inventory information.
+* Enquire About Phase 1 button.
+* Request Inspection button.
+Phase 2 — Ibusa
+Location: Ibusa, Delta State, Nigeria.
+Previously stated project inventory:
+* 200 plots.
+* 12 semi-detached duplexes.
+Again, do not imply that every plot or building is still available.
+Show:
+* Project overview.
+* Location.
+* Project photographs.
+* Confirmed project information.
+* Enquire About Phase 2 button.
+* Request Inspection button.
+All enquiry buttons must open the Contact page enquiry panel with the relevant project preselected.
+Do not invent:
+* Prices.
+* Completion dates.
+* Infrastructure.
+* Road construction status.
+* Government approvals.
+* Title documents.
+* Utility connections.
+* Availability.
+If these details are not present in verified company data, do not publish them.
+11. ABOUT PAGE
+The About page should contain:
+Who We Are
+A professional company introduction explaining King Zion's Estate's real-estate focus.
+Use the company name and motto.
+Do not invent the company's founding date, awards, number of customers, years of experience or number of completed developments.
+Our Approach
+Briefly explain the company's approach to helping customers explore available property options and submit enquiries.
+Avoid unsupported claims.
+CEO section
+Display: Mr. Kingslay Wilfred CEO, King Zion's Estate.
+Use a real approved portrait if available.
+If no genuine portrait exists, use a clearly labelled placeholder until one is uploaded.
+Write a short professional introduction. Do not invent personal achievements or biographical details.
+Property Coordinator section
+Show a second profile card parallel to the CEO card on desktop.
+Use the actual confirmed name and genuine portrait only when provided.
+Do not invent a person's identity.
+Frequently Asked Questions
+Include the complete expandable FAQ section.
+Cover:
+* Buying houses.
+* Buying land.
+* Rental options.
+* Short stays.
+* One-year, two-year and three-year rental arrangements.
+* Inspection requests.
+* Property enquiries.
+* Property documentation.
+* Custom property requests.
+* Property availability.
+Answers must be cautious and truthful.
+Testimonials
+Show testimonials only if genuine, approved customer testimonials already exist.
+Do not invent names, photographs, customer reviews, star ratings or quotes.
+If no genuine testimonials exist, omit the testimonial section entirely. Do not create fake sample testimonials.
+12. CONTACT PAGE — ONE CENTRAL ENQUIRY AREA
+The Contact page must have one central enquiry form with a selector.
+The enquiry type selector must offer:
+1. Inspection Request
+2. Purchase Enquiry
+3. Rental Enquiry
+4. Custom Property Request
+When the user selects an enquiry type, show the corresponding form fields dynamically.
+Do not display all four forms at the same time.
+The form must adapt to the selected enquiry type and validate the appropriate required fields.
+Inspection Request
+Required:
+* Full name.
+* Phone number.
+* Property or project of interest, if known.
+* Preferred inspection date.
+* Preferred time.
+* Preferred contact method.
+Optional:
+* WhatsApp.
+* Email.
+* Number of attendees.
+* Alternative date.
+* Questions or comments.
+Important: Submitting an inspection request does not guarantee an appointment.
+After successful saving, say: "Your inspection request has been received. Our team will review the schedule and contact you to confirm an available appointment."
+Purchase Enquiry
+Use the purchase enquiry form described in the Properties section.
+Rental Enquiry
+Use the adaptive rental enquiry form described above.
+Custom Property Request
+Use the property request form described above.
+Contact information
+Show the verified:
+* Phone number.
+* WhatsApp number.
+* Email.
+* Office address.
+Use the confirmed office address: No. 5 King Zion Estate, Phase 1, Asaba, Delta State, Nigeria.
+Do not invent missing contact information.
+Use click-to-call, WhatsApp and email links only when the corresponding real details exist.
+13. IMAGE REQUIREMENTS — VERY IMPORTANT
+Use at least 14 distinct high-resolution images across the website.
+All generated or selected property visuals must look like realistic modern Nigerian properties, especially the architectural style found in:
+* Asaba.
+* Lagos.
+* Abuja.
+* Other modern Nigerian urban residential areas.
+Required image types:
+1. Modern Nigerian luxury detached duplex for the hero.
+2. Nigerian detached duplex for the Houses category.
+3. Nigerian residential land with visible plot boundaries for the Land category.
+4. Modern Nigerian apartment interior for the Rentals category.
+5. Semi-detached duplex.
+6. Contemporary Nigerian bungalow.
+7. Modern gated Nigerian estate.
+8. Residential plot with survey pegs and visible boundaries.
+9. Modern Nigerian apartment exterior.
+10. Premium Nigerian apartment bedroom.
+11. Modern gated estate entrance.
+12. Nigerian estate development land.
+13. CEO portrait.
+14. Property coordinator portrait.
+Use the images in the appropriate sections.
+Image rules:
+* No American suburban houses.
+* No European countryside houses.
+* No generic foreign architectural style.
+* No house photograph in the Land gallery.
+* No land photograph in the rental interior gallery.
+* Do not present generated illustrative visuals as genuine company properties.
+* Use actual uploaded property photos for genuine listings wherever available.
+* Label non-listing editorial images as illustrative where necessary.
+* Do not fabricate property prices or listing availability.
+Image rendering:
+* Use high-resolution source images.
+* Prefer at least 1600 pixels wide for major hero images.
+* Use responsive image sizes.
+* Use object-fit: cover for photographic cards.
+* Use object-position controls where needed to preserve important architectural features.
+* Maintain consistent 4:3 property card ratios.
+* Use a suitable wide ratio for the hero.
+* Never stretch or distort photographs.
+* Never apply blur filters to property photos.
+* Avoid unnecessary opacity overlays.
+* Do not use low-resolution thumbnails as full-screen hero images.
+* Use lazy loading for images below the fold.
+* Prioritise loading the hero image.
+* Provide meaningful alt text.
+14. DATABASE AND FORM SUBMISSION RULES
+All forms must use the existing database and backend architecture.
+Before implementing, inspect the current data model and reuse compatible tables and fields.
+If new fields or records are needed, use safe additive changes.
+For each enquiry:
+* Save the full submitted data.
+* Store the enquiry type.
+* Store the selected property or project reference when applicable.
+* Store the submission timestamp.
+* Generate a unique reference ID.
+* Store the status using the existing enquiry workflow where possible.
+* Ensure the administrator/staff can access the enquiry through the existing internal area.
+* Do not expose enquiry data publicly.
+Do not claim that a form has been submitted successfully before the database confirms success.
+Handle:
+* Validation errors.
+* Network errors.
+* Database errors.
+* Duplicate taps.
+* Loading states.
+* Success states.
+Protect personal data and do not expose customer information in public page source, public APIs or unauthorised views.
+15. ADMIN AND STAFF AREA
+Preserve the existing secure admin/staff portal.
+Do not add it to the public navigation.
+Do not count it as one of the five public pages.
+Preserve existing:
+* Authentication.
+* Role permissions.
+* Property management.
+* Listing management.
+* Enquiry management.
+* Staff permissions.
+* Existing reports and integrations.
+The administrator should continue to manage actual property records and availability through the existing system.
+Public listings must reflect actual published records.
+Draft, unavailable or unpublished records must not appear as available listings.
+Do not expose internal management or finance information to public visitors.
+16. RESPONSIVE DESIGN AND INTERACTIONS
+Design for:
+* Android phones.
+* iPhones.
+* Tablets.
+* Laptops.
+* Desktop screens.
+Mobile requirements:
+* No horizontal scrolling.
+* No clipped headings.
+* No overlapping navigation.
+* Cards should fit the available width.
+* Property details should open in a mobile-friendly full-height panel or sheet.
+* Forms should be easy to complete with one hand.
+* Buttons should have comfortable tap targets.
+* Gallery images should remain sharp and properly cropped.
+* Navigation should work reliably.
+Desktop requirements:
+* Balanced content widths.
+* Spacious layouts.
+* Aligned cards.
+* Consistent image ratios.
+* Properly spaced navigation.
+* Slide-out property detail panel.
+* Responsive multi-column layouts.
+Ensure every interactive element works:
+* Header navigation.
+* Mobile menu.
+* Property tabs.
+* Gallery tabs.
+* Carousel arrows.
+* Carousel dots.
+* Carousel play/pause.
+* Property detail panels.
+* Image lightboxes.
+* Enquiry selectors.
+* Conditional form fields.
+* Form validation.
+* Form submission.
+* Contact links.
+* Footer navigation.
+17. FINAL QUALITY CONTROL
+Before finishing:
+1. Confirm that there are exactly five public pages: Home, Properties, Estate Projects, About and Contact.
+2. Confirm that the admin area still works and remains private.
+3. Confirm that the homepage Search Properties box has been completely removed.
+4. Confirm that the three category cards remain on the homepage.
+5. Confirm that each category card opens the correct Properties tab.
+6. Confirm that the featured-property slideshow works with its arrows, dots, eight-second autoplay, fade transition and pause controls.
+7. Confirm that the Properties page contains the three tabs and comprehensive gallery.
+8. Confirm that land listings use land images.
+9. Confirm that rental enquiries support nightly, weekly, monthly, one-year, two-year and three-year preferences where applicable.
+10. Confirm that property details open inside a modal or slide-out panel, not a sixth public page.
+11. Confirm that all enquiry forms save correctly to the existing database.
+12. Confirm that successful submission messages appear only after confirmed database saves.
+13. Confirm that no fake property listings, prices, documents, testimonials, staff names or contact details have been introduced.
+14. Confirm that the website uses the new premium green, gold and ivory palette consistently.
+15. Confirm that all images are sharp, correctly cropped, responsive and placed in their appropriate sections.
+16. Confirm that all navigation links, buttons, tabs, pop-ups and forms work.
+17. Confirm that no existing working database, authentication, integrations or admin functionality has been damaged.
+Do not finish with a visual-only mockup. Implement the actual working website in the existing project.
+Test every menu link, button, tab, pop-up, form and image on a phone view and a computer view before finishing.

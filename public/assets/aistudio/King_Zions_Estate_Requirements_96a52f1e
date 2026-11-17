@@ -1,0 +1,370 @@
+﻿GPERIGN I.C.A GLOBAL — SMALL WEBSITE UPDATE
+
+
+IMPORTANT: This is a targeted update to the EXISTING website, not a redesign.
+
+
+Do not regenerate, rebuild, restructure or rewrite the website. Preserve all existing code, colours, fonts, spacing, layouts, animations, content, navigation, forms and working functionality.
+
+
+Implement ONLY the seven changes listed below.
+
+
+1. HEADER LOGO AND BUSINESS NAME
+
+
+Update only the existing header logo and business name.
+
+
+Logo image URL:
+"https://i.postimg.cc/76Cjfkyc/IMG-20261105-WA0046.jpg"
+
+
+- Display this image as the business logo beside the business name.
+- Keep it properly proportioned, sharp and professionally aligned.
+- Do not stretch or distort the image.
+
+
+Business name:
+
+
+"Gperign I.C.A Global"
+
+
+Typography:
+
+
+- Font: Arial Black.
+- Increase the font size slightly so the business name is more prominent.
+- Keep "Gperign I.C.A" in its existing colour.
+- Change only the word "Global" to red ("#E10600").
+
+
+Keep the existing header layout, background, navigation and spacing.
+
+
+2. SPELLING CORRECTION — GUARANTORS LETTER
+
+
+Search the entire website, including:
+
+
+- Core Service cards.
+- Letter selection cards.
+- Form headings and titles.
+- Selected-letter tags.
+- Buttons.
+- Any other visible labels.
+
+
+Replace every occurrence of:
+
+
+"Grantor Letter"
+
+
+with:
+
+
+"Guarantors Letter"
+
+
+Do not change any other letter type or form field.
+
+
+3. ADD NEW CORE SERVICE — STUDENT HOSTELS
+
+
+Add a new Core Services card titled:
+
+
+Student Hostels
+
+
+Place it after Online Registration and before Event Programs.
+
+
+When clicked, it must open its own dedicated internal page or full-page screen. Do not display the enquiry form in a small popup.
+
+
+Student Hostels page
+
+
+Create a professional page with the existing website's blue/navy design and orange CTA buttons.
+
+
+At the top:
+
+
+- Display a clear page heading: "Student Hostel Assistance".
+- Add a suitable hostel illustration or visual banner.
+- Include a short description explaining that the IT Hub helps students make hostel accommodation enquiries around the available campus locations.
+
+
+Campus Sites selector
+
+
+Provide three selectable campus options:
+
+
+1. Site I — Main Campus (Abraka Road, Agbor).
+2. Site II — Owa-Oyibo Campus.
+3. Site III — Owa-Alero Campus.
+
+
+The student must select a campus before submitting.
+
+
+Preferred Location selector
+
+
+Provide two options:
+
+
+- Inside School Campus.
+- Outside School Campus.
+
+
+Display this selector only where the selected campus supports the location choice. Do not imply that accommodation is available inside every campus if that has not been confirmed.
+
+
+Enquiry form
+
+
+Include these fields:
+
+
+1. Full Name.
+2. WhatsApp Phone Number.
+3. Preferred Campus Site.
+4. Amount Budgeted:
+   - ₦100k–₦150k.
+   - ₦150k–₦200k.
+   - ₦200k–₦300k+.
+5. Roommate Preference:
+   - Yes.
+   - No.
+   - Open to matching.
+6. Specific Notes.
+
+
+For Specific Notes, use this placeholder:
+
+
+"e.g. running water, self-contained, light, near school gate"
+
+
+Submission behaviour
+
+
+Add one bright orange button:
+
+
+SUBMIT HOSTEL ENQUIRY
+
+
+When clicked:
+
+
+- Validate the required fields.
+- Collect all the student's answers.
+- Generate a properly formatted, pre-filled WhatsApp message containing every submitted detail.
+- Open the configured business WhatsApp number with the message ready to send.
+- Do not silently discard any information.
+- If the WhatsApp number is not configured, clearly indicate that it must be added before the feature can work.
+
+
+This is an enquiry service, not a confirmed hostel booking. Do not promise accommodation availability.
+
+
+4. ADD NEW CORE SERVICE — EVENT PROGRAMS
+
+
+Add another Core Services card titled:
+
+
+Typing, Design and Printing of Event Programs
+
+
+Place it immediately after Student Hostels and before Custom Request.
+
+
+Card image
+
+
+Use this exact image:
+
+
+"https://i.postimg.cc/q7fZQbSZ/file-00000000656481f4910e0623ab781f88.png"
+
+
+Display it neatly without distortion or cropping important content.
+
+
+Short description
+
+
+Use persuasive, concise wording such as:
+
+
+"Beautifully prepared, professionally designed and neatly printed event programmes for your special occasions. We handle weddings, funerals, church programmes, graduations, birthdays and school events."
+
+
+CTA button
+
+
+Use the existing bright orange button style.
+
+
+Button text:
+
+
+ENQUIRE ON WHATSAPP
+
+
+Function:
+
+
+- Open the configured business WhatsApp chat directly.
+- Use a pre-filled message expressing interest in event programme typing, design or printing.
+- Do not create a form for this service.
+- Do not introduce a payment section.
+
+
+5. CORE SERVICES — EXACT ORDER
+
+
+Reorder the existing Core Services cards to follow this exact order:
+
+
+1. UTME Registration.
+2. Letter Writing.
+3. Online Registration.
+4. Student Hostels.
+5. Event Programs.
+6. Custom Request.
+
+
+Important:
+
+
+- Preserve the existing UTME Registration form.
+- Preserve the existing Letter Writing selection and submission flow.
+- Preserve the existing Online Registration information page without introducing a form.
+- Preserve the existing Custom Request form.
+- Student Hostels must have its dedicated enquiry page and WhatsApp submission.
+- Event Programs must open WhatsApp directly without a form.
+
+
+Ensure all six cards have working CTA buttons.
+
+
+6. REMOVE LETTER WRITING PRICES
+
+
+In the Letter Writing section, remove all displayed prices and monetary amounts, including examples such as:
+
+
+"₦1,000"
+
+
+Remove price references from letter cards, headings, descriptions and other visible parts of that section.
+
+
+Keep everything else in Letter Writing exactly as it is:
+
+
+- Four letter types.
+- Multiple selection.
+- Selection highlights and check marks.
+- Continue button.
+- Shared student information.
+- Letter-specific fields.
+- Back button.
+- Submit Request button.
+- Confirmation message.
+- Existing form validation and submission functionality.
+
+
+Do not introduce sample letters or letter templates.
+
+
+7. RENAME ONE SERVICE IN MORE SERVICES
+
+
+In the existing More Services section, find:
+
+
+"Event Programme Preparation"
+
+
+Rename it to:
+
+
+"Computer Training"
+
+
+Keep its existing:
+
+
+- Card design.
+- Icon unless an icon change is essential for the new title.
+- Background.
+- Colours.
+- Button style.
+- Position.
+- General layout.
+
+
+Do not create another card. Rename the existing one only.
+
+
+---
+
+
+STRICT PRESERVATION — DO NOT TOUCH
+
+
+The following must remain exactly as they currently are:
+
+
+- Hero section and its content.
+- Who We Are section and its colours.
+- Core website branding apart from the specified header name and logo.
+- Testimonials and student portraits.
+- CEO section.
+- Letter-writing flow apart from the spelling correction and removal of prices.
+- UTME Registration form.
+- Online Registration page.
+- Custom Request form.
+- More Services layout apart from the specified service rename.
+- Floating animated WhatsApp button.
+- Orange CTA button styling.
+- Header navigation layout.
+- Footer.
+- Existing backend, database and form integrations.
+- All other existing pages and working features.
+
+
+Do not add customer login, website account registration, submission-code tracking or unrelated services.
+
+
+FINAL TESTING
+
+
+After making the changes, verify:
+
+
+1. The new logo displays correctly beside the updated business name.
+2. Only "Global" is red in the header name.
+3. No visible occurrence of "Grantor Letter" remains.
+4. Student Hostels appears in the correct Core Services position.
+5. All hostel enquiry fields work and the complete enquiry is passed into WhatsApp.
+6. Event Programs displays the supplied image and opens WhatsApp without a form.
+7. The six Core Services appear in the exact requested order.
+8. Letter Writing contains no displayed prices and its existing flow still works.
+9. More Services displays "Computer Training" instead of "Event Programme Preparation".
+10. All unrelated website sections remain unchanged.
+
+
+FINAL INSTRUCTION: Make only these requested updates. Do not make creative improvements to unrelated parts of the website. After implementation, provide a short list of exactly what was changed and confirm that the other sections were preserved.

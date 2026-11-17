@@ -1,0 +1,696 @@
+﻿PROJECT: KING ZION'S ESTATE — TARGETED WEBSITE FIXES
+
+
+IMPORTANT INSTRUCTION:
+Modify the EXISTING website. Do not rebuild it from scratch.
+
+
+Keep the current green-and-gold colour palette, branding, layout, typography style, written content, navigation, page structure, and existing functionality.
+
+
+Only implement the specific corrections listed below.
+
+
+Before making changes, inspect the existing code and identify the components responsible for image rendering, text clarity, the Featured Properties slideshow, responsive card sizing, and the homepage property enquiry form.
+
+
+Preserve the existing database, authentication, property records, integrations, and working functionality.
+
+
+Do not reset the database, create duplicate records, or remove existing features unrelated to these corrections.
+
+
+==================================================
+1. FIX BLURRY IMAGES AND TEXT
+==================================================
+
+
+PROBLEM:
+Images and text throughout the website appear blurry, pixelated, faded, or insufficiently sharp.
+
+
+OBJECTIVE:
+Make all images crisp, bright, high-resolution, and visually professional. Ensure all text is sharp and readable.
+
+
+IMAGE QUALITY:
+
+
+1. Inspect every image used across the website, including:
+   - Homepage hero image.
+   - Property category images.
+   - Featured property images.
+   - Estate development images.
+   - Interior photographs.
+   - CEO and property manager photographs.
+   - Footer background images.
+   - Property detail galleries.
+
+
+2. Replace low-resolution or visibly pixelated images with suitable high-resolution alternatives.
+
+
+3. Use image sources with a width of at least 1600 pixels for large hero and full-width images whenever available.
+
+
+4. For property cards and smaller images, use appropriately sized, high-quality source images that provide sufficient resolution for their rendered dimensions.
+
+
+5. Do not enlarge small, low-resolution images to make them appear high-resolution.
+
+
+6. Do not stretch or distort images.
+
+
+7. Preserve the existing image subjects and visual direction wherever possible. Replace an image only when its quality is inadequate or the source is unsuitable.
+
+
+8. Prefer reliable image sources and verify that replacement URLs load successfully.
+
+
+9. If the website already has uploaded property photographs, preserve those assets when their quality is sufficient.
+
+
+IMAGE RENDERING:
+
+
+Use appropriate width and height values.
+
+
+For standard photographic cards, use:
+
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+
+
+Use an appropriate aspect ratio for each image container.
+
+
+For hero images, adjust object-position as necessary to keep the important architectural features visible.
+
+
+Do not apply these cover rules indiscriminately to logos, icons, or images that must remain completely visible.
+
+
+Remove unnecessary image effects, including:
+
+
+- filter: blur()
+- backdrop-filter
+- Unnecessary opacity reductions.
+- Excessive translucent overlays.
+- CSS effects that soften the actual image.
+- Transformations that cause visible pixelation.
+
+
+Use the following subtle image enhancement only when appropriate:
+
+
+filter: brightness(1.05) contrast(1.05) saturate(1.1);
+
+
+Do not apply this filter repeatedly or stack multiple image filters.
+
+
+If an image already has excellent colour and contrast, preserve its natural appearance instead of making it excessively bright.
+
+
+TEXT CLARITY:
+
+
+Ensure headings, paragraphs, labels, navigation links, and buttons render sharply.
+
+
+Use:
+
+
+-webkit-font-smoothing: antialiased;
+
+
+Use solid, readable text colours consistent with the existing green-and-gold design.
+
+
+Remove unintended text transparency, blur, and unnecessary filter effects.
+
+
+Do not change the website's established font family or redesign the typography.
+
+
+Ensure sufficient contrast between text and its background.
+
+
+IMAGE LOADING:
+
+
+For the main above-the-fold hero image, use eager loading and appropriate fetch priority.
+
+
+Example:
+
+
+<img
+  src="HIGH_RESOLUTION_IMAGE_URL"
+  srcset="RESPONSIVE_IMAGE_SOURCES"
+  sizes="100vw"
+  loading="eager"
+  fetchpriority="high"
+  alt="Descriptive property image"
+/>
+
+
+Replace the example placeholders with real image URLs and valid responsive image sources.
+
+
+For below-the-fold images, use lazy loading where appropriate.
+
+
+Implement responsive srcset and sizes values when multiple suitable image sizes are available.
+
+
+Do not create fake srcset entries that point to the same low-resolution image.
+
+
+Preserve the existing image layout, colours, and content.
+
+
+==================================================
+2. CHANGE FEATURED PROPERTIES INTO A FADE SLIDESHOW
+==================================================
+
+
+PROBLEM:
+The Featured Properties section currently displays multiple property cards side by side or stacked, and its presentation needs to be replaced with a proper slideshow.
+
+
+OBJECTIVE:
+Display exactly ONE featured property card at a time.
+
+
+Do not display multiple featured property cards simultaneously.
+
+
+Do not place the slides side by side.
+
+
+Do not stack the slides vertically.
+
+
+SLIDESHOW STRUCTURE:
+
+
+Use the existing Featured Properties section.
+
+
+Keep its current green-and-gold design, section heading, introductory text, property information, and overall visual identity.
+
+
+Create a single slideshow viewport containing all the existing featured property slides.
+
+
+Position the slides absolutely within a relatively positioned viewport so they occupy the same space.
+
+
+Only the active slide should be visible and interactive.
+
+
+Inactive slides must not be visible or intercept pointer interactions.
+
+
+Each slide should contain the appropriate property image and its existing information.
+
+
+Do not delete the existing property records.
+
+
+SLIDE TRANSITIONS:
+
+
+Use a smooth crossfade transition.
+
+
+When moving to another property:
+
+
+- The outgoing slide fades out.
+- The incoming slide fades in.
+- The transition lasts approximately 1 second.
+- Both slides remain aligned in the same viewport.
+- No horizontal scrolling occurs during the transition.
+- No slide should jump vertically or change the section height unexpectedly.
+
+
+Use opacity transitions rather than a horizontal sliding animation.
+
+
+Suggested CSS:
+
+
+.slideshow-viewport {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+.property-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+
+.property-slide.is-active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+Adapt these styles to the existing component structure.
+
+
+Ensure that the slideshow viewport maintains a stable height based on the active slide.
+
+
+AUTOPLAY:
+
+
+Automatically advance to the next property every 8 seconds.
+
+
+The timer must reset appropriately after manual navigation.
+
+
+Do not start multiple competing autoplay timers.
+
+
+NAVIGATION CONTROLS:
+
+
+Preserve and implement all the following controls:
+
+
+1. Previous arrow.
+2. Next arrow.
+3. Slide indicator dots.
+4. Play button.
+5. Pause button.
+
+
+FUNCTIONAL REQUIREMENTS:
+
+
+- Clicking Previous displays the preceding property.
+- Clicking Next displays the following property.
+- Clicking a dot opens the corresponding property.
+- The active dot always matches the displayed property.
+- The play button starts autoplay.
+- The pause button stops autoplay.
+- Autoplay advances through the existing property list.
+- After the final property, the slideshow returns to the first property.
+- Manual navigation updates the active slide and indicators immediately.
+- Manual navigation must not create duplicate timers.
+- The controls must remain functional on desktop and mobile.
+
+
+HOVER AND TOUCH BEHAVIOUR:
+
+
+Pause autoplay when the user hovers over the slideshow on desktop.
+
+
+Resume autoplay when the pointer leaves, provided the user has not explicitly paused it.
+
+
+On mobile, pause autoplay while the user is actively touching or interacting with the slideshow.
+
+
+Resume autoplay after the interaction ends, provided the user has not explicitly paused it.
+
+
+Distinguish temporary interaction pauses from an intentional pause using the pause button.
+
+
+Respect the user's reduced-motion accessibility preference.
+
+
+Do not remove the existing property details or enquiry buttons.
+
+
+==================================================
+3. FIX THE OVERSIZED PROPERTY CARD
+==================================================
+
+
+PROBLEM:
+The featured property card is too large, causes layout problems on mobile, and makes the section heading or introductory text appear cut off.
+
+
+OBJECTIVE:
+Make the slideshow responsive and prevent horizontal overflow on every screen size.
+
+
+SLIDESHOW AND CARD WIDTH:
+
+
+Use:
+
+
+width: 100%;
+max-width: 100%;
+box-sizing: border-box;
+
+
+Ensure that the slideshow viewport and each property card fit within their parent containers.
+
+
+Use:
+
+
+overflow: hidden;
+
+
+on the slideshow viewport where appropriate.
+
+
+Do not introduce a fixed width that exceeds the available screen width.
+
+
+Do not allow any card, image, or navigation control to cause horizontal page scrolling.
+
+
+IMAGE ASPECT RATIO:
+
+
+Use a consistent 4:3 aspect ratio for the main featured property image.
+
+
+Example:
+
+
+.property-slide-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+Do not stretch images.
+
+
+Maintain a consistent image container height for the slideshow.
+
+
+Adjust object-position where necessary to keep important architectural features visible.
+
+
+The card should look balanced, premium, and proportionate rather than excessively tall.
+
+
+Do not unnecessarily enlarge the card to fill the entire page.
+
+
+RESPONSIVE BEHAVIOUR:
+
+
+Desktop:
+Keep the slideshow centered within the existing content container.
+
+
+Tablet:
+Reduce spacing and ensure the card remains within the available width.
+
+
+Mobile:
+Use the full available content width with appropriate side padding.
+
+
+Prevent:
+- Horizontal scrolling.
+- Images extending beyond the viewport.
+- Oversized cards.
+- Overlapping buttons.
+- Cut-off text.
+- Navigation controls extending outside the slideshow.
+
+
+Check the layout at narrow mobile widths as well as tablet and desktop sizes.
+
+
+HEADING AND INTRODUCTORY TEXT:
+
+
+The current Featured Properties heading is being truncated to text similar to:
+
+
+"Featured Propert..."
+
+
+Fix this issue.
+
+
+Ensure that the full section heading and its introductory text are visible.
+
+
+Use:
+
+
+width: 100%;
+max-width: 100%;
+white-space: normal;
+overflow-wrap: anywhere;
+box-sizing: border-box;
+
+
+Apply these rules only where needed.
+
+
+Do not apply text-overflow: ellipsis to the section heading or introductory paragraph.
+
+
+Remove unnecessary fixed heights, restrictive widths, and overflow rules that cut off the text.
+
+
+Preserve the existing heading wording.
+
+
+Do not shrink the heading excessively just to force it onto one line.
+
+
+Allow it to wrap naturally on smaller screens.
+
+
+Ensure that the heading, introductory text, slideshow, dots, and navigation controls have adequate spacing.
+
+
+==================================================
+4. REMOVE THE PROPERTY ENQUIRY FORM FROM THE HOMEPAGE
+==================================================
+
+
+PROBLEM:
+The complete property enquiry form is currently displayed directly on the homepage.
+
+
+I do not want the full form to appear immediately when someone visits the homepage.
+
+
+OBJECTIVE:
+Keep the homepage clean, premium, and focused on property discovery.
+
+
+Remove the full property enquiry form from the homepage layout.
+
+
+IMPORTANT:
+Do not delete the form component, form fields, database integration, validation, or enquiry submission functionality.
+
+
+The form must remain available through a dedicated page or an appropriate interaction.
+
+
+DEDICATED FORM PAGE:
+
+
+Create or preserve the dedicated property enquiry route:
+
+
+/property-request
+
+
+This page should contain the complete existing property enquiry form.
+
+
+Preserve its current fields, validation rules, customer information fields, property preferences, custom requirements, consent checkbox, and successful submission workflow.
+
+
+Do not remove any existing form functionality.
+
+
+CTA TRIGGERS:
+
+
+Make the form accessible through appropriate calls to action, including:
+
+
+- Enquire Now.
+- Start Your Enquiry.
+- Request a Property.
+- Find My Property.
+- Request Custom Property.
+- Enquire About This Property.
+
+
+When a user clicks one of these buttons, open the dedicated property request page.
+
+
+For property-specific enquiries, pass the selected property's identifier to the form where possible so the enquiry is associated with the correct property.
+
+
+If the existing website uses a modal for a specific enquiry workflow, preserve it when appropriate. However, the full property request form must not remain permanently visible on the homepage.
+
+
+HOMEPAGE LAYOUT:
+
+
+After removing the form, reorganize the affected area carefully.
+
+
+Do not leave a large empty space.
+
+
+Allow the remaining homepage content to flow naturally while preserving the existing design, section order, colours, and spacing.
+
+
+Do not remove the surrounding content or replace the form with an unrelated section.
+
+
+Ensure all CTA buttons still work and lead to the correct destination.
+
+
+==================================================
+5. PRESERVE THE EXISTING WEBSITE
+==================================================
+
+
+These are targeted fixes, not a complete redesign.
+
+
+Keep:
+
+
+- Existing green-and-gold branding.
+- Existing logo.
+- Existing navigation.
+- Existing website content.
+- Existing property listings.
+- Existing property details.
+- Existing footer.
+- Existing CEO and property manager sections.
+- Existing FAQ section.
+- Existing database and integrations.
+- Existing property enquiry functionality.
+- Existing working routes.
+- Existing administrative functions.
+
+
+Do not introduce a new colour palette.
+
+
+Do not rename the company.
+
+
+Do not rewrite the website's marketing copy.
+
+
+Do not remove working features that are unrelated to the requested fixes.
+
+
+Inspect the existing code before editing components.
+
+
+Modify only the relevant styles, image sources, slideshow logic, responsive layout, and homepage form placement.
+
+
+Avoid duplicating CSS rules or introducing conflicting JavaScript timers.
+
+
+Reuse existing components wherever possible.
+
+
+==================================================
+6. TESTING AND ACCEPTANCE CRITERIA
+==================================================
+
+
+Do not declare the task complete until the following checks pass.
+
+
+IMAGE QUALITY:
+- All major images use suitable high-resolution sources.
+- Images are not visibly pixelated or stretched.
+- Images and text do not have unintended blur or transparency.
+- Responsive image loading works correctly.
+- The hero image loads with appropriate priority.
+
+
+FEATURED PROPERTY SLIDESHOW:
+- Exactly one property is visible at a time.
+- Autoplay advances every 8 seconds.
+- Transitions use an approximately 1-second crossfade.
+- Previous and Next buttons work.
+- Dot navigation works.
+- The active dot remains synchronized.
+- Play and Pause controls work.
+- Hover and touch interactions temporarily pause autoplay.
+- No duplicate autoplay timers are created.
+- The slideshow loops correctly.
+
+
+RESPONSIVE CARD:
+- The featured image uses a 4:3 aspect ratio.
+- The card fits the available screen width.
+- No horizontal page scrolling occurs.
+- The section heading is fully visible.
+- The introductory text is not cut off.
+- The card is not excessively tall.
+- All controls remain accessible on mobile.
+
+
+PROPERTY REQUEST FORM:
+- The full form no longer appears directly on the homepage.
+- The dedicated /property-request page works.
+- Relevant CTAs open the form.
+- Existing form validation remains functional.
+- Enquiries continue to save correctly.
+- Property-specific enquiries retain their property reference.
+- Successful submissions display the correct confirmation message.
+- Failed submissions do not falsely report success.
+
+
+FINAL REQUIREMENT:
+
+
+Implement these corrections directly in the existing website.
+
+
+Preserve the current design and content except where a change is explicitly requested above.
+
+
+Do not return only recommendations or sample code.
+
+
+Make the changes, test the affected components, and report which issues have been fixed and whether any configuration remains.

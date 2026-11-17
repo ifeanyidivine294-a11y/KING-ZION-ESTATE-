@@ -1,0 +1,37 @@
+﻿My enquiry forms must save into a Google Sheet. The previous approach failed: Google Apps Script showed "Cannot use import statement outside a module" because TypeScript, import statements and browser OAuth code were pasted into it. Fix this properly.
+
+
+WHAT TO REMOVE FROM THE WEBSITE
+Remove all Google OAuth, sign-in, token checking and direct Google Sheets API code. Visitors must NEVER be asked to sign in to Google. The owner's email check is not needed.
+
+
+WHAT TO BUILD (two separate parts)
+
+
+PART 1: The Google Apps Script (Code.gs), written in PLAIN Apps Script JavaScript.
+Rules: no import or export statements, no TypeScript, no fetch, no async/await, no npm packages. Use only Apps Script services (SpreadsheetApp, ContentService, LockService, Utilities).
+- A setup() function I run once. It creates five tabs with bold, frozen header rows: Inspection Requests, Purchase Enquiries, Rental Enquiries, Land Enquiries, Custom Requests. Each tab starts with Reference and Date columns, followed by that form's fields.
+- A doPost(e) function that reads the JSON from e.postData.contents, checks that fullName and phone are present, picks the tab from a "type" field (inspection, purchase, rental, land, custom), creates a reference number like KZE-YYMMDD-HHMMSS in Africa/Lagos time, saves the row, and returns JSON: {ok:true, reference:"..."} or {ok:false, error:"..."}.
+- Format the cells as plain text so phone numbers like +234... are kept exactly.
+- Use LockService so two submissions at once don't overwrite each other.
+- Limit every value to 1000 characters.
+- Return the output with ContentService as JSON.
+
+
+PART 2: The website form code.
+- Each form submits with fetch() to my Web App URL using method POST, the header "Content-Type": "text/plain;charset=utf-8" (this avoids browser CORS blocking), and a JSON body that includes the correct "type" field.
+- Validate required fields and stop double-clicks while the request is sending, showing a loading state.
+- On success, show the returned reference number in a clear confirmation message. If ok is false or the request fails, show a friendly error and keep the form filled in.
+- Keep the Web App URL in one constant at the top, written as: const SCRIPT_URL = "PASTE_WEB_APP_URL_HERE";
+
+
+ALSO GIVE ME, in simple English, numbered steps on a phone-friendly level for:
+1. Opening Extensions > Apps Script from inside my Google Sheet (so the script is attached to it)
+2. Pasting the code, running setup() and approving permissions
+3. Deploying as a Web app: Execute as Me, access Anyone
+4. Pasting the Web App URL into the website
+5. Updating the deployment with a new version whenever the code changes
+6. Testing each form three times and checking the rows
+
+
+Before finishing, check the code line by line for anything that would not run in Google Apps Script, and fix it.

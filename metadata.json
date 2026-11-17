@@ -1,0 +1,6 @@
+{
+  "name": "King Zion's Estate",
+  "description": "Premium real estate, land sales, rentals, and estate developments across Delta State, Nigeria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

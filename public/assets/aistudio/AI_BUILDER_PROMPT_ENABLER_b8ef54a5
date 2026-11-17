@@ -1,0 +1,118 @@
+﻿IMPORTANT: STOP GENERATING WORDPRESS PHP THEMES. I ONLY WANT RAW HTML, CSS AND JAVASCRIPT.
+I want you to convert my existing KING ZION'S ESTATE website into a fully functional website that I can copy and paste directly into WordPress.
+1. EXACT CODE FORMAT REQUIRED
+Give me ONLY these three separate codes:
+CODE 1: HTML
+* Complete website HTML.
+* All five public pages: Home, Properties, Estate Projects, About and Contact.
+* All navigation, sections, property cards, galleries, forms, buttons and modals.
+* Every element must have the correct IDs, classes and links.
+CODE 2: CSS
+* Complete website styling.
+* Responsive mobile, tablet and desktop layouts.
+* All colours, typography, spacing, animations and layouts.
+* Use unique class names prefixed with kze- to avoid WordPress theme conflicts.
+CODE 3: JAVASCRIPT
+* Complete functionality for every interactive element.
+* Navigation and mobile menu.
+* Property category switching and filters.
+* Property details and modals.
+* Image galleries and featured property slider.
+* Enquiry forms and validation.
+* Google Sheets submission.
+* All buttons and interactive elements.
+Use plain HTML5, CSS3 and vanilla JavaScript.
+DO NOT generate:
+* PHP files.
+* WordPress theme files.
+* functions.php.
+* header.php.
+* footer.php.
+* front-page.php.
+* ZIP packages.
+* React applications.
+* Build tools or complicated dependencies.
+2. WORDPRESS CUSTOM HTML COMPATIBILITY
+I will paste the HTML into a WordPress Custom HTML block.
+I will paste the CSS separately into WordPress Additional CSS.
+I will add the JavaScript using a WordPress-compatible script insertion method.
+Therefore:
+* Do not put CSS inside the HTML.
+* Do not put JavaScript inside the HTML.
+* Do not combine the three codes.
+* Clearly label each code.
+* Give me the complete code, not snippets.
+* Do not leave out sections to save space.
+* Do not use features that only work in Google AI Studio.
+* Do not use JavaScript that requires React or another framework.
+3. VERY IMPORTANT: ALL BUTTONS MUST ACTUALLY WORK
+I previously pasted website code into WordPress. The website appeared, but after publishing it and opening the published URL, the buttons and other elements were not clickable.
+I do not want that problem again.
+Check every interactive element carefully.
+Every button must have a working action.
+Every navigation link must lead to the correct section or page.
+Every tab must switch content.
+Every property card must open its corresponding details.
+Every form must submit correctly.
+Every modal must open and close.
+The mobile menu must open and close.
+Do not use empty links such as href="#" for buttons that are supposed to perform an action.
+Do not create decorative buttons that do nothing.
+Do not place invisible overlays or elements on top of clickable buttons.
+Check z-index, pointer-events, event listeners, element selectors and event propagation.
+Use reliable JavaScript event handling that works after WordPress publishes the page.
+Make sure the JavaScript initializes correctly even if WordPress loads the script after the HTML.
+4. GOOGLE SHEETS CONNECTION
+My existing website already connects to Google Sheets through this Google Apps Script Web App URL:
+https://script.google.com/macros/s/AKfycbzonwBMjcKLZEqWTWV3YcxB0n48CrH6Br0xgSKJ6P0DbMLHeCRDQIgFuZaOEXXg7OzH/exec
+Preserve this exact URL and the existing submission format.
+Do not create another Google Sheet.
+Do not change my existing connection unnecessarily.
+All relevant enquiry forms must continue sending their information to the correct Google Sheets destination.
+Use the existing request format and payload types: inspection, purchase, land, rental and custom.
+Do not claim submissions are successful unless the actual integration supports confirmation.
+If the existing Google Apps Script requires a specific request method or payload, preserve it.
+5. WEBSITE DESIGN
+Preserve the existing KING ZION'S ESTATE website design and content.
+Maintain these five public sections:
+1. Home
+2. Properties
+3. Estate Projects
+4. About
+5. Contact
+Use the existing premium colour palette:
+* #102F2B
+* #1D5147
+* #D6B779
+* #F5F3ED
+* #FFFFFF
+* #202824
+Keep the website professional, responsive and mobile-friendly.
+6. TEST BEFORE GIVING ME THE CODE
+Before delivering the code, verify:
+* All navigation links work.
+* All buttons are clickable.
+* All tabs work.
+* All modals work.
+* All forms validate.
+* All galleries work.
+* All sliders work.
+* The mobile menu works.
+* JavaScript has no obvious errors.
+* The Google Sheets request uses the correct existing URL and format.
+* No invisible element blocks user interaction.
+Do not claim that WordPress publishing has been tested if you have only tested it in Google AI Studio.
+7. FINAL RESPONSE FORMAT
+Your final response must contain exactly these sections:
+PART 1 — COMPLETE HTML CODE
+One complete, copyable HTML code block.
+PART 2 — COMPLETE CSS CODE
+One complete, copyable CSS code block.
+PART 3 — COMPLETE JAVASCRIPT CODE
+One complete, copyable JavaScript code block.
+PART 4 — WORDPRESS INSTALLATION
+Simple instructions explaining exactly where to paste each code.
+Do not give me PHP or a WordPress theme.
+Do not give me a ZIP file.
+Do not give me a design preview instead of code.
+I want the actual raw HTML, CSS and JavaScript, separated and ready for copying and pasting into WordPress.

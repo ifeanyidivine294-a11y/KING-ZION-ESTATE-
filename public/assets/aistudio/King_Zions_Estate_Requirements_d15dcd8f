@@ -1,0 +1,353 @@
+﻿PRIVATE GOOGLE ACCOUNT VERIFICATION AND GOOGLE SHEETS INTEGRATION — KING ZION'S ESTATE
+
+
+Act as a senior full-stack developer and Google Workspace integration specialist.
+
+
+I want you to implement a private Google Sheets integration for my existing King Zion's Estate website.
+
+
+Google account to connect:
+chukwudebeifeanyi6@gmail.com
+
+
+Correction: Use this exact account address:
+chukwudebeifeanyi6@gmail.com
+
+
+1. PURPOSE
+
+
+The purpose of this integration is to automatically collect customer information submitted through the real estate website's enquiry forms and organise it in a private Google Spreadsheet belonging to my Google account.
+
+
+This integration is exclusively for Google Sheets.
+
+
+Do not connect Google Drive for general file storage, Gmail messaging, Google Analytics or any unrelated Google services.
+
+
+Google Sheets should be used as the destination for customer enquiry records.
+
+
+2. GOOGLE ACCOUNT AUTHENTICATION AND OWNER CONFIRMATION
+
+
+When the website administrator accesses the private integration setup:
+
+
+1. Display a private administrator-only setup screen.
+2. Show the Google account intended for connection: chukwudebeifeanyi6@gmail.com.
+3. Provide a button labelled "Connect Google Account".
+4. When clicked, initiate Google's official OAuth 2.0 authentication process.
+5. Allow Google to display its official account-selection and permission-consent screen.
+6. Ask the administrator to sign in and explicitly approve the requested Google Sheets permissions.
+7. Never ask for or collect the administrator's Gmail password.
+8. Never attempt to bypass Google's authentication or consent process.
+9. Verify that the authenticated Google account matches chukwudebeifeanyi6@gmail.com.
+10. If another Google account is selected, do not connect it. Explain that the correct account must be used.
+11. After successful authentication, display a confirmation message to the administrator.
+
+
+Do not claim that the Google account is verified or connected until Google's authentication response confirms it.
+
+
+Use the minimum OAuth scopes required to create and manage the intended spreadsheet and append enquiry records.
+
+
+Store access and refresh tokens securely on the server, never in public frontend code, browser local storage or publicly accessible database fields.
+
+
+3. AUTOMATIC GOOGLE SHEET CREATION
+
+
+After successful authentication and administrator confirmation:
+
+
+Automatically create one Google Spreadsheet named:
+
+
+KING ZION'S ESTATE — CUSTOMER ENQUIRIES
+
+
+The spreadsheet must belong to the authenticated Google account.
+
+
+Create the spreadsheet only once.
+
+
+Before creating it, check whether the integration has already created and registered the spreadsheet. Avoid creating duplicate spreadsheets every time the website loads.
+
+
+Store the spreadsheet ID securely in the server-side integration configuration.
+
+
+Create the following separate worksheet tabs inside the spreadsheet:
+
+
+1. House Purchase Enquiries
+2. Land Purchase Enquiries
+3. Rental Enquiries
+4. Inspection Requests
+5. Custom Property Requests
+
+
+Each tab should have clear column headings and a consistent format.
+
+
+4. INFORMATION TO COLLECT FROM WEBSITE FORMS
+
+
+The website must capture only the information customers actually submit through the corresponding form.
+
+
+Do not invent missing values or fill empty fields with guessed information.
+
+
+A. House Purchase Enquiries
+
+
+Capture:
+
+
+- Submission date and time.
+- Enquiry reference number.
+- Customer full name.
+- Phone number.
+- WhatsApp number, if supplied.
+- Email, if supplied.
+- Preferred contact method.
+- Selected property or property reference, if applicable.
+- Preferred location.
+- House type.
+- Bedroom preference, if supplied.
+- Budget.
+- Intended use.
+- Purchase timeline.
+- Preferred inspection date, if supplied.
+- Additional message.
+
+
+B. Land Purchase Enquiries
+
+
+Capture:
+
+
+- Submission date and time.
+- Enquiry reference number.
+- Customer full name.
+- Phone number.
+- WhatsApp number, if supplied.
+- Email, if supplied.
+- Preferred contact method.
+- Selected property or project, if applicable.
+- Preferred location.
+- Preferred plot size, if supplied.
+- Intended land use.
+- Budget.
+- Purchase timeline.
+- Preferred inspection date, if supplied.
+- Additional message.
+
+
+C. Rental Enquiries
+
+
+Capture:
+
+
+- Submission date and time.
+- Enquiry reference number.
+- Customer full name.
+- Phone number.
+- WhatsApp number, if supplied.
+- Email, if supplied.
+- Preferred contact method.
+- Accommodation type.
+- Preferred location.
+- Number of bedrooms.
+- Rental category: short stay or long term.
+- Preferred duration: nightly, weekly, monthly, yearly, two years or three years, according to the customer's selection.
+- Budget.
+- Intended move-in or check-in date, if supplied.
+- Additional message.
+
+
+D. Inspection Requests
+
+
+Capture:
+
+
+- Submission date and time.
+- Enquiry reference number.
+- Customer full name.
+- Phone number.
+- WhatsApp number, if supplied.
+- Email, if supplied.
+- Project of interest.
+- Preferred inspection date.
+- Preferred inspection time.
+- Number of attendees, if supplied.
+- Additional message.
+
+
+Do not automatically mark an inspection as confirmed. It must remain a request until the company confirms it.
+
+
+E. Custom Property Requests
+
+
+Capture:
+
+
+- Submission date and time.
+- Enquiry reference number.
+- Customer full name.
+- Phone number.
+- WhatsApp number, if supplied.
+- Email, if supplied.
+- Property category.
+- Preferred location.
+- Property type.
+- Budget.
+- Bedroom or plot-size preference, if applicable.
+- Intended use.
+- Expected timeline.
+- Customer's description of the requested property.
+
+
+5. AUTOMATIC FORM-TO-SHEET CONNECTION
+
+
+Connect the existing website forms to the Google Sheets integration through secure server-side functions.
+
+
+When a customer submits a form:
+
+
+1. Validate the form information.
+2. Identify the enquiry category.
+3. Generate or retrieve a unique enquiry reference.
+4. Save the submission using the existing website database and its current workflow.
+5. Send the submitted information to the correct Google Sheets worksheet.
+6. Append it as a new row without overwriting previous customer records.
+7. Preserve the original submission date and time.
+8. Prevent accidental duplicate entries caused by repeated clicks or network retries.
+9. Record the Google Sheets synchronisation status.
+10. Show the customer a successful submission message only when the website's primary database has successfully saved the enquiry.
+
+
+If Google Sheets temporarily fails, do not lose the customer's enquiry. Keep the record safely in the existing website database and allow the server to retry synchronisation.
+
+
+Do not show technical Google errors to customers.
+
+
+The administrator should be able to see whether an enquiry is:
+
+
+- Successfully synchronised.
+- Awaiting synchronisation.
+- Failed and requiring attention.
+
+
+6. PRIVACY AND SECURITY — VERY IMPORTANT
+
+
+This integration is strictly private.
+
+
+Customers must never know that this Google Sheets integration exists.
+
+
+Do not display:
+
+
+- The connected Gmail address.
+- Google authentication buttons.
+- Google Sheets links.
+- Spreadsheet names.
+- Spreadsheet IDs.
+- Integration settings.
+- OAuth tokens.
+- Synchronisation information.
+
+
+Do not add any Google Sheets link to the public website navigation or footer.
+
+
+Do not create a public spreadsheet.
+
+
+Do not expose the spreadsheet through a public API or frontend JavaScript.
+
+
+Only the authorised website administrator should be able to manage the integration.
+
+
+Protect all customer information and restrict access according to existing administrator permissions.
+
+
+Do not send customer information to any other Google service.
+
+
+7. PRIVATE ADMINISTRATOR INTEGRATION SETTINGS
+
+
+Add the Google Sheets connection controls inside the existing protected administrator area.
+
+
+Provide:
+
+
+- Google account connection status.
+- Connected account confirmation.
+- Spreadsheet creation status.
+- Spreadsheet synchronisation status.
+- Last successful synchronisation time.
+- A secure reconnect option if authentication expires.
+- A disconnect option.
+- A retry synchronisation option.
+
+
+Do not expose these settings to normal staff or public visitors unless the existing permissions explicitly authorise them.
+
+
+Do not break the existing admin dashboard or authentication system.
+
+
+8. TESTING AND COMPLETION
+
+
+Before finishing, test the following:
+
+
+1. Google authentication with the specified account.
+2. Confirmation that the correct Google account is connected.
+3. Automatic creation of the spreadsheet.
+4. Creation of all five worksheet tabs.
+5. Submission of a house purchase enquiry.
+6. Submission of a land purchase enquiry.
+7. Submission of a rental enquiry.
+8. Submission of an inspection request.
+9. Submission of a custom property request.
+10. Correct mapping of each form field to its corresponding spreadsheet column.
+11. Prevention of duplicate spreadsheet creation.
+12. Prevention of duplicate enquiry rows.
+13. Recovery when Google Sheets is temporarily unavailable.
+14. Privacy of the integration from public website visitors.
+15. Protection of OAuth tokens and spreadsheet access.
+
+
+Do not use simulated success messages or pretend that authentication, spreadsheet creation or data synchronisation succeeded.
+
+
+If Google authentication, permissions or API configuration requires additional action from me, clearly explain what I need to approve or configure.
+
+
+Implement this inside my existing King Zion's Estate website. Do not rebuild the website or destroy existing database records, authentication, integrations or functionality.
+
+
+The Google Sheets integration must remain completely invisible to customers and operate privately in the background.

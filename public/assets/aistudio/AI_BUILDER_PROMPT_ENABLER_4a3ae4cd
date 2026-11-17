@@ -1,0 +1,257 @@
+﻿FINAL WEBSITE UPDATE — KING ZION'S ESTATE
+
+
+Use my existing KING ZION'S ESTATE website project and the attached website screenshot as your exact visual reference.
+
+
+I want you to make the final adjustments and resend the complete, working website code.
+
+
+Do not redesign the website unnecessarily. Preserve the existing layout, colours, content and functionality. Make the final result look as close as possible to the attached screenshot.
+
+
+1. EXACT DESIGN REFERENCE
+
+
+Reproduce the attached screenshot as closely as possible.
+
+
+Preserve:
+
+
+- The dark green and champagne gold design.
+- The full-background photographic hero.
+- The navigation and logo placement.
+- The three property category cards.
+- The featured property slideshow.
+- The About section.
+- The property gallery.
+- The two management profile cards.
+- The FAQ section.
+- The footer.
+
+
+Do not remove sections or substitute a different design.
+
+
+2. ALL IMAGES MUST BE INCLUDED
+
+
+This is extremely important.
+
+
+Inspect the existing project assets and restore all the original images used in the design.
+
+
+I need:
+
+
+- The hero background image.
+- Houses for Sale image.
+- Land for Sale image.
+- Rental Apartments image.
+- Featured property images.
+- Estate entrance image.
+- Houses, Land and Rentals gallery images.
+- CEO photograph.
+- Property Coordinator photograph.
+
+
+The previous code had images that did not display after publishing on WordPress.
+
+
+Fix this.
+
+
+Use the original image files from the project wherever available.
+
+
+Image URL requirement
+
+
+I want images that WordPress visitors can actually access.
+
+
+For each image:
+
+
+- Use a working public HTTPS image URL if one is available.
+- If the image is not publicly hosted, use an appropriate Base64 embedded image where practical.
+- Otherwise, clearly identify the image that must be uploaded to WordPress Media Library and provide the exact location where its URL should be inserted.
+
+
+Do not use temporary Google AI Studio preview URLs, local file paths or broken image links.
+
+
+Do not invent image URLs.
+
+
+Make sure every image loads after the website is published.
+
+
+3. RESTORE THE TWO MANAGEMENT PHOTOGRAPHS
+
+
+The CEO and Property Coordinator photographs were omitted in the previous version.
+
+
+Restore their correct original photographs from the existing project assets.
+
+
+- Mr. Kingslay Wilfred — CEO, King Zion's Estate.
+- Property Coordinator — use the correct existing photograph and profile.
+
+
+Do not interchange their pictures.
+
+
+Do not use random AI-generated portraits.
+
+
+Keep both photographs visible in their respective profile cards, as shown in the reference screenshot.
+
+
+4. SLIDESHOW ADJUSTMENT
+
+
+Adjust the featured property slideshow:
+
+
+- Change automatic slide timing to 4 seconds.
+- Include the final slide.
+- Ensure the slideshow loops from the last slide to the first.
+- Keep the previous and next arrows.
+- Keep the slide indicators.
+- Make all controls clickable.
+- Use a smooth transition.
+- Ensure it works on phones and computers.
+
+
+5. WHATSAPP INTEGRATION
+
+
+Connect the website to this WhatsApp number:
+
+
++2349069710687
+
+
+Add a visible floating WhatsApp button.
+
+
+Connect the relevant enquiry buttons and forms to this number.
+
+
+When a customer submits an enquiry, prepare a WhatsApp message containing the information entered, such as:
+
+
+- Customer's name.
+- Phone number.
+- Property interest.
+- Selected property or project.
+- Budget.
+- Preferred inspection date.
+- Additional message.
+
+
+Open the correct WhatsApp conversation using a proper click-to-chat link.
+
+
+Do not claim that a message has been sent automatically. The customer must review and send it through WhatsApp.
+
+
+6. PRESERVE GOOGLE SHEETS
+
+
+My existing Google Sheets connection must remain functional.
+
+
+Preserve this exact Google Apps Script URL:
+
+
+https://script.google.com/macros/s/AKfycbzonwBMjcKLZEqWTWV3YcxB0n48CrH6Br0xgSKJ6P0DbMLHeCRDQIgFuZaOEXXg7OzH/exec
+
+
+Preserve the existing request format and payload types:
+
+
+- inspection
+- purchase
+- land
+- rental
+- custom
+
+
+Do not create another spreadsheet or replace the existing connection.
+
+
+Make sure the enquiry forms continue to submit to the existing Google Sheet.
+
+
+7. FINAL CODE FORMAT
+
+
+I want the complete updated website code.
+
+
+My preferred format is ONE complete, self-contained HTML code block containing the HTML, CSS and JavaScript, ready to copy into a WordPress Custom HTML block.
+
+
+Do not give me PHP, React, a WordPress theme or a ZIP package.
+
+
+However, if WordPress will block or remove JavaScript from the Custom HTML block, do not give me code that will fail.
+
+
+In that case, provide:
+
+
+1. Complete HTML.
+2. Complete CSS.
+3. Complete JavaScript.
+
+
+Keep each in a separate, clearly labelled copyable code block and explain exactly where to paste each one in WordPress.
+
+
+Do not omit any code or provide incomplete snippets.
+
+
+8. FUNCTIONALITY TESTING
+
+
+Check that:
+
+
+- All images load.
+- Both management photographs appear.
+- All navigation links work.
+- Every button is clickable.
+- All property cards work.
+- Galleries work.
+- Modals open and close.
+- Forms validate and submit.
+- WhatsApp opens the correct number.
+- Google Sheets integration is preserved.
+- Slideshow changes every 4 seconds.
+- Mobile navigation works.
+- No invisible overlay blocks buttons.
+- No broken image paths or missing files remain.
+
+
+Do not claim that WordPress publishing has been tested unless you actually tested it on WordPress.
+
+
+FINAL INSTRUCTION
+
+
+Do not just send me the changes.
+
+
+Resend the COMPLETE, UPDATED website code, including every required HTML, CSS and JavaScript section.
+
+
+I want to copy it into WordPress and publish the website.
+
+
+Use my attached screenshot as the visual reference and preserve the existing project rather than starting again.

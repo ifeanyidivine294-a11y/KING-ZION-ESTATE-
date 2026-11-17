@@ -1,0 +1,1431 @@
+﻿PROJECT: KING ZION'S ESTATE
+PREMIUM REAL ESTATE WEBSITE DEVELOPMENT
+
+
+ROLE AND OBJECTIVE
+
+
+Act as a senior full-stack developer, professional real estate website
+designer, UI/UX architect, real estate marketing strategist, and
+conversion optimization specialist.
+
+
+Build a complete, premium, responsive, functional website for
+KING ZION'S ESTATE.
+
+
+I have attached a reference image showing the website design I want.
+
+
+IMPORTANT:
+Use the attached image as the primary visual reference for the website.
+Study its layout, colour palette, typography, spacing, image placement,
+property cards, search interface, enquiry form, leadership section,
+FAQ section, and footer.
+
+
+Reproduce the overall design direction as closely as practical while
+turning it into a real, working website.
+
+
+The reference image is a design guide, not a flat image to display
+as the website.
+
+
+Do not simply place the image on a page.
+Build the actual website using functional components, real navigation,
+working forms, property listings, responsive layouts, and a suitable
+data-management system.
+
+
+Do not redesign the website into a completely different visual style.
+
+
+==================================================
+1. BUSINESS INFORMATION
+==================================================
+
+
+Company name:
+KING ZION'S ESTATE
+
+
+Company motto:
+"Our Customers' Satisfaction Is Our Overall Aim."
+
+
+CEO:
+Mr. Kingslay Wilfred.
+
+
+Head office:
+No. 5 King Zion Estate Phase 1,
+Asaba, Delta State, Nigeria.
+
+
+Business:
+Real estate, land sales, property sales, rentals, estate developments,
+and property investment opportunities.
+
+
+Initial locations:
+- Asaba, Delta State.
+- Ibusa, Delta State.
+- Agbor, Delta State.
+- Warri, Delta State.
+
+
+Allow administrators to add more locations in the future.
+
+
+Currency:
+Nigerian naira (₦).
+
+
+Primary customer communication channels:
+Telephone, WhatsApp, and website enquiry forms.
+
+
+Do not invent the company's telephone number, WhatsApp number,
+email address, registration details, certifications, or awards.
+
+
+Provide editable settings for missing business information.
+
+
+==================================================
+2. VISUAL DESIGN SYSTEM
+==================================================
+
+
+Follow the attached reference image.
+
+
+Use this premium colour palette:
+
+
+Deep Forest Green: #073B35
+Dark Green: #062F2B
+Warm Cream: #F8F6EF
+Pure White: #FFFFFF
+Soft Sage: #E8EFE8
+Champagne Gold: #D6B77A
+Dark Text: #17312E
+Secondary Text: #66736F
+Borders: #E1E7E1
+
+
+Use forest green for the header accents, main buttons, footer,
+important headings, and primary interface elements.
+
+
+Use champagne gold sparingly for emphasis.
+
+
+Use warm cream and white for content backgrounds.
+
+
+Avoid bright orange, excessive purple, excessive gradients,
+and unrelated colours.
+
+
+TYPOGRAPHY
+
+
+Use an elegant serif font for major headings, such as Playfair Display
+or a similar professional editorial typeface.
+
+
+Use Inter for body text, forms, buttons, and navigation.
+
+
+Create clear visual hierarchy and generous whitespace.
+
+
+The result must look premium, professional, elegant, and trustworthy.
+
+
+Do not overcrowd the interface.
+
+
+Use consistent spacing, border radii, typography, icons, and
+image proportions throughout the website.
+
+
+==================================================
+3. WEBSITE HEADER
+==================================================
+
+
+Create a clean, premium navigation bar matching the reference image.
+
+
+LEFT:
+KING ZION'S ESTATE logo.
+
+
+If no logo file is available, create a tasteful architectural house
+icon and elegant text-based logo.
+
+
+MAIN NAVIGATION:
+- Home
+- Buy Property
+- Rent Property
+- Land
+- Estate Projects
+- About Us
+- Contact
+
+
+RIGHT:
+- Favourites icon.
+- Enquire Now button.
+
+
+On mobile, convert the navigation into a functional menu drawer.
+
+
+All navigation links must lead to working pages or sections.
+
+
+The header should be responsive and remain easy to use while scrolling.
+
+
+==================================================
+4. HERO SECTION
+==================================================
+
+
+Reproduce the premium hero layout from the reference image.
+
+
+Use a large, beautiful photograph of a contemporary luxury home
+or residential estate.
+
+
+Use this image URL as the first candidate:
+
+
+https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85
+
+
+Verify that the image loads.
+
+
+If it fails, use another working architectural photograph.
+
+
+The hero image should cover the available background area without
+stretching.
+
+
+Use an appropriate dark overlay to maintain text readability.
+
+
+HERO LABEL:
+FIND YOUR PLACE. BUILD YOUR FUTURE.
+
+
+MAIN HEADLINE:
+A Better Place to
+Call Home.
+
+
+Use champagne gold to emphasize "Home."
+
+
+DESCRIPTION:
+Discover homes, land, and property opportunities across Delta State
+and beyond.
+
+
+PRIMARY BUTTON:
+Explore Properties
+
+
+SECONDARY BUTTON:
+Talk to Our Team
+
+
+The buttons must work.
+
+
+Explore Properties should take visitors to the property listings.
+
+
+Talk to Our Team should open the configured contact or WhatsApp option.
+
+
+Do not invent a WhatsApp number.
+
+
+==================================================
+5. PROPERTY SEARCH PANEL
+==================================================
+
+
+Place a premium property search panel below or overlapping the
+lower part of the hero section.
+
+
+Include these fields:
+
+
+1. I Want To:
+   - Buy
+   - Rent
+   - Land
+
+
+2. Location:
+   - Asaba
+   - Ibusa
+   - Agbor
+   - Warri
+   - Other available locations
+
+
+3. Property Type:
+   - Detached Duplex
+   - Semi-Detached Duplex
+   - Terraced House
+   - Apartment
+   - Bungalow
+   - Residential Land
+   - Commercial Property
+   - Other categories
+
+
+4. Budget:
+   - Minimum price
+   - Maximum price
+
+
+5. Search Properties button.
+
+
+Only display relevant filters.
+
+
+For example, do not request the number of bedrooms for land listings.
+
+
+Search must return matching property records from the database.
+
+
+The search button must not be decorative.
+
+
+Include appropriate empty states when no matching properties exist.
+
+
+==================================================
+6. TRUST AND SERVICE FEATURES
+==================================================
+
+
+Directly below the search panel, create four compact service cards.
+
+
+CARD 1:
+Clear Property Information
+
+
+Description:
+Get accurate details on every listing, including location,
+type, and features.
+
+
+CARD 2:
+Personal Customer Support
+
+
+Description:
+Our team is here to guide you at every step of your property journey.
+
+
+CARD 3:
+Property Inspections
+
+
+Description:
+Book a site visit and see your preferred property in person.
+
+
+CARD 4:
+Local Market Knowledge
+
+
+Description:
+We understand the Delta State market and your investment needs.
+
+
+Use simple line icons, subtle borders, and a soft sage background.
+
+
+Do not claim that every property has been legally verified unless
+the company has actually completed the relevant checks.
+
+
+==================================================
+7. PROPERTY CATEGORY SECTION
+==================================================
+
+
+SECTION TITLE:
+Explore Property Opportunities
+
+
+DESCRIPTION:
+From beautiful homes to strategic land investments, find the
+right property for your goals.
+
+
+Create four clickable category cards.
+
+
+CARD 1:
+Homes for Sale
+
+
+CARD 2:
+Land for Sale
+
+
+CARD 3:
+Homes for Rent
+
+
+CARD 4:
+Estate Developments
+
+
+Each card should contain:
+- Relevant property image.
+- Category title.
+- Short description.
+- View Properties link.
+
+
+Use appropriate photographs and consistent image dimensions.
+
+
+Each category must lead to its own filtered listing page.
+
+
+==================================================
+8. FEATURED PROPERTY SLIDESHOW
+==================================================
+
+
+This is a critical requirement.
+
+
+Create a dedicated section titled:
+
+
+Discover Our Featured Properties
+
+
+DESCRIPTION:
+Explore selected property opportunities and find a place
+that suits your needs.
+
+
+Display between six and seven property cards.
+
+
+Use these as the initial demonstration categories:
+
+
+1. Modern Detached Duplex.
+2. Semi-Detached House.
+3. Luxury Apartment.
+4. Residential Land Plot.
+5. Terraced House.
+6. Gated Estate.
+7. Premium Investment Property.
+
+
+IMPORTANT SLIDESHOW REQUIREMENTS:
+
+
+The property photographs must NOT be cropped.
+
+
+I want to see the complete image inside each slideshow slide.
+
+
+Use:
+
+
+object-fit: contain;
+
+
+Do not use object-fit: cover for the main slideshow images.
+
+
+Do not zoom into the property images.
+
+
+Do not cut off buildings, roofs, gardens, swimming pools,
+land boundaries, or other important image details.
+
+
+Do not stretch images to fit the frame.
+
+
+Preserve each image's natural aspect ratio.
+
+
+Use a clean, consistent image area with a neutral background
+where needed.
+
+
+SLIDESHOW ANIMATION:
+
+
+Create a smooth, premium transition.
+
+
+One property image should move out while the next image moves in.
+
+
+Use a gentle horizontal slide transition with subtle fading.
+
+
+The outgoing slide should move left as the incoming slide
+enters from the right.
+
+
+Avoid harsh movement, flashing, spinning, or distracting effects.
+
+
+AUTOPLAY:
+
+
+Automatically advance through the properties approximately
+every five seconds.
+
+
+Provide:
+- Previous button.
+- Next button.
+- Slide indicators.
+- Pause and resume controls.
+- Swipe navigation on mobile.
+
+
+Stop autoplay when the user interacts with the slideshow.
+
+
+Respect the user's reduced-motion accessibility preference.
+
+
+PROPERTY CARD INFORMATION:
+
+
+Each card should show:
+- Property image.
+- Property title.
+- Location.
+- Property type.
+- Sale or rental status.
+- Price, when confirmed.
+- Relevant specifications.
+- Favourite icon.
+- View Property button.
+
+
+Do not fabricate real availability, verified property status,
+or confirmed prices.
+
+
+If actual property records are unavailable, use clearly labelled
+demonstration listings until the administrator adds real properties.
+
+
+Use unique property reference IDs.
+
+
+==================================================
+9. INDIVIDUAL PROPERTY DETAILS
+==================================================
+
+
+When a visitor clicks View Property, open a dedicated property page.
+
+
+Include:
+
+
+- Property title.
+- Full location information available.
+- Price.
+- Property description.
+- Property type.
+- Bedrooms and bathrooms, where applicable.
+- Plot size for land.
+- Building size, where available.
+- Amenities.
+- Image gallery.
+- Availability status.
+- Documentation information.
+- Enquiry form.
+- Request Inspection button.
+- WhatsApp enquiry option.
+- Similar properties.
+
+
+Allow users to open photographs in a larger gallery view.
+
+
+For land listings, emphasize plot dimensions, location,
+available documentation, and inspection arrangements.
+
+
+Do not invent property documentation or legal verification claims.
+
+
+==================================================
+10. PROPERTY ENQUIRY AND CUSTOM PROPERTY REQUEST FORM
+==================================================
+
+
+This is another critical requirement.
+
+
+Create a complete, professional page titled:
+
+
+FIND A PROPERTY THAT FITS YOUR NEEDS
+
+
+The form must be accessible from:
+- The main navigation.
+- The homepage.
+- Property detail pages.
+- The footer.
+- The Enquire Now button.
+
+
+Create a dedicated route:
+
+
+/property-request
+
+
+The page should match the premium design of the reference image.
+
+
+Use a two-column desktop layout.
+
+
+LEFT COLUMN:
+A professional property photograph and short explanatory content.
+
+
+RIGHT COLUMN:
+A clean, well-organized property enquiry form.
+
+
+On mobile, stack the image and form vertically.
+
+
+FORM INTRODUCTION:
+
+
+Tell us what you are looking for, and our team will help you
+explore suitable property opportunities.
+
+
+FORM FIELDS:
+
+
+A. CUSTOMER INFORMATION
+
+
+1. Full Name — required.
+2. Phone Number — required.
+3. WhatsApp Number — required.
+4. Email Address — optional.
+5. Preferred Contact Method:
+   - Phone Call
+   - WhatsApp
+   - Email
+
+
+B. PROPERTY REQUIREMENTS
+
+
+6. What are you looking for?
+   - Buy a Property
+   - Rent a Property
+   - Buy Land
+   - Invest in an Estate Development
+   - Request a Custom Property
+   - Other
+
+
+7. Preferred Location:
+   - Asaba
+   - Ibusa
+   - Agbor
+   - Warri
+   - Other
+
+
+8. Preferred Property Type:
+   - Detached Duplex
+   - Semi-Detached Duplex
+   - Terraced House
+   - Apartment
+   - Bungalow
+   - Residential Land
+   - Commercial Property
+   - Estate Investment
+   - Custom Property
+   - Other
+
+
+9. Budget Range:
+   - Allow the customer to enter a minimum budget.
+   - Allow the customer to enter a maximum budget.
+   - Display all amounts in Nigerian naira.
+
+
+10. Number of Bedrooms:
+    Show only when relevant.
+
+
+11. Preferred Land Size:
+    Show only for land requests.
+
+
+12. Preferred Payment Plan:
+    - Outright Payment
+    - Installment Payment
+    - Open to Discussion
+
+
+Only advertise installment options that the company actually offers.
+
+
+13. Intended Purpose:
+    - Personal Residence
+    - Family Home
+    - Rental Income
+    - Land Investment
+    - Commercial Use
+    - Estate Investment
+    - Other
+
+
+C. CUSTOM PROPERTY REQUEST
+
+
+Include a field titled:
+
+
+Describe Your Ideal Property
+
+
+Provide a large text area where the customer can explain
+specific requirements.
+
+
+Examples:
+- A four-bedroom house in Asaba.
+- A residential plot suitable for building a family home.
+- A property within a specified budget.
+- A house with parking and a spacious compound.
+- A custom property with particular features.
+
+
+Make it possible for the customer to describe requirements
+that do not fit the predefined options.
+
+
+14. Preferred Inspection Date — optional.
+15. Additional Requirements — optional.
+16. Consent checkbox for processing the enquiry — required.
+
+
+SUBMIT BUTTON:
+
+
+Send My Property Request
+
+
+FORM FUNCTIONALITY:
+
+
+- Validate required fields.
+- Validate phone number input.
+- Validate budget ranges.
+- Show useful validation messages.
+- Prevent accidental duplicate submissions.
+- Save enquiries to the database.
+- Generate an enquiry reference number.
+- Associate the request with the selected property when applicable.
+- Display a success message after a successful submission.
+- Display an error message if submission fails.
+- Do not falsely report success when data has not been saved.
+
+
+SUCCESS MESSAGE:
+
+
+Thank you for contacting KING ZION'S ESTATE.
+
+
+Your property request has been received. Our team will review
+your requirements and contact you using your preferred method.
+
+
+Your enquiry reference is: [Generated Reference].
+
+
+Do not promise a response time unless the company has established
+and approved that service commitment.
+
+
+ADMINISTRATION:
+
+
+Allow authorized staff to review incoming requests.
+
+
+They should be able to:
+- View customer requirements.
+- View contact information.
+- Assign enquiries to staff.
+- Record follow-up notes.
+- Update enquiry status.
+- Contact the customer.
+- Associate the enquiry with suitable property listings.
+
+
+Suggested enquiry statuses:
+New.
+Under Review.
+Contacted.
+Property Suggested.
+Inspection Requested.
+Converted.
+Closed.
+
+
+Protect all customer information from unauthorized access.
+
+
+==================================================
+11. WHY CHOOSE KING ZION'S ESTATE
+==================================================
+
+
+Create a two-column section inspired by the reference image.
+
+
+LEFT:
+Large, premium interior photograph.
+
+
+RIGHT:
+Heading:
+Your Trusted Partner in Real Estate
+
+
+Description:
+We help you find the right property, whether you are buying,
+renting, or investing. Our focus is on giving you the information,
+support, and guidance you need to make an informed decision.
+
+
+Add four concise points:
+
+
+- Transparent Property Information.
+- Dedicated Customer Support.
+- Property Inspection Assistance.
+- Local Market Knowledge.
+
+
+Include a button:
+
+
+LEARN MORE ABOUT US
+
+
+Do not make unsupported claims about customer numbers, awards,
+or legal guarantees.
+
+
+==================================================
+12. CEO AND PROPERTY MANAGER SECTION
+==================================================
+
+
+Create a premium leadership section.
+
+
+SECTION LABEL:
+OUR LEADERSHIP
+
+
+SECTION TITLE:
+Meet Our Leadership Team
+
+
+DESCRIPTION:
+Experienced leadership. A clear vision. A commitment to your
+property journey.
+
+
+Display two professional leadership profile cards side by side.
+
+
+PROFILE 1:
+
+
+Name:
+Mr. Kingslay Wilfred
+
+
+Position:
+Chief Executive Officer
+
+
+Use a professional portrait if an approved photograph is available.
+
+
+Do not invent biographical details or career achievements.
+
+
+CEO QUOTE:
+
+
+"A property decision is more than a transaction; it is a decision
+about your future. We are committed to helping every customer make
+that decision with clarity, confidence, and the right information."
+
+
+Display the quote attractively beside or below the CEO photograph.
+
+
+PROFILE 2:
+
+
+Name:
+Property Manager
+
+
+Position:
+Property Management
+
+
+Use the manager's real name and approved photograph when supplied.
+
+
+Until those details are available, display the role as
+"Property Manager" and use an appropriate professional placeholder
+that can be replaced later.
+
+
+PROPERTY MANAGER QUOTE:
+
+
+"Every property deserves clear information, careful attention,
+and a smooth customer experience from the first enquiry
+to the inspection."
+
+
+IMPORTANT:
+
+
+The quotes above are proposed website copy, not verified verbatim
+statements from the individuals.
+
+
+Display them as approved company messages only after authorization.
+
+
+Use premium executive portrait framing.
+
+
+Do not crop the leadership photographs awkwardly.
+
+
+Allow administrators to update names, photographs, roles,
+biographies, and quotations.
+
+
+==================================================
+13. HOW IT WORKS
+==================================================
+
+
+Create a clean four-step section.
+
+
+SECTION TITLE:
+Simple Steps to Your Next Property
+
+
+STEP 1:
+Discover
+
+
+Browse available properties and investment opportunities.
+
+
+STEP 2:
+Enquire
+
+
+Contact us for more information and ask your questions.
+
+
+STEP 3:
+Inspect
+
+
+Arrange a site visit and view the property in person.
+
+
+STEP 4:
+Proceed with Confidence
+
+
+Review the relevant information and documentation before
+proceeding with the transaction.
+
+
+Use simple icons connected by a subtle visual line.
+
+
+Ensure that the layout remains readable on mobile devices.
+
+
+==================================================
+14. FREQUENTLY ASKED QUESTIONS
+==================================================
+
+
+Create a dedicated FAQ section near the bottom of the homepage.
+
+
+SECTION LABEL:
+FREQUENTLY ASKED QUESTIONS
+
+
+SECTION TITLE:
+Common Questions. Clear Answers.
+
+
+DESCRIPTION:
+Find answers to common questions about our properties and services.
+
+
+Use an accordion interface.
+
+
+Include the following questions:
+
+
+1. How do I enquire about a property?
+
+
+2. Can I arrange a site inspection?
+
+
+3. What information should I request before buying land?
+
+
+4. Can I request a property that is not currently listed?
+
+
+5. How do I learn about payment terms?
+
+
+6. How will my personal information be used?
+
+
+7. How can I find out whether a property is available?
+
+
+8. What documentation is available for a property?
+
+
+9. Can I submit a custom property requirement?
+
+
+10. How can I contact KING ZION'S ESTATE?
+
+
+Provide clear, accurate answers.
+
+
+Explain that inspection requests require confirmation.
+
+
+Explain that documentation and payment terms vary by property.
+
+
+Do not promise that all properties have the same documentation.
+
+
+Allow authorized administrators to edit FAQ questions and answers.
+
+
+Include a View All FAQs link leading to a dedicated FAQ page.
+
+
+==================================================
+15. FINAL CALL TO ACTION
+==================================================
+
+
+Create a premium, full-width closing section.
+
+
+Use a beautiful residential estate photograph as the background.
+
+
+Use a dark green overlay.
+
+
+HEADING:
+
+
+Let's Find the Right Property for You
+
+
+DESCRIPTION:
+
+
+Whether you are buying, renting, or investing, we are here to help
+you find a property that fits your needs.
+
+
+PRIMARY BUTTON:
+Start Your Enquiry
+
+
+SECONDARY BUTTON:
+Explore Properties
+
+
+Start Your Enquiry must open the dedicated property request form.
+
+
+==================================================
+16. FOOTER
+==================================================
+
+
+Create a professional deep-green footer.
+
+
+Include:
+
+
+COMPANY:
+KING ZION'S ESTATE.
+
+
+MOTTO:
+"Our Customers' Satisfaction Is Our Overall Aim."
+
+
+PROPERTY LINKS:
+- Buy Property.
+- Rent Property.
+- Land for Sale.
+- Estate Projects.
+
+
+COMPANY LINKS:
+- About Us.
+- Contact Us.
+- Frequently Asked Questions.
+- Property Request Form.
+
+
+CONTACT INFORMATION:
+No. 5 King Zion Estate Phase 1,
+Asaba, Delta State, Nigeria.
+
+
+Add telephone, WhatsApp, and email links only after their official
+contact details have been configured.
+
+
+LEGAL:
+- Privacy Policy.
+- Terms of Use.
+- Property Disclaimer.
+
+
+Use the current year dynamically.
+
+
+==================================================
+17. PROPERTY DATABASE AND ADMINISTRATION
+==================================================
+
+
+Build a manageable property administration system.
+
+
+If the project already has a database, inspect it and preserve
+existing working records and integrations.
+
+
+Do not reset the database or create duplicate tables or records
+without first checking the existing architecture.
+
+
+Allow authorized administrators to:
+
+
+- Add properties.
+- Edit properties.
+- Upload property photographs.
+- Manage image galleries.
+- Set prices.
+- Set locations.
+- Enter property descriptions.
+- Set property types.
+- Enter plot sizes.
+- Enter building sizes.
+- Set availability.
+- Publish and unpublish listings.
+- Manage estate projects.
+- Review property requests.
+- Review inspection requests.
+- Assign enquiries to staff.
+- Update enquiry statuses.
+- Manage FAQs.
+- Update leadership profiles.
+- Update contact information.
+- Configure the business WhatsApp number.
+
+
+Use appropriate authentication and role-based permissions.
+
+
+Never expose customer information or administration tools publicly.
+
+
+==================================================
+18. IMAGE PRESENTATION RULES
+==================================================
+
+
+Use high-quality real estate photographs.
+
+
+Hero image candidate:
+
+
+https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85
+
+
+Interior image candidate:
+
+
+https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85
+
+
+Additional architectural photography sources:
+
+
+https://unsplash.com/s/photos/luxury-house-exterior
+
+
+https://unsplash.com/s/photos/modern-residential-estate
+
+
+https://unsplash.com/s/photos/luxury-apartment-interior
+
+
+These URLs are candidate assets and sources. Verify each direct image
+URL before production use.
+
+
+IMAGE RULES:
+
+
+1. The hero image may use cover cropping when necessary.
+
+
+2. Category cards may use carefully controlled cover cropping.
+
+
+3. Property detail galleries must preserve image proportions.
+
+
+4. The featured property slideshow must display complete images
+   without cropping.
+
+
+5. The CEO and property manager photographs must use suitable
+   professional portrait framing.
+
+
+6. Do not stretch or distort any image.
+
+
+7. Optimize image loading and mobile performance.
+
+
+8. Provide a fallback for unavailable images.
+
+
+9. Use actual property photographs wherever available.
+
+
+10. Do not imply that illustrative stock photographs represent
+    actual properties for sale.
+
+
+==================================================
+19. MOBILE RESPONSIVENESS
+==================================================
+
+
+Make the entire website responsive across:
+
+
+- Android phones.
+- iPhones.
+- Tablets.
+- Laptops.
+- Desktop computers.
+
+
+Pay particular attention to:
+
+
+- Header navigation.
+- Hero image and headline.
+- Property search panel.
+- Featured property slideshow.
+- Property enquiry form.
+- Leadership cards.
+- FAQ accordion.
+- Footer.
+
+
+On mobile:
+- Stack content appropriately.
+- Keep form fields easy to complete.
+- Prevent horizontal overflow.
+- Use touch-friendly controls.
+- Keep important enquiry actions accessible.
+- Preserve the full image in the featured property slideshow.
+
+
+==================================================
+20. SEO, PERFORMANCE, AND SECURITY
+==================================================
+
+
+Implement:
+
+
+- Page titles and meta descriptions.
+- Semantic HTML.
+- Descriptive URLs.
+- Image alt text.
+- Appropriate structured data.
+- Responsive images.
+- Lazy loading.
+- Accessible forms.
+- Input validation.
+- Spam protection.
+- Secure authentication.
+- Appropriate database permissions.
+- Privacy-conscious handling of customer information.
+
+
+Do not expose API secrets in frontend code.
+
+
+Do not publish fabricated testimonials, fake reviews, false prices,
+or unsupported property verification claims.
+
+
+==================================================
+21. TEST EVERYTHING
+==================================================
+
+
+Before declaring the website complete, test:
+
+
+- All navigation links.
+- Property search.
+- Search filters.
+- Featured property slideshow.
+- Previous and next slideshow controls.
+- Autoplay and pause controls.
+- Image framing and object-fit behavior.
+- Property details navigation.
+- Favourite functionality.
+- Property enquiry form.
+- Custom property request form.
+- Inspection request form.
+- WhatsApp links.
+- FAQ accordion.
+- Contact forms.
+- Database saving.
+- Administrator permissions.
+- Mobile responsiveness.
+- Error messages.
+- Empty states.
+- Image loading.
+
+
+Do not claim that a feature works until it has been tested.
+
+
+If an external integration requires credentials or configuration,
+identify exactly what remains to be completed.
+
+
+==================================================
+FINAL INSTRUCTION
+==================================================
+
+
+Build the website using the attached design reference.
+
+
+Preserve the premium forest-green, warm-cream, white, and champagne-gold
+visual direction.
+
+
+The result must look like the reference design while functioning
+as a real estate website for KING ZION'S ESTATE.
+
+
+Prioritize:
+1. Visual fidelity to the attached design.
+2. Functional property listings.
+3. A premium featured property slideshow with no image cropping.
+4. A complete custom property enquiry form.
+5. CEO and property manager profiles and quotes.
+6. A functional FAQ section.
+7. WhatsApp and inspection enquiries.
+8. Secure administration and database integration.
+9. Excellent mobile responsiveness.
+
+
+Do not stop at a static homepage mockup.
+
+
+Build the actual website, test the implemented functionality,
+and identify any remaining configuration requirements.

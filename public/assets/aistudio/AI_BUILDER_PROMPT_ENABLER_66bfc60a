@@ -1,0 +1,285 @@
+﻿PROJECT: MAKE MY KING ZION'S ESTATE WEBSITE WORDPRESS-COMPATIBLE
+
+
+Act as an expert website developer and WordPress developer.
+
+
+I want you to convert my existing KING ZION'S ESTATE website into a complete, working website that I can publish on WordPress.
+
+
+IMPORTANT: I NEED REAL WORKING CODE, NOT JUST A WEBSITE DESIGN OR PREVIEW.
+
+
+1. Examine my existing website first
+
+
+- Inspect the existing website and its complete source code.
+- Understand all pages, designs, images, buttons, navigation and forms.
+- Identify all existing integrations.
+- Identify how my Google Sheets connection currently works.
+- Preserve my existing website features and business information.
+- Do not rebuild everything unnecessarily.
+
+
+2. Use WordPress-compatible technology
+
+
+Build the website using standard technologies:
+
+
+- HTML5
+- CSS3
+- JavaScript
+
+
+The code must work outside Google AI Studio.
+
+
+Make sure:
+
+
+- The CSS does not interfere with my WordPress theme.
+- JavaScript does not conflict with WordPress or other plugins.
+- Use unique CSS and JavaScript names prefixed with "kze-".
+- All buttons, forms, navigation and interactive features work.
+- The website works on mobile, tablet and desktop.
+- There are no unnecessary dependencies on Google AI Studio.
+
+
+3. Give me the complete code in separate files
+
+
+I want the actual code, not explanations alone.
+
+
+Provide:
+
+
+1. "index.html" – website structure.
+2. "style.css" – complete website styling.
+3. "script.js" – all website functionality.
+4. "README.txt" – installation instructions.
+5. Any other files required.
+
+
+If the website requires multiple pages, provide the complete code for all pages.
+
+
+If a complete WordPress theme is a better solution, create a proper installable WordPress theme with all required PHP, CSS, JavaScript and asset files.
+
+
+Do not give me a standalone HTML file and claim it is a complete WordPress theme.
+
+
+4. Make the code easy to install in WordPress
+
+
+I may want to use WordPress Custom HTML blocks.
+
+
+Check whether the website can work with this method.
+
+
+If it can:
+
+
+- Give me the HTML separately.
+- Give me the CSS separately.
+- Give me the JavaScript separately.
+- Explain exactly where to paste each code.
+
+
+If Custom HTML blocks cannot support the complete website reliably, provide a complete WordPress theme or another reliable WordPress installation method.
+
+
+Do not force all the code into one HTML block if that will make the website unreliable.
+
+
+5. VERY IMPORTANT: Preserve my existing Google Sheets connection
+
+
+My existing website is already connected to my Google Sheet using my Google Sheets URL and connection code.
+
+
+I have already configured this.
+
+
+You must inspect the existing code and preserve:
+
+
+- My existing Google Sheets URL.
+- My existing spreadsheet ID, where applicable.
+- My existing form submission method.
+- My existing Google Sheets connection code.
+- The connection between customer enquiry forms and the correct spreadsheet.
+
+
+Do not create another Google Sheet unnecessarily.
+
+
+Do not replace my existing URL or connection code.
+
+
+Do not break the existing forms.
+
+
+All customer enquiry forms must continue submitting information to my existing Google Sheet.
+
+
+If the connection uses Google Apps Script, preserve the existing Web App URL and request format.
+
+
+If the connection uses another method, preserve that method.
+
+
+If you cannot find the existing connection details, tell me exactly what is missing. Do not invent a URL or pretend the connection works.
+
+
+Make sure forms:
+
+
+- Validate customer information.
+- Submit information to the correct Google Sheet.
+- Prevent accidental duplicate submissions.
+- Show a loading message.
+- Show success only when submission is confirmed.
+- Show an error message if submission fails.
+- Keep customer information in the form if submission fails.
+
+
+Do not expose private credentials or administrative information to website visitors.
+
+
+If the existing integration exposes sensitive credentials in public JavaScript, explain the risk and provide a secure WordPress-compatible alternative without silently changing the integration.
+
+
+6. Preserve my website structure
+
+
+The public website must retain these five pages:
+
+
+1. Home
+2. Properties
+3. Estate Projects
+4. About
+5. Contact
+
+
+Keep the admin and staff portal private and outside the public navigation.
+
+
+Preserve the existing property categories, enquiry forms and business information.
+
+
+Do not invent property availability, prices, plot sizes, titles, testimonials, infrastructure, staff identities or contact details.
+
+
+7. Preserve the design
+
+
+Maintain the premium real estate design.
+
+
+Use this colour palette:
+
+
+- Deep Estate Green: #102F2B
+- Emerald Green: #1D5147
+- Champagne Gold: #D6B779
+- Warm Ivory: #F5F3ED
+- White: #FFFFFF
+- Charcoal: #202824
+
+
+Use Playfair Display for headings and DM Sans for body text where available.
+
+
+Ensure the website looks professional on Android, iPhone, tablet, laptop and desktop.
+
+
+8. Antigravity
+
+
+If Antigravity or an available coding agent is accessible, you may use it to inspect, develop, organise and test the project.
+
+
+Only use it if it is genuinely available.
+
+
+The main requirement remains a complete WordPress-compatible website with working code.
+
+
+9. Test everything
+
+
+Test:
+
+
+- HTML structure.
+- CSS styling.
+- JavaScript functionality.
+- All five pages.
+- Navigation and buttons.
+- Property cards and details.
+- Galleries and sliders.
+- Customer enquiry forms.
+- Google Sheets submission.
+- Mobile responsiveness.
+- Broken images and missing files.
+- Browser console errors.
+- Privacy of administrative information.
+
+
+Do not claim a test passed if you did not perform it.
+
+
+Clearly identify what still needs testing after installation on WordPress.
+
+
+10. Final delivery
+
+
+Give me:
+
+
+A. Complete source code for every required file.
+
+
+B. Exact filenames and folder structure.
+
+
+C. Simple, step-by-step WordPress installation instructions.
+
+
+D. Exact instructions for where to paste or upload each file.
+
+
+E. Instructions for preserving and testing my existing Google Sheets connection.
+
+
+F. A report showing what you actually tested.
+
+
+G. Any missing information or configuration I must provide.
+
+
+FINAL REQUIREMENT:
+
+
+I want a complete, portable, working KING ZION'S ESTATE website that I can publish and operate on WordPress.
+
+
+Do not stop at a preview.
+
+
+Do not provide incomplete code.
+
+
+Do not leave important functions as placeholders.
+
+
+Do not remove or break my existing Google Sheets connection.
+
+
+Give me the complete code in an easy-to-copy-and-paste format, with each file clearly separated and labelled.
